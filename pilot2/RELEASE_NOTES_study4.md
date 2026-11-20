@@ -12,7 +12,7 @@ of these committed files:
    `family_s4` or `family_s4_commit`).
 3. **`LCB_at_decision`.** This credential field is computed with the PrPl bet (`gates.lcb_path`), while the
    decision used the grid bet. It is not the bound behind the decision, and on admissions it can be negative.
-   The paper does not use it.
+   The paper quotes it once, for the study 5N harmful exam, and labels it there as the PrPl bound.
 4. **N_max.** `decide()` runs the bet on all valid pairs, which can exceed `N_max` by up to one batch (the 4N
    placebo exam had 603 valid pairs for N_max 600). No decision fell beyond N_max.
 5. **Reveal order.** `build()` does not check that the exams are closed before it logs the reveal. In study 4N

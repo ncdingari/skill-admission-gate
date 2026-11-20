@@ -22,10 +22,13 @@ Known quirks of the committed files (both runners derive from `run4.py`):
      That chunk's responses were never written, nothing was logged to the ledger, and the rerun started
      exam 1 from pair 0 with the same committed seeds. The same failure occurred for studies 4bN and 4cN
      (`logs_4bn_run_attempt1_nodir.txt`).
-4. **Power plan.** `power_plan_study5.json` comes from the Haiku paired calibration
+4. **Pass counts in the 5N harmful exam.** The credential's `pass_with` / `pass_without` (294 / 259) count all
+   606 rows, including the 4 excluded pairs (one with a with-skill pass). Over the 602 valid pairs the counts are
+   293 / 259; the decision and `Dbar_at_decision` use the valid pairs only. The paper quotes neither count.
+5. **Power plan.** `power_plan_study5.json` comes from the Haiku paired calibration
    (`transcripts5/calibration.jsonl`). The Nemotron study uses the same plan, as in studies 2N to 4N. Every
    skill's calibrated lift was negative, so the pre-registered rule set N_max to 600.
-5. **Grader.** `family_dm.grade` is grader v2. The frozen v1 grader and the reason for the change are in
+6. **Grader.** `family_dm.grade` is grader v2. The frozen v1 grader and the reason for the change are in
    `E25_PLAN.md`; the change was made on the no-skill calibration only, before any skill was run.
 
 Third-party material: `skills_s5/` holds three MIT-licensed skills at pinned commits (see `MANIFEST.json`). The
