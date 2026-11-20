@@ -1,6 +1,6 @@
 # Sequential admission tests for agent skills: code and data
 
-Code, results and live-study records for the paper "Certifying That an Agent Skill Helps: Anytime-Valid, Resubmission-Proof and Verifiable Admission for Skill Registries" (JMLR submission). Released under the MIT
+Code, results and live-study records for the paper "Certifying That an Agent Skill Helps: Anytime-Valid, Resubmission-Proof and Verifiable Admission for Skill Registries" (submitted to JMLR). Released under the MIT
 license for code (`LICENSE`) and CC BY 4.0 for our data and transcripts (`LICENSE-DATA`); third-party material keeps its own license (below).
 
 ## Install
