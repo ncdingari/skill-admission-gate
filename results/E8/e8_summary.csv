@@ -1,0 +1,15 @@
+rule,cells,admitted_cells,skills,mean_lift_admitted,mean_lift_other_configs,share_other_configs_positive
+golden_source_rule,392,5,4,0.21034,0.07912,0.8
+one_sided,392,7,5,0.172457,0.0807571,0.714286
+bh,392,0,0,,,
+bet_c050,392,0,0,,,
+bet_c075,392,0,0,,,
+bet_grid,392,0,0,,,
+ebh,392,0,0,,,
+all_cells,392,392,98,0.00343316,0.00343316,0.484694
+harmful_source_rule,392,1,1,,,
+pooled_one_sided,98,10,10,0.07232,,
+pooled_bh,98,1,1,0.1769,,
+pooled_betting,98,0,0,,,
+pooled_grid,98,1,1,0.1769,,
+pooled_ebh,98,0,0,,,

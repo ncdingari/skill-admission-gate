@@ -1,0 +1,232 @@
+[civ6-adjacency-optimizer] ACP error -32603: Internal error
+[civ6-adjacency-optimizer] ACP error -32603: Internal error
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[dapt-intrusion-detection] ACP error -32603: Internal error
+[azure-bgp-oscillation-route-leak] ACP error -32603: Internal error
+[azure-bgp-oscillation-route-leak] ACP error -32603: Internal error
+[dapt-intrusion-detection] ACP error -32603: Internal error
+[fix-build-agentops] Run failed: AgentInstallError: Agent openhands install failed (rc=1) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b06_with_skill/fix-build-agentops__be9abc37/error-traceback.txt)
+[dapt-intrusion-detection] ACP error -32603: Internal error
+[dapt-intrusion-detection] ACP error -32603: Internal error
+[civ6-adjacency-optimizer] ACP error -32603: Internal error
+[civ6-adjacency-optimizer] ACP error -32603: Internal error
+[azure-bgp-oscillation-route-leak] ACP error -32603: Internal error
+[azure-bgp-oscillation-route-leak] ACP error -32603: Internal error
+[fix-build-agentops] Run failed: AgentInstallError: Agent openhands install failed (rc=1) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b06_with_skill/fix-build-agentops__819e542b/error-traceback.txt)
+[dapt-intrusion-detection] ACP error -32603: Internal error
+[dapt-intrusion-detection] ACP error -32603: Internal error
+[fix-build-agentops] Run failed: AgentInstallError: Agent openhands install failed (rc=1) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b06_with_skill/fix-build-agentops__a12a5b4a/error-traceback.txt)
+[azure-bgp-oscillation-route-leak] ACP error -32603: Internal error
+[azure-bgp-oscillation-route-leak] ACP error -32603: Internal error
+[civ6-adjacency-optimizer] ACP error -32603: Internal error
+[civ6-adjacency-optimizer] ACP error -32603: Internal error
+[python-scala-translation] Run failed: the task's image did not build: environment/Dockerfile:16 `RUN curl -fL https://github.com/coursier/coursier/releases/download/v2.1.25-M23/cs-x86_64-pc-linux.gz | gzip -d > cs && chmod +x cs && ./cs setup --yes && ./cs install scala:2.13.12 scalac:2.13.12` exited with code 133 (rosetta error: failed to open elf at /lib64/ld-linux-x86-64.so.2; Trace/breakpoint trap)
+[python-scala-translation]   next: fix that line in the task's environment/Dockerfile; `docker build <task>/environment` prints the whole build log
+[flood-risk-analysis] ACP error -32603: Internal error
+[flood-risk-analysis] ACP error -32603: Internal error
+[lake-warming-attribution] ACP error -32603: Internal error
+[lake-warming-attribution] ACP error -32603: Internal error
+[offer-letter-generator] ACP error -32603: Internal error
+[offer-letter-generator] ACP error -32603: Internal error
+[flood-risk-analysis] ACP error -32603: Internal error
+[flood-risk-analysis] ACP error -32603: Internal error
+[lake-warming-attribution] ACP error -32603: Internal error
+[lake-warming-attribution] ACP error -32603: Internal error
+[offer-letter-generator] ACP error -32603: Internal error
+[offer-letter-generator] ACP error -32603: Internal error
+[setup-fuzzing-py] Run failed: CloudMetadataPowerError: sandbox startup refused: the agent privilege construction could not be verified from /proc as root. The shared launch must set NoNewPrivs, remove NET_ADMIN and NET_RAW from CapBnd, and clear CapAmb. Provide util-linux setpriv and a readable /proc. (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b06_with_skill/setup-fuzzing-py__98cdc4ec/error-traceback.txt)
+[flood-risk-analysis] ACP error -32603: Internal error
+[flood-risk-analysis] ACP error -32603: Internal error
+[lake-warming-attribution] ACP error -32603: Internal error
+[lake-warming-attribution] ACP error -32603: Internal error
+[setup-fuzzing-py] Run failed: CloudMetadataPowerError: sandbox startup refused: the agent privilege construction could not be verified from /proc as root. The shared launch must set NoNewPrivs, remove NET_ADMIN and NET_RAW from CapBnd, and clear CapAmb. Provide util-linux setpriv and a readable /proc. (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b06_with_skill/setup-fuzzing-py__5991a34c/error-traceback.txt)
+[offer-letter-generator] ACP error -32603: Internal error
+[offer-letter-generator] ACP error -32603: Internal error
+[xlsx-recover-data] ACP error -32603: Internal error
+[xlsx-recover-data] ACP error -32603: Internal error
+[setup-fuzzing-py] Run failed: CloudMetadataPowerError: sandbox startup refused: the agent privilege construction could not be verified from /proc as root. The shared launch must set NoNewPrivs, remove NET_ADMIN and NET_RAW from CapBnd, and clear CapAmb. Provide util-linux setpriv and a readable /proc. (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b06_with_skill/setup-fuzzing-py__b008227a/error-traceback.txt)
+[xlsx-recover-data] Run failed: AgentInstallError: Agent openhands install failed (rc=2) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b06_with_skill/xlsx-recover-data__87f4bd02/error-traceback.txt)
+[xlsx-recover-data] Run failed: RuntimeError: Docker compose command failed for environment xlsx-recover-data. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name xlsx-recover-data__0d86f107-7f136561 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b06_with_skill/xlsx-recover-data__0d86f107/error-traceback.txt)
+[shock-analysis-supply] Run failed: AgentInstallError: Agent openhands install failed (rc=1) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b06_with_skill/shock-analysis-supply__71f8ba9a/error-traceback.txt)
+[shock-analysis-supply] Run failed: RuntimeError: Docker compose command failed for environment shock-analysis-supply. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name shock-analysis-supply__9194314d-3fbddfc2 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b06_with_skill/shock-analysis-supply__9194314d/error-traceback.txt)
+[shock-analysis-supply] Run failed: RuntimeError: Docker compose command failed for environment shock-analysis-supply. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name shock-analysis-supply__68f43047-6d73d1f9 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b06_with_skill/shock-analysis-supply__68f43047/error-traceback.txt)
+3 tasks (27%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+
+✗ Score: 0/11 (0.0%), mean reward 0.00 over all 11 trials (unscored as 0), 
+errors=11; scored only: none scored
+Outcomes: 0 scored (0 passed, 0 failed), 0 unscored, 11 errored
+  6 errored: the agent reported an error (agent problem): azure-bgp-oscillation-route-leak, civ6-adjacency-optimizer, dapt-intrusion-detection, flood-risk-analysis, lake-warming-attribution and 1 more
+      next: the agent's log (agent/<agent>.txt in the trial folder) has its side
+  1 errored: the agent's install failed (infrastructure problem): fix-build-agentops
+      next: `bench doctor` checks the network to npm and Node.js; the trial's agent/install-stdout.txt has the log
+  1 errored: the task's image did not build: environment/Dockerfile:16 `RUN curl -fL https://github.com/coursier/coursier/releases/download/v2.1.25-M23/cs-x86_64-pc-linux.gz | gzip -d > cs && chmod +x c... (task problem): python-scala-translation
+      next: fix that line in the task's environment/Dockerfile; `docker build '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/vendor/skillsbench/tasks/python-scala-translation'/environment` prints the whole build log
+  1 errored: the sandbox did not start: sandbox startup refused: the agent privilege construction could not be verified from /proc as root. The shared launch must set NoNewPrivs, remove NET_ADMIN and NET_RAW from CapBnd, and clear CapAmb. Provide util-linux setpriv and a readable /proc. (infrastructure problem): setup-fuzzing-py
+      next: `bench doctor`; error in result.json has the whole message
+  1 errored: the sandbox did not start: Docker compose command failed for environment shock-analysis-supply. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name shock-analysis-supply__68f43047-6d73d1f9 --project-directory /private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-stage-vdkuq9zd/private/var/fol... (infrastructure problem): shock-analysis-supply
+      next: `bench doctor`; error in result.json has the whole message
+  1 errored: the sandbox did not start: Docker compose command failed for environment xlsx-recover-data. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name xlsx-recover-data__0d86f107-7f136561 --project-directory /private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-stage-webwco04/private/var/folders/55/... (infrastructure problem): xlsx-recover-data
+      next: `bench doctor`; error in result.json has the whole message
+  `bench explain R205` says more (also install_failure, image_build, ...)
+Cost:      none: no model tokens were used
+Time:      13m 31s
+Artifacts: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b06_with_skill
+Summary:   /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b06_with_skill/summary.json
+View:      bench view '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b06_with_skill'
+[fix-build-agentops] Run failed: AgentInstallError: Agent openhands install failed (rc=1) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b06_with_skill/fix-build-agentops__4c4e074b/error-traceback.txt)
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[azure-bgp-oscillation-route-leak] ACP error -32603: Internal error
+[civ6-adjacency-optimizer] ACP error -32603: Internal error
+[azure-bgp-oscillation-route-leak] ACP error -32603: Internal error
+[civ6-adjacency-optimizer] ACP error -32603: Internal error
+[fix-build-agentops] Run failed: AgentInstallError: Agent openhands install failed (rc=1) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b06_with_skill/fix-build-agentops__2e0688cb/error-traceback.txt)
+[fix-build-agentops] Run failed: AgentInstallError: Agent openhands install failed (rc=1) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b06_with_skill/fix-build-agentops__389875cb/error-traceback.txt)
+[azure-bgp-oscillation-route-leak] ACP error -32603: Internal error
+[azure-bgp-oscillation-route-leak] ACP error -32603: Internal error
+[civ6-adjacency-optimizer] ACP error -32603: Internal error
+[civ6-adjacency-optimizer] ACP error -32603: Internal error
+[dapt-intrusion-detection] ACP error -32603: Internal error
+[dapt-intrusion-detection] ACP error -32603: Internal error
+[flood-risk-analysis] ACP error -32603: Internal error
+[flood-risk-analysis] ACP error -32603: Internal error
+[dapt-intrusion-detection] ACP error -32603: Internal error
+[dapt-intrusion-detection] ACP error -32603: Internal error
+[civ6-adjacency-optimizer] ACP error -32603: Internal error
+[civ6-adjacency-optimizer] ACP error -32603: Internal error
+[flood-risk-analysis] ACP error -32603: Internal error
+[flood-risk-analysis] ACP error -32603: Internal error
+[dapt-intrusion-detection] ACP error -32603: Internal error
+[dapt-intrusion-detection] ACP error -32603: Internal error
+[azure-bgp-oscillation-route-leak] ACP error -32603: Internal error
+[azure-bgp-oscillation-route-leak] ACP error -32603: Internal error
+[python-scala-translation] Run failed: the task's image did not build: environment/Dockerfile:16 `RUN curl -fL https://github.com/coursier/coursier/releases/download/v2.1.25-M23/cs-x86_64-pc-linux.gz | gzip -d > cs && chmod +x cs && ./cs setup --yes && ./cs install scala:2.13.12 scalac:2.13.12` exited with code 133 (rosetta error: failed to open elf at /lib64/ld-linux-x86-64.so.2; Trace/breakpoint trap)
+[python-scala-translation]   next: fix that line in the task's environment/Dockerfile; `docker build <task>/environment` prints the whole build log
+[flood-risk-analysis] ACP error -32603: Internal error
+[flood-risk-analysis] ACP error -32603: Internal error
+[lake-warming-attribution] ACP error -32603: Internal error
+[lake-warming-attribution] ACP error -32603: Internal error
+[offer-letter-generator] ACP error -32603: Internal error
+[offer-letter-generator] ACP error -32603: Internal error
+[offer-letter-generator] ACP error -32603: Internal error
+[offer-letter-generator] ACP error -32603: Internal error
+[lake-warming-attribution] ACP error -32603: Internal error
+[lake-warming-attribution] ACP error -32603: Internal error
+[setup-fuzzing-py] Run failed: CloudMetadataPowerError: sandbox startup refused: the agent privilege construction could not be verified from /proc as root. The shared launch must set NoNewPrivs, remove NET_ADMIN and NET_RAW from CapBnd, and clear CapAmb. Provide util-linux setpriv and a readable /proc. (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b06_with_skill/setup-fuzzing-py__81b29f4b/error-traceback.txt)
+[offer-letter-generator] ACP error -32603: Internal error
+[offer-letter-generator] ACP error -32603: Internal error
+[lake-warming-attribution] ACP error -32603: Internal error
+[lake-warming-attribution] ACP error -32603: Internal error
+[setup-fuzzing-py] Run failed: CloudMetadataPowerError: sandbox startup refused: the agent privilege construction could not be verified from /proc as root. The shared launch must set NoNewPrivs, remove NET_ADMIN and NET_RAW from CapBnd, and clear CapAmb. Provide util-linux setpriv and a readable /proc. (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b06_with_skill/setup-fuzzing-py__e2f7c5a5/error-traceback.txt)
+[xlsx-recover-data] ACP error -32603: Internal error
+[xlsx-recover-data] ACP error -32603: Internal error
+[setup-fuzzing-py] Run failed: CloudMetadataPowerError: sandbox startup refused: the agent privilege construction could not be verified from /proc as root. The shared launch must set NoNewPrivs, remove NET_ADMIN and NET_RAW from CapBnd, and clear CapAmb. Provide util-linux setpriv and a readable /proc. (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b06_with_skill/setup-fuzzing-py__3e4796fd/error-traceback.txt)
+[xlsx-recover-data] ACP error -32603: Internal error
+[xlsx-recover-data] ACP error -32603: Internal error
+[shock-analysis-supply] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b06_with_skill/shock-analysis-supply__b0f257a3/error-traceback.txt)
+[shock-analysis-supply] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b06_with_skill/shock-analysis-supply__02f1b201/error-traceback.txt)
+[xlsx-recover-data] ACP error -32603: Internal error
+[xlsx-recover-data] ACP error -32603: Internal error
+[shock-analysis-supply] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b06_with_skill/shock-analysis-supply__65f0ca19/error-traceback.txt)
+2 tasks (18%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+
+✗ Score: 0/11 (0.0%), mean reward 0.00 over all 11 trials (unscored as 0), 
+errors=11; scored only: none scored
+Outcomes: 0 scored (0 passed, 0 failed), 0 unscored, 11 errored
+  7 errored: the agent reported an error (agent problem): azure-bgp-oscillation-route-leak, civ6-adjacency-optimizer, dapt-intrusion-detection, flood-risk-analysis, lake-warming-attribution and 2 more
+      next: the agent's log (agent/<agent>.txt in the trial folder) has its side
+  1 errored: the agent's install failed (infrastructure problem): fix-build-agentops
+      next: `bench doctor` checks the network to npm and Node.js; the trial's agent/install-stdout.txt has the log
+  1 errored: the task's image did not build: environment/Dockerfile:16 `RUN curl -fL https://github.com/coursier/coursier/releases/download/v2.1.25-M23/cs-x86_64-pc-linux.gz | gzip -d > cs && chmod +x c... (task problem): python-scala-translation
+      next: fix that line in the task's environment/Dockerfile; `docker build '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/vendor/skillsbench/tasks/python-scala-translation'/environment` prints the whole build log
+  1 errored: the sandbox did not start: sandbox startup refused: the agent privilege construction could not be verified from /proc as root. The shared launch must set NoNewPrivs, remove NET_ADMIN and NET_RAW from CapBnd, and clear CapAmb. Provide util-linux setpriv and a readable /proc. (infrastructure problem): setup-fuzzing-py
+      next: `bench doctor`; error in result.json has the whole message
+  1 errored: the sandbox did not start: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su and pkexec) and other nonstandard privileged helpers from the image, or set allow_... (infrastructure problem): shock-analysis-supply
+      next: `bench doctor`; error in result.json has the whole message
+  `bench explain R205` says more (also install_failure, image_build, ...)
+Cost:      none: no model tokens were used
+Time:      10m 26s
+Artifacts: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b06_with_skill
+Summary:   /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b06_with_skill/summary.json
+View:      bench view '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b06_with_skill'
+[dapt-intrusion-detection] ACP error -32603: Internal error
+[dapt-intrusion-detection] ACP error -32603: Internal error
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[dapt-intrusion-detection] ACP error -32603: Internal error
+[dapt-intrusion-detection] ACP error -32603: Internal error
+[civ6-adjacency-optimizer] ACP error -32603: Internal error
+[azure-bgp-oscillation-route-leak] ACP error -32603: Internal error
+[civ6-adjacency-optimizer] ACP error -32603: Internal error
+[azure-bgp-oscillation-route-leak] ACP error -32603: Internal error
+[dapt-intrusion-detection] ACP error -32603: Internal error
+[dapt-intrusion-detection] ACP error -32603: Internal error
+[civ6-adjacency-optimizer] ACP error -32603: Internal error
+[civ6-adjacency-optimizer] ACP error -32603: Internal error
+[azure-bgp-oscillation-route-leak] ACP error -32603: Internal error
+[fix-build-agentops] Run failed: AgentInstallError: Agent openhands install failed (rc=1) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b06_with_skill/fix-build-agentops__dafce450/error-traceback.txt)
+[azure-bgp-oscillation-route-leak] ACP error -32603: Internal error
+[fix-build-agentops] Run failed: AgentInstallError: Agent openhands install failed (rc=1) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b06_with_skill/fix-build-agentops__5d5ed5f7/error-traceback.txt)
+[flood-risk-analysis] ACP error -32603: Internal error
+[flood-risk-analysis] ACP error -32603: Internal error
+[fix-build-agentops] Run failed: AgentInstallError: Agent openhands install failed (rc=1) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b06_with_skill/fix-build-agentops__a0064800/error-traceback.txt)
+[azure-bgp-oscillation-route-leak] ACP error -32603: Internal error
+[azure-bgp-oscillation-route-leak] ACP error -32603: Internal error
+[flood-risk-analysis] ACP error -32603: Internal error
+[flood-risk-analysis] ACP error -32603: Internal error
+[civ6-adjacency-optimizer] ACP error -32603: Internal error
+[civ6-adjacency-optimizer] ACP error -32603: Internal error
+[lake-warming-attribution] ACP error -32603: Internal error
+[python-scala-translation] Run failed: the task's image did not build: environment/Dockerfile:16 `RUN curl -fL https://github.com/coursier/coursier/releases/download/v2.1.25-M23/cs-x86_64-pc-linux.gz | gzip -d > cs && chmod +x cs && ./cs setup --yes && ./cs install scala:2.13.12 scalac:2.13.12` exited with code 133 (rosetta error: failed to open elf at /lib64/ld-linux-x86-64.so.2; Trace/breakpoint trap)
+[python-scala-translation]   next: fix that line in the task's environment/Dockerfile; `docker build <task>/environment` prints the whole build log
+[lake-warming-attribution] ACP error -32603: Internal error
+[flood-risk-analysis] ACP error -32603: Internal error
+[flood-risk-analysis] ACP error -32603: Internal error
+[setup-fuzzing-py] Run failed: CloudMetadataPowerError: sandbox startup refused: the agent privilege construction could not be verified from /proc as root. The shared launch must set NoNewPrivs, remove NET_ADMIN and NET_RAW from CapBnd, and clear CapAmb. Provide util-linux setpriv and a readable /proc. (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b06_with_skill/setup-fuzzing-py__8865a440/error-traceback.txt)
+[offer-letter-generator] ACP connect failed (attempt 1): ACP session_new timed out after 60s before the first prompt
+[setup-fuzzing-py] Run failed: RuntimeError: Docker compose command failed for environment setup-fuzzing-py. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name setup-fuzzing-py__c76ddcd4-16449438 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b06_with_skill/setup-fuzzing-py__c76ddcd4/error-traceback.txt)
+[lake-warming-attribution] ACP connect failed (attempt 1): ACP session_new timed out after 60s before the first prompt
+[shock-analysis-supply] Run failed: AgentInstallError: Agent openhands install failed (rc=1) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b06_with_skill/shock-analysis-supply__67a87e6f/error-traceback.txt)
+[setup-fuzzing-py] Run failed: RuntimeError: Docker compose command failed for environment setup-fuzzing-py. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name setup-fuzzing-py__0083790f-bc9249e2 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b06_with_skill/setup-fuzzing-py__0083790f/error-traceback.txt)
+[offer-letter-generator] ACP connect failed (attempt 2): ACP session_new timed out after 60s before the first prompt
+[lake-warming-attribution] ACP connect failed (attempt 2): ACP session_new timed out after 60s before the first prompt
+[xlsx-recover-data] Run failed: RuntimeError: Docker compose command failed for environment xlsx-recover-data. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name xlsx-recover-data__97f7670c-78a61158 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b06_with_skill/xlsx-recover-data__97f7670c/error-traceback.txt)
+[shock-analysis-supply] Run failed: RuntimeError: Docker compose command failed for environment shock-analysis-supply. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name shock-analysis-supply__30688859-761fecfc --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b06_with_skill/shock-analysis-supply__30688859/error-traceback.txt)
+[shock-analysis-supply] Run failed: RuntimeError: Docker compose command failed for environment shock-analysis-supply. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name shock-analysis-supply__1f4f3b63-2ea52e57 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b06_with_skill/shock-analysis-supply__1f4f3b63/error-traceback.txt)
+[xlsx-recover-data] Run failed: RuntimeError: Docker compose command failed for environment xlsx-recover-data. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name xlsx-recover-data__50063339-bbb43b90 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b06_with_skill/xlsx-recover-data__50063339/error-traceback.txt)
+[offer-letter-generator] ACP connect failed (attempt 3): ACP session_new timed out after 60s before the first prompt
+[xlsx-recover-data] Run failed: RuntimeError: Docker compose command failed for environment xlsx-recover-data. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name xlsx-recover-data__4be616f2-3080d65a --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b06_with_skill/xlsx-recover-data__4be616f2/error-traceback.txt)
+[lake-warming-attribution] ACP connect failed (attempt 3): ACP session_new timed out after 60s before the first prompt
+[offer-letter-generator] Agent connection lost: ACP session_new timed out after 60s before the first prompt
+[lake-warming-attribution] Agent connection lost: ACP session_new timed out after 60s before the first prompt
+[offer-letter-generator] Run failed: RuntimeError: Docker compose command failed for environment offer-letter-generator. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name offer-letter-generator__da95cf87-f3c85bc4 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b06_with_skill/offer-letter-generator__da95cf87/error-traceback.txt)
+[lake-warming-attribution] Run failed: RuntimeError: Docker compose command failed for environment lake-warming-attribution. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name lake-warming-attribution__3cac5200-9ab6650e --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b06_with_skill/lake-warming-attribution__3cac5200/error-traceback.txt)
+[offer-letter-generator] Run failed: RuntimeError: Docker compose command failed for environment offer-letter-generator. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name offer-letter-generator__7cb54067-0640d661 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b06_with_skill/offer-letter-generator__7cb54067/error-traceback.txt)
+5 tasks (45%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+
+✗ Score: 0/11 (0.0%), mean reward 0.00 over all 11 trials (unscored as 0), 
+errors=11; scored only: none scored
+Outcomes: 0 scored (0 passed, 0 failed), 0 unscored, 11 errored
+  4 errored: the agent reported an error (agent problem): azure-bgp-oscillation-route-leak, civ6-adjacency-optimizer, dapt-intrusion-detection, flood-risk-analysis
+      next: the agent's log (agent/<agent>.txt in the trial folder) has its side
+  1 errored: the agent's install failed (infrastructure problem): fix-build-agentops
+      next: `bench doctor` checks the network to npm and Node.js; the trial's agent/install-stdout.txt has the log
+  1 errored: the sandbox did not start: Docker compose command failed for environment lake-warming-attribution. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name lake-warming-attribution__3cac5200-9ab6650e --project-directory /private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-stage-os001mgd/private/v... (infrastructure problem): lake-warming-attribution
+      next: `bench doctor`; error in result.json has the whole message
+  1 errored: the sandbox did not start: Docker compose command failed for environment offer-letter-generator. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name offer-letter-generator__7cb54067-0640d661 --project-directory /private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-stage-y855jnj8/private/var/f... (infrastructure problem): offer-letter-generator
+      next: `bench doctor`; error in result.json has the whole message
+  1 errored: the task's image did not build: environment/Dockerfile:16 `RUN curl -fL https://github.com/coursier/coursier/releases/download/v2.1.25-M23/cs-x86_64-pc-linux.gz | gzip -d > cs && chmod +x c... (task problem): python-scala-translation
+      next: fix that line in the task's environment/Dockerfile; `docker build '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/vendor/skillsbench/tasks/python-scala-translation'/environment` prints the whole build log
+  1 errored: the sandbox did not start: Docker compose command failed for environment setup-fuzzing-py. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name setup-fuzzing-py__0083790f-bc9249e2 --project-directory /private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-stage-4ojuw9m2/private/var/folders/55/0q... (infrastructure problem): setup-fuzzing-py
+      next: `bench doctor`; error in result.json has the whole message
+  1 errored: the sandbox did not start: Docker compose command failed for environment shock-analysis-supply. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name shock-analysis-supply__1f4f3b63-2ea52e57 --project-directory /private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-stage-ysqv841c/private/var/fol... (infrastructure problem): shock-analysis-supply
+      next: `bench doctor`; error in result.json has the whole message
+  1 errored: the sandbox did not start: Docker compose command failed for environment xlsx-recover-data. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-4a0fho9d compose --project-name xlsx-recover-data__4be616f2-3080d65a --project-directory /private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-stage-rz5uik3k/private/var/folders/55/... (infrastructure problem): xlsx-recover-data
+      next: `bench doctor`; error in result.json has the whole message
+  `bench explain R205` says more (also install_failure, sandbox_setup, ...)
+Cost:      none: no model tokens were used
+Time:      12m 32s
+Artifacts: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b06_with_skill
+Summary:   /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b06_with_skill/summary.json
+View:      bench view '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b06_with_skill'
+Matrix summary: /Users/ndingari/Dropbox/Dingari 
+Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/matrix-summary.json
+Matrix: 3 trial job(s), 0/33 trials passed, errors=33 verifier-errors=0

@@ -1,0 +1,19 @@
+[openrouter] helpful 0 with=True without=False ok=True/True lat=9.24/5.64s total=$0.1019
+[openrouter] helpful 1 with=True without=False ok=True/True lat=8.66/7.63s total=$0.1100
+[openrouter] helpful 2 with=True without=False ok=True/True lat=13.54/13.93s total=$0.1198
+[openrouter] helpful 3 with=True without=False ok=True/True lat=10.06/13.25s total=$0.1294
+[openrouter] helpful 4 with=False without=False ok=True/True lat=13.05/3.99s total=$0.1368
+[openrouter] placebo 0 with=False without=False ok=True/True lat=12.06/12.51s total=$0.1467
+[openrouter] placebo 1 with=False without=False ok=True/True lat=6.51/8.21s total=$0.1535
+[openrouter] placebo 2 with=False without=False ok=True/True lat=6.15/5.59s total=$0.1599
+[openrouter] placebo 3 with=False without=False ok=True/True lat=5.68/5.93s total=$0.1701
+[openrouter] placebo 4 with=False without=False ok=True/True lat=12.66/9.92s total=$0.1796
+# Open-model smoke test (2026-11-17)
+
+| Model / route | Pairs | Helpful: with / without | Placebo: with / without | Failed calls | Cut off at limit | Median latency (s) | Cost (USD) | Providers |
+|:--|--:|:--|:--|--:|--:|--:|--:|:--|
+| Claude Haiku 5.5 (study 2 calibration, Nov 16) | 10 | 5/5 / 0/5 | 0/5 / 0/5 | 0/20 | 0/20 | - | 0.0350 | - |
+| Nemotron 3.5 Super VL via hf (nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16:cheapest) | 2 | 2/2 / 0/2 | 0/0 / 0/0 | 0/4 | 0/4 | 187.8 | 0.0077 | openrouter |
+| Nemotron 3.5 Super VL via openrouter (nvidia/nemotron-3.5-super-vl) | 10 | 4/5 / 0/5 | 0/5 / 0/5 | 0/20 | 6/20 | 8.9 | 0.0805 | CoreWeave, DeepInfra, Venice |
+| Nemotron 3.5 Super VL via nvidia (nvidia/nemotron-3.5-super-vl-120b-a12b) | 10 | 4/5 / 0/5 | 0/5 / 0/5 | 0/20 | 6/20 | 55.5 | 0.0914 | - |
+

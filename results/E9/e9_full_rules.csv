@@ -1,0 +1,8 @@
+rule,admitted,of,mean_lift_admitted
+t_uncorrected,27,87,0.436214
+t_bh,21,87,0.516755
+betting_per_exam,2,87,0.87037
+betting_c075,10,87,0.67037
+betting_grid,17,87,0.574074
+betting_grid_ebh,10,87,0.67037
+betting_ebh,0,87,

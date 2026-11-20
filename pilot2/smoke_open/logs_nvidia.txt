@@ -1,0 +1,17 @@
+[nvidia] helpful 0 with=True without=False ok=True/True lat=38.49/21.35s total=$0.0064
+[nvidia] helpful 1 with=True without=False ok=True/True lat=103.76/46.17s total=$0.0155
+[nvidia] helpful 2 with=False without=False ok=True/True lat=61.98/31.57s total=$0.0245
+[nvidia] helpful 3 with=True without=False ok=True/True lat=56.55/56.25s total=$0.0341
+[nvidia] helpful 4 with=True without=False ok=True/True lat=53.9/37.11s total=$0.0425
+[nvidia] placebo 0 with=False without=False ok=True/True lat=56.89/54.73s total=$0.0530
+[nvidia] placebo 1 with=False without=False ok=True/True lat=59.66/39.96s total=$0.0622
+[nvidia] placebo 2 with=False without=False ok=True/True lat=40.4/56.4s total=$0.0705
+[nvidia] placebo 3 with=False without=False ok=True/True lat=60.0/58.24s total=$0.0811
+[nvidia] placebo 4 with=False without=False ok=True/True lat=54.37/59.02s total=$0.0914
+# Open-model smoke test (2026-11-17)
+
+| Model / route | Pairs | Helpful: with / without | Placebo: with / without | Failed calls | Median latency (s) | Cost (USD) | Providers |
+|:--|--:|:--|:--|--:|--:|--:|:--|
+| Claude Haiku 5.5 (study 2 calibration, Nov 16) | 10 | 5/5 / 0/5 | 0/5 / 0/5 | 0/20 | - | 0.0350 | - |
+| Nemotron 3.5 Super VL via nvidia (nvidia/nemotron-3.5-super-vl-120b-a12b) | 10 | 4/5 / 0/5 | 0/5 / 0/5 | 0/20 | 55.489999999999995 | 0.0914 | - |
+

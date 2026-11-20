@@ -1,0 +1,17 @@
+{"exp": "E3b_h600", "quick": false, "wall_s": 1651.18, "seed": 20261114, "nixigate": "0.1.0", "python": "3.12.7", "numpy": "1.26.3", "pandas": "2.3.3", "time": "2026-11-20 09:49:26 EST", "rule": "grid", "T": 2000, "histories": 600, "share_elond_binding": 0.997}
+        method      fdr   fdr_se    power   admitted
+ elond_horizon 0.011616 0.000232 0.879261 355.578333
+elond_infinite 0.000323 0.000046 0.784187 313.531667
+per_exam_alpha 0.103817 0.000593 0.950123 423.721667
+method  elond_horizon  elond_infinite  per_exam_alpha
+block                                                
+1               0.819           0.814           0.949
+2               0.853           0.794           0.950
+3               0.870           0.791           0.952
+4               0.878           0.784           0.949
+5               0.887           0.781           0.951
+6               0.892           0.782           0.951
+7               0.891           0.771           0.948
+8               0.897           0.773           0.950
+9               0.903           0.781           0.951
+10              0.904           0.771           0.950

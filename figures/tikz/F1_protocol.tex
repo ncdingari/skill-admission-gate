@@ -1,0 +1,17 @@
+% F1: admission protocol (TikZ, included by paper/main.tex)
+\begin{tikzpicture}[font=\small, node distance=4mm and 6mm,
+  box/.style={draw, rounded corners=2pt, align=center, minimum height=9mm, inner sep=3pt, fill=#1},
+  box/.default=white, ar/.style={-{Stealth[length=2mm]}, thick}]
+\definecolor{okblue}{HTML}{0072B2}\definecolor{okorange}{HTML}{E69F00}\definecolor{okgreen}{HTML}{009E73}
+\node[box=okblue!12] (reg) {Register\\$H(s)$, $\mathrm{id}(a)$ at $b_0$};
+\node[box=okblue!12, right=of reg] (com) {Commit $c=H(\sigma_p\|\rho\|\theta)$\\at $b_1$, beacon height $b_2$};
+\node[box=okblue!12, right=of com] (seed) {Seed\\$\sigma=H(\sigma_p\|\beta_{b_2})$};
+\node[box=okorange!18, below=7mm of seed] (exam) {Paired exam on $G(\sigma,i)$\\arm 0: $s_0$, arm 1: $s$};
+\node[box=okorange!18, left=of exam] (gate) {Betting test, futility margin;\\level $\alpha_t$ from e-LOND\\and lineage spending};
+\node[box=okgreen!15, left=of gate] (cred) {Credential $\chi$: both\\Merkle roots, $\theta$, decision;\\reveal $(\sigma_p,\rho)$ at $b_3$};
+\node[box=okgreen!15, below=7mm of gate] (ver) {Any verifier: Algorithm~\ref{alg:verify}\\recompute decision from transcripts};
+\node[box=gray!12, below=7mm of cred] (log) {Append-only log\\+ public beacon};
+\draw[ar] (reg) -- (com); \draw[ar] (com) -- (seed); \draw[ar] (seed) -- (exam);
+\draw[ar] (exam) -- node[above, font=\scriptsize]{$D_i$} (gate); \draw[ar] (gate) -- node[above, font=\scriptsize]{stop} (cred);
+\draw[ar] (cred) -- (log); \draw[ar] (log) -- (ver); \draw[ar, dashed] (ver.east) -| (exam.south);
+\end{tikzpicture}

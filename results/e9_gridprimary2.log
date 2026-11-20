@@ -1,0 +1,1 @@
+{"exp": "E9", "quick": false, "wall_s": 172.64, "seed": 20261114, "nixigate": "0.1.0", "python": "3.12.7", "numpy": "1.26.3", "pandas": "2.3.3", "time": "2026-11-18 15:58:08 EST", "rule": "prpl", "tasks": 87, "configs": 18, "splits": 500, "boot": 1000}

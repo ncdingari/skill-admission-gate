@@ -1,0 +1,54 @@
+real 0 with True without True stop end_turn $0.062
+real 1 with True without True stop end_turn $0.062
+real 2 with True without False stop end_turn $0.064
+real 3 with True without True stop end_turn $0.065
+real 4 with True without True stop end_turn $0.066
+real 5 with True without True stop end_turn $0.067
+real 6 with True without True stop end_turn $0.068
+real 7 with True without False stop end_turn $0.070
+real 8 with True without True stop end_turn $0.071
+real 9 with True without True stop end_turn $0.072
+real 10 with True without False stop end_turn $0.073
+real 11 with True without True stop end_turn $0.074
+real 12 with True without True stop end_turn $0.075
+real 13 with True without True stop end_turn $0.076
+real 14 with True without True stop end_turn $0.078
+real 15 with True without True stop end_turn $0.079
+real 16 with False without False stop end_turn $0.081
+real 17 with True without False stop end_turn $0.082
+real 18 with True without True stop end_turn $0.083
+real 19 with True without True stop end_turn $0.083
+placebo 0 with True without False stop end_turn $0.084
+placebo 1 with True without True stop end_turn $0.085
+placebo 2 with True without True stop end_turn $0.087
+placebo 3 with True without True stop end_turn $0.088
+placebo 4 with True without True stop end_turn $0.089
+placebo 5 with True without True stop end_turn $0.090
+placebo 6 with True without True stop end_turn $0.091
+placebo 7 with True without False stop end_turn $0.093
+placebo 8 with True without True stop end_turn $0.094
+placebo 9 with True without True stop end_turn $0.095
+placebo 10 with True without False stop end_turn $0.096
+placebo 11 with True without True stop end_turn $0.097
+placebo 12 with False without True stop end_turn $0.098
+placebo 13 with True without True stop end_turn $0.099
+placebo 14 with True without True stop end_turn $0.101
+placebo 15 with True without True stop end_turn $0.102
+placebo 16 with True without True stop end_turn $0.104
+placebo 17 with True without True stop end_turn $0.105
+placebo 18 with True without True stop end_turn $0.105
+placebo 19 with True without True stop end_turn $0.106
+{
+ "real": {
+  "with": 19,
+  "without": 15,
+  "ok_pairs": 20,
+  "pairs": 20
+ },
+ "placebo": {
+  "with": 19,
+  "without": 17,
+  "ok_pairs": 20,
+  "pairs": 20
+ }
+}

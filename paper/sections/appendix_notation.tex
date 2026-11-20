@@ -1,0 +1,34 @@
+\section{Notation}
+\label{app:notation}
+
+\begin{table}[h]
+\centering\small
+\caption{Main notation.}
+\label{tab:notation}
+\begin{tabular}{@{}l>{\raggedright\arraybackslash}p{0.62\linewidth}@{}}
+\toprule
+Symbol & Meaning \\
+\midrule
+$i$, $D_i$ & variant index; paired difference, pass with skill minus pass without, in $[-1,1]$ \\
+$X_i=(1+D_i)/2$, $m_0=(1+\delta)/2$ & rescaled difference and its null mean \\
+$\mathcal F_{i-1}$ & registry history at exam start, skill, comparator, commitment and earlier transcripts \\
+$\Delta_i=\mathbb E[D_i\mid\mathcal F_{i-1}]$, $\Delta$ & conditional and average lift \\
+$\delta$, $\delta_f$ & admission margin (0 throughout); futility margin \\
+$\alpha$, $\alpha_f$ & registry error level; futility level \\
+$a$ & level of one exam; admit when wealth reaches $1/a$ (in Section~\ref{sec:setup}, also the agent) \\
+$\lambda_i$, $K_n$ & bet and wealth (e-process) of an exam \\
+$\tau$, $N_{\max}$ & stopping time of an exam; cap on variants \\
+$t$, $R_{t-1}$, $\gamma_t$ & registry exam index; earlier admissions; e-LOND sequence $t^{-1.6}/\zeta(1.6)$ \\
+$\alpha_t=\alpha\gamma_t(R_{t-1}+1)$ & e-LOND level of exam $t$ \\
+$k$, $q_k$ ($\gamma^{\text{lin}}_k$) & attempt index within a lineage; lineage schedule \\
+$\min(\alpha_t,\alpha q_k)$ & deployed level \\
+$J$, $\pi$ & attempt at which an honest author's first helpful version arrives; its law \\
+$H(\pi)$, $\mathrm{KL}(\pi\|q)$ & entropy of $\pi$; mismatch between $\pi$ and the schedule \\
+$K_{\inf}(P,m_0)$ & information per variant against the closest null \\
+$C$ & expected variants an honest lineage spends on its helpful exam \\
+$\beta$ & type-II error of an exam \\
+$L=\log(1/a)$, $\rho=L/(L+1)$ & level in nats; grid ratio of the level-tuned bet \\
+$\Lambda$, $w_j$, $c_u$ & distance of the best bet from the cap; grid weights; their normalizer \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="../vendor/echarts.min.js"></script>
+
+    
+</head>
+<body >
+    <div id="ec517d74a59a4127a85fc1b7a169d0d6" class="chart-container" style="width:1050px; height:620px; "></div>
+    <script>
+        var chart_ec517d74a59a4127a85fc1b7a169d0d6 = echarts.init(
+            document.getElementById('ec517d74a59a4127a85fc1b7a169d0d6'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_ec517d74a59a4127a85fc1b7a169d0d6 = {
+    "backgroundColor": "#FFFFFF",
+    "animation": false,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#000000",
+        "#E69F00",
+        "#56B4E9",
+        "#009E73",
+        "#F0E442",
+        "#0072B2",
+        "#D55E00",
+        "#CC79A7"
+    ],
+    "textStyle": {
+        "color": "#000000",
+        "fontSize": 24,
+        "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+    },
+    "title": [
+        {
+            "left": 20,
+            "top": 6,
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 26,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+                "fontWeight": "normal"
+            }
+        }
+    ],
+    "grid": [
+        {
+            "left": 120,
+            "right": 40,
+            "top": 90,
+            "bottom": 110
+        }
+    ],
+    "xAxis": [
+        {
+            "type": "value",
+            "gridIndex": 0,
+            "name": "True lift \u0394",
+            "nameLocation": "middle",
+            "nameGap": 60,
+            "nameTextStyle": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "axisLine": {
+                "show": true,
+                "onZero": false,
+                "lineStyle": {
+                    "color": "#000000",
+                    "width": 2
+                }
+            },
+            "axisTick": {
+                "show": true,
+                "inside": true,
+                "lineStyle": {
+                    "color": "#000000",
+                    "width": 2
+                }
+            },
+            "axisLabel": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "splitLine": {
+                "show": false
+            },
+            "min": 0,
+            "max": 0.26
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value",
+            "gridIndex": 0,
+            "name": "Lift printed on the credential",
+            "nameLocation": "middle",
+            "nameGap": 70,
+            "nameTextStyle": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "axisLine": {
+                "show": true,
+                "onZero": false,
+                "lineStyle": {
+                    "color": "#000000",
+                    "width": 2
+                }
+            },
+            "axisTick": {
+                "show": true,
+                "inside": true,
+                "lineStyle": {
+                    "color": "#000000",
+                    "width": 2
+                }
+            },
+            "axisLabel": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "splitLine": {
+                "show": false
+            },
+            "min": 0,
+            "max": 0.3
+        }
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u0394\u0302, betting gate (admitted)",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "data": [
+                [
+                    0.025,
+                    0.0832916
+                ],
+                [
+                    0.05,
+                    0.083464
+                ],
+                [
+                    0.075,
+                    0.0964674
+                ],
+                [
+                    0.1,
+                    0.119054
+                ],
+                [
+                    0.166,
+                    0.184659
+                ],
+                [
+                    0.25,
+                    0.270237
+                ]
+            ],
+            "symbol": "circle",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#0072B2",
+                "type": "solid",
+                "width": 3
+            },
+            "itemStyle": {
+                "color": "#0072B2"
+            }
+        },
+        {
+            "type": "line",
+            "name": "\u0394\u0302, fixed-n t-test (admitted)",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "data": [
+                [
+                    0.025,
+                    0.0822331
+                ],
+                [
+                    0.05,
+                    0.0893381
+                ],
+                [
+                    0.075,
+                    0.0989685
+                ],
+                [
+                    0.1,
+                    0.113768
+                ],
+                [
+                    0.166,
+                    0.167461
+                ],
+                [
+                    0.25,
+                    0.250158
+                ]
+            ],
+            "symbol": "circle",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#000000",
+                "type": "solid",
+                "width": 3
+            },
+            "itemStyle": {
+                "color": "#000000"
+            }
+        },
+        {
+            "type": "line",
+            "name": "Anytime-valid lower bound at stop",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "data": [
+                [
+                    0.025,
+                    0.00195685
+                ],
+                [
+                    0.05,
+                    0.00189888
+                ],
+                [
+                    0.075,
+                    0.00232973
+                ],
+                [
+                    0.1,
+                    0.00317481
+                ],
+                [
+                    0.166,
+                    0.00616967
+                ],
+                [
+                    0.25,
+                    0.0102163
+                ]
+            ],
+            "symbol": "circle",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#009E73",
+                "type": "dashed",
+                "width": 3
+            },
+            "itemStyle": {
+                "color": "#009E73"
+            }
+        },
+        {
+            "type": "line",
+            "name": "Truth (y = x)",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "data": [
+                [
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.26,
+                    0.26
+                ]
+            ],
+            "symbol": "none",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#CC79A7",
+                "type": "dotted",
+                "width": 2
+            },
+            "itemStyle": {
+                "color": "#CC79A7"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "show": true,
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "itemWidth": 30,
+            "itemHeight": 16,
+            "inactiveColor": "#FFFFFF",
+            "itemGap": 18,
+            "left": 20,
+            "top": 10,
+            "width": 1000
+        }
+    ],
+    "_emsk_width_px": 1050,
+    "_emsk_height_px": 620
+};
+        chart_ec517d74a59a4127a85fc1b7a169d0d6.setOption(option_ec517d74a59a4127a85fc1b7a169d0d6);
+    </script>
+</body>
+</html>

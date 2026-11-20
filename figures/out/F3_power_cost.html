@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="../vendor/echarts.min.js"></script>
+
+    
+</head>
+<body >
+    <div id="640495bee01c4798907dffb749ede36a" class="chart-container" style="width:1050px; height:1010px; "></div>
+    <script>
+        var chart_640495bee01c4798907dffb749ede36a = echarts.init(
+            document.getElementById('640495bee01c4798907dffb749ede36a'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_640495bee01c4798907dffb749ede36a = {
+    "backgroundColor": "#FFFFFF",
+    "animation": false,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#000000",
+        "#E69F00",
+        "#56B4E9",
+        "#009E73",
+        "#F0E442",
+        "#0072B2",
+        "#D55E00",
+        "#CC79A7"
+    ],
+    "textStyle": {
+        "color": "#000000",
+        "fontSize": 24,
+        "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+    },
+    "title": [
+        {
+            "text": "(a)",
+            "left": 10,
+            "top": 120,
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 26,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+                "fontWeight": "normal"
+            }
+        },
+        {
+            "text": "(b)",
+            "left": 10,
+            "top": 590,
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 26,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+                "fontWeight": "normal"
+            }
+        }
+    ],
+    "grid": [
+        {
+            "left": 120,
+            "right": 30,
+            "top": 130,
+            "height": 330
+        },
+        {
+            "left": 120,
+            "right": 30,
+            "top": 600,
+            "height": 330
+        }
+    ],
+    "xAxis": [
+        {
+            "type": "value",
+            "gridIndex": 0,
+            "nameLocation": "middle",
+            "nameGap": 60,
+            "nameTextStyle": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "axisLine": {
+                "show": true,
+                "onZero": false,
+                "lineStyle": {
+                    "color": "#000000",
+                    "width": 2
+                }
+            },
+            "axisTick": {
+                "show": true,
+                "inside": true,
+                "lineStyle": {
+                    "color": "#000000",
+                    "width": 2
+                }
+            },
+            "axisLabel": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "splitLine": {
+                "show": false
+            },
+            "min": -0.05,
+            "max": 0.3
+        },
+        {
+            "type": "value",
+            "gridIndex": 1,
+            "name": "True lift \u0394 (fraction of tasks)",
+            "nameLocation": "middle",
+            "nameGap": 60,
+            "nameTextStyle": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "axisLine": {
+                "show": true,
+                "onZero": false,
+                "lineStyle": {
+                    "color": "#000000",
+                    "width": 2
+                }
+            },
+            "axisTick": {
+                "show": true,
+                "inside": true,
+                "lineStyle": {
+                    "color": "#000000",
+                    "width": 2
+                }
+            },
+            "axisLabel": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "splitLine": {
+                "show": false
+            },
+            "min": -0.05,
+            "max": 0.3
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value",
+            "gridIndex": 0,
+            "name": "P(admit)",
+            "nameLocation": "middle",
+            "nameGap": 70,
+            "nameTextStyle": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "axisLine": {
+                "show": true,
+                "onZero": false,
+                "lineStyle": {
+                    "color": "#000000",
+                    "width": 2
+                }
+            },
+            "axisTick": {
+                "show": true,
+                "inside": true,
+                "lineStyle": {
+                    "color": "#000000",
+                    "width": 2
+                }
+            },
+            "axisLabel": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "splitLine": {
+                "show": false
+            },
+            "min": 0,
+            "max": 1
+        },
+        {
+            "type": "value",
+            "gridIndex": 1,
+            "name": "Mean variants E[N]",
+            "nameLocation": "middle",
+            "nameGap": 80,
+            "nameTextStyle": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "axisLine": {
+                "show": true,
+                "onZero": false,
+                "lineStyle": {
+                    "color": "#000000",
+                    "width": 2
+                }
+            },
+            "axisTick": {
+                "show": true,
+                "inside": true,
+                "lineStyle": {
+                    "color": "#000000",
+                    "width": 2
+                }
+            },
+            "axisLabel": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "splitLine": {
+                "show": false
+            }
+        }
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "Fixed-n t-test",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "data": [
+                [
+                    -0.05,
+                    0.00225
+                ],
+                [
+                    0.0,
+                    0.053
+                ],
+                [
+                    0.025,
+                    0.1665
+                ],
+                [
+                    0.05,
+                    0.36575
+                ],
+                [
+                    0.075,
+                    0.60375
+                ],
+                [
+                    0.1,
+                    0.8055
+                ],
+                [
+                    0.125,
+                    0.9285
+                ],
+                [
+                    0.15,
+                    0.9755
+                ],
+                [
+                    0.166,
+                    0.99075
+                ],
+                [
+                    0.2,
+                    0.99875
+                ],
+                [
+                    0.25,
+                    1.0
+                ],
+                [
+                    0.3,
+                    1.0
+                ]
+            ],
+            "symbol": "circle",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#000000",
+                "type": "solid",
+                "width": 3
+            },
+            "itemStyle": {
+                "color": "#000000"
+            }
+        },
+        {
+            "type": "line",
+            "name": "Fixed-n t-test",
+            "xAxisIndex": 1,
+            "yAxisIndex": 1,
+            "data": [
+                [
+                    -0.05,
+                    137.0
+                ],
+                [
+                    0.0,
+                    137.0
+                ],
+                [
+                    0.025,
+                    137.0
+                ],
+                [
+                    0.05,
+                    137.0
+                ],
+                [
+                    0.075,
+                    137.0
+                ],
+                [
+                    0.1,
+                    137.0
+                ],
+                [
+                    0.125,
+                    137.0
+                ],
+                [
+                    0.15,
+                    137.0
+                ],
+                [
+                    0.166,
+                    137.0
+                ],
+                [
+                    0.2,
+                    137.0
+                ],
+                [
+                    0.25,
+                    137.0
+                ],
+                [
+                    0.3,
+                    137.0
+                ]
+            ],
+            "symbol": "circle",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#000000",
+                "type": "solid",
+                "width": 3
+            },
+            "itemStyle": {
+                "color": "#000000"
+            }
+        },
+        {
+            "type": "line",
+            "name": "95% CI, re-checked every 10",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "data": [
+                [
+                    -0.05,
+                    0.025
+                ],
+                [
+                    0.0,
+                    0.1765
+                ],
+                [
+                    0.025,
+                    0.52425
+                ],
+                [
+                    0.05,
+                    0.891
+                ],
+                [
+                    0.075,
+                    0.9915
+                ],
+                [
+                    0.1,
+                    0.99975
+                ],
+                [
+                    0.125,
+                    1.0
+                ],
+                [
+                    0.15,
+                    1.0
+                ],
+                [
+                    0.166,
+                    1.0
+                ],
+                [
+                    0.2,
+                    1.0
+                ],
+                [
+                    0.25,
+                    1.0
+                ],
+                [
+                    0.3,
+                    1.0
+                ]
+            ],
+            "symbol": "circle",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#E69F00",
+                "type": "dashed",
+                "width": 3
+            },
+            "itemStyle": {
+                "color": "#E69F00"
+            }
+        },
+        {
+            "type": "line",
+            "name": "95% CI, re-checked every 10",
+            "xAxisIndex": 1,
+            "yAxisIndex": 1,
+            "data": [
+                [
+                    -0.05,
+                    585.64
+                ],
+                [
+                    0.0,
+                    518.155
+                ],
+                [
+                    0.025,
+                    391.05
+                ],
+                [
+                    0.05,
+                    232.447
+                ],
+                [
+                    0.075,
+                    134.03
+                ],
+                [
+                    0.1,
+                    85.55
+                ],
+                [
+                    0.125,
+                    59.18
+                ],
+                [
+                    0.15,
+                    45.485
+                ],
+                [
+                    0.166,
+                    40.0425
+                ],
+                [
+                    0.2,
+                    29.6975
+                ],
+                [
+                    0.25,
+                    22.395
+                ],
+                [
+                    0.3,
+                    17.49
+                ]
+            ],
+            "symbol": "circle",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#E69F00",
+                "type": "dashed",
+                "width": 3
+            },
+            "itemStyle": {
+                "color": "#E69F00"
+            }
+        },
+        {
+            "type": "line",
+            "name": "SPRT, discordant pairs",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "data": [
+                [
+                    -0.05,
+                    0.00175
+                ],
+                [
+                    0.0,
+                    0.04725
+                ],
+                [
+                    0.025,
+                    0.17
+                ],
+                [
+                    0.05,
+                    0.4305
+                ],
+                [
+                    0.075,
+                    0.6765
+                ],
+                [
+                    0.1,
+                    0.8235
+                ],
+                [
+                    0.125,
+                    0.91775
+                ],
+                [
+                    0.15,
+                    0.95775
+                ],
+                [
+                    0.166,
+                    0.96825
+                ],
+                [
+                    0.2,
+                    0.9875
+                ],
+                [
+                    0.25,
+                    0.996
+                ],
+                [
+                    0.3,
+                    0.999
+                ]
+            ],
+            "symbol": "circle",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#CC79A7",
+                "type": "solid",
+                "width": 3
+            },
+            "itemStyle": {
+                "color": "#CC79A7"
+            }
+        },
+        {
+            "type": "line",
+            "name": "SPRT, discordant pairs",
+            "xAxisIndex": 1,
+            "yAxisIndex": 1,
+            "data": [
+                [
+                    -0.05,
+                    40.043
+                ],
+                [
+                    0.0,
+                    76.5413
+                ],
+                [
+                    0.025,
+                    103.439
+                ],
+                [
+                    0.05,
+                    122.57
+                ],
+                [
+                    0.075,
+                    116.781
+                ],
+                [
+                    0.1,
+                    94.6937
+                ],
+                [
+                    0.125,
+                    78.3835
+                ],
+                [
+                    0.15,
+                    64.229
+                ],
+                [
+                    0.166,
+                    58.1818
+                ],
+                [
+                    0.2,
+                    46.1183
+                ],
+                [
+                    0.25,
+                    35.785
+                ],
+                [
+                    0.3,
+                    28.7082
+                ]
+            ],
+            "symbol": "circle",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#CC79A7",
+                "type": "solid",
+                "width": 3
+            },
+            "itemStyle": {
+                "color": "#CC79A7"
+            }
+        },
+        {
+            "type": "line",
+            "name": "mSPRT",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "data": [
+                [
+                    -0.05,
+                    0.00025
+                ],
+                [
+                    0.0,
+                    0.0115
+                ],
+                [
+                    0.025,
+                    0.118
+                ],
+                [
+                    0.05,
+                    0.50625
+                ],
+                [
+                    0.075,
+                    0.88175
+                ],
+                [
+                    0.1,
+                    0.99275
+                ],
+                [
+                    0.125,
+                    0.99975
+                ],
+                [
+                    0.15,
+                    1.0
+                ],
+                [
+                    0.166,
+                    1.0
+                ],
+                [
+                    0.2,
+                    1.0
+                ],
+                [
+                    0.25,
+                    1.0
+                ],
+                [
+                    0.3,
+                    1.0
+                ]
+            ],
+            "symbol": "circle",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#56B4E9",
+                "type": "solid",
+                "width": 3
+            },
+            "itemStyle": {
+                "color": "#56B4E9"
+            }
+        },
+        {
+            "type": "line",
+            "name": "mSPRT",
+            "xAxisIndex": 1,
+            "yAxisIndex": 1,
+            "data": [
+                [
+                    -0.05,
+                    599.88
+                ],
+                [
+                    0.0,
+                    595.372
+                ],
+                [
+                    0.025,
+                    563.499
+                ],
+                [
+                    0.05,
+                    455.388
+                ],
+                [
+                    0.075,
+                    306.422
+                ],
+                [
+                    0.1,
+                    191.22
+                ],
+                [
+                    0.125,
+                    132.821
+                ],
+                [
+                    0.15,
+                    97.5685
+                ],
+                [
+                    0.166,
+                    84.5422
+                ],
+                [
+                    0.2,
+                    64.1068
+                ],
+                [
+                    0.25,
+                    47.3608
+                ],
+                [
+                    0.3,
+                    36.7522
+                ]
+            ],
+            "symbol": "circle",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#56B4E9",
+                "type": "solid",
+                "width": 3
+            },
+            "itemStyle": {
+                "color": "#56B4E9"
+            }
+        },
+        {
+            "type": "line",
+            "name": "Betting, grid bet (proposed)",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "data": [
+                [
+                    -0.05,
+                    0.002
+                ],
+                [
+                    0.0,
+                    0.028
+                ],
+                [
+                    0.025,
+                    0.13225
+                ],
+                [
+                    0.05,
+                    0.46725
+                ],
+                [
+                    0.075,
+                    0.85475
+                ],
+                [
+                    0.1,
+                    0.988
+                ],
+                [
+                    0.125,
+                    0.9995
+                ],
+                [
+                    0.15,
+                    1.0
+                ],
+                [
+                    0.166,
+                    1.0
+                ],
+                [
+                    0.2,
+                    1.0
+                ],
+                [
+                    0.25,
+                    1.0
+                ],
+                [
+                    0.3,
+                    1.0
+                ]
+            ],
+            "symbol": "circle",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#0072B2",
+                "type": "solid",
+                "width": 3
+            },
+            "itemStyle": {
+                "color": "#0072B2"
+            }
+        },
+        {
+            "type": "line",
+            "name": "Betting, grid bet (proposed)",
+            "xAxisIndex": 1,
+            "yAxisIndex": 1,
+            "data": [
+                [
+                    -0.05,
+                    377.193
+                ],
+                [
+                    0.0,
+                    570.231
+                ],
+                [
+                    0.025,
+                    545.632
+                ],
+                [
+                    0.05,
+                    442.477
+                ],
+                [
+                    0.075,
+                    292.708
+                ],
+                [
+                    0.1,
+                    174.333
+                ],
+                [
+                    0.125,
+                    113.374
+                ],
+                [
+                    0.15,
+                    80.3822
+                ],
+                [
+                    0.166,
+                    68.4705
+                ],
+                [
+                    0.2,
+                    49.1305
+                ],
+                [
+                    0.25,
+                    35.1555
+                ],
+                [
+                    0.3,
+                    26.7165
+                ]
+            ],
+            "symbol": "circle",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#0072B2",
+                "type": "solid",
+                "width": 3
+            },
+            "itemStyle": {
+                "color": "#0072B2"
+            }
+        },
+        {
+            "type": "line",
+            "name": "Betting + futility margin",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "data": [
+                [
+                    -0.05,
+                    0.002
+                ],
+                [
+                    0.0,
+                    0.028
+                ],
+                [
+                    0.025,
+                    0.132
+                ],
+                [
+                    0.05,
+                    0.46675
+                ],
+                [
+                    0.075,
+                    0.8535
+                ],
+                [
+                    0.1,
+                    0.9875
+                ],
+                [
+                    0.125,
+                    0.9995
+                ],
+                [
+                    0.15,
+                    1.0
+                ],
+                [
+                    0.166,
+                    1.0
+                ],
+                [
+                    0.2,
+                    1.0
+                ],
+                [
+                    0.25,
+                    1.0
+                ],
+                [
+                    0.3,
+                    1.0
+                ]
+            ],
+            "symbol": "circle",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#009E73",
+                "type": "solid",
+                "width": 3
+            },
+            "itemStyle": {
+                "color": "#009E73"
+            }
+        },
+        {
+            "type": "line",
+            "name": "Betting + futility margin",
+            "xAxisIndex": 1,
+            "yAxisIndex": 1,
+            "data": [
+                [
+                    -0.05,
+                    138.944
+                ],
+                [
+                    0.0,
+                    361.918
+                ],
+                [
+                    0.025,
+                    472.254
+                ],
+                [
+                    0.05,
+                    427.582
+                ],
+                [
+                    0.075,
+                    290.182
+                ],
+                [
+                    0.1,
+                    173.894
+                ],
+                [
+                    0.125,
+                    113.374
+                ],
+                [
+                    0.15,
+                    80.3822
+                ],
+                [
+                    0.166,
+                    68.4705
+                ],
+                [
+                    0.2,
+                    49.1305
+                ],
+                [
+                    0.25,
+                    35.1555
+                ],
+                [
+                    0.3,
+                    26.7165
+                ]
+            ],
+            "symbol": "circle",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#009E73",
+                "type": "solid",
+                "width": 3
+            },
+            "itemStyle": {
+                "color": "#009E73"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "show": true,
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "itemWidth": 30,
+            "itemHeight": 16,
+            "inactiveColor": "#FFFFFF",
+            "itemGap": 18,
+            "left": 20,
+            "top": 5,
+            "width": 1000,
+            "data": [
+                "Fixed-n t-test",
+                "95% CI, re-checked every 10",
+                "SPRT, discordant pairs",
+                "mSPRT",
+                "Betting, grid bet (proposed)",
+                "Betting + futility margin"
+            ]
+        }
+    ],
+    "_emsk_width_px": 1050,
+    "_emsk_height_px": 1010
+};
+        chart_640495bee01c4798907dffb749ede36a.setOption(option_640495bee01c4798907dffb749ede36a);
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+[paratransit-routing] Agent prompt exceeded wall-clock budget 900s
+1 tasks (33%) hit agent wall-clock timeout — error in result.json has the cause (agent_timeout_info has details when set)
+
+• Score: 1/3 (33.3%), mean reward 0.60, errors=0
+  ✗ adaptive-cruise-control: reward 0.0 — test_safety failed: assert 1.6606 >= 
+5.0 (+1 more failure; 10/12 checks passed)
+  ✗ lab-unit-harmonization: reward 0.812 — test_conversion_feature_in_range 
+failed: Failed: Range…
+  (details: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b08_no_skill/adaptive-cruise-control__85b7736a/verifier)
+Outcomes: 3 scored (1 passed, 2 failed), 0 unscored, 0 errored
+Cost:      $3.91, 8,574,501 tokens
+Time:      25m 1s
+Artifacts: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b08_no_skill
+Summary:   /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b08_no_skill/summary.json
+View:      bench view '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b08_no_skill'
+[lab-unit-harmonization] Run failed: AgentInstallError: Agent openhands install failed (rc=2) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b08_no_skill/lab-unit-harmonization__db3f5078/error-traceback.txt)
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[adaptive-cruise-control] ACP connect failed (attempt 1): ACP session_new timed out after 60s before the first prompt
+[paratransit-routing] ACP connect failed (attempt 1): ACP session_new timed out after 60s before the first prompt
+[lab-unit-harmonization] Run failed: RuntimeError: Docker compose command failed for environment lab-unit-harmonization. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-flygnssy compose --project-name lab-unit-harmonization__97ef4348-3238b1d3 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b08_no_skill/lab-unit-harmonization__97ef4348/error-traceback.txt)
+[adaptive-cruise-control] ACP connect failed (attempt 2): ACP session_new timed out after 60s before the first prompt
+[paratransit-routing] ACP connect failed (attempt 2): ACP session_new timed out after 60s before the first prompt
+[lab-unit-harmonization] Run failed: RuntimeError: Docker compose command failed for environment lab-unit-harmonization. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-flygnssy compose --project-name lab-unit-harmonization__f953e332-e5f3a80a --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b08_no_skill/lab-unit-harmonization__f953e332/error-traceback.txt)
+[adaptive-cruise-control] ACP connect failed (attempt 3): ACP session_new timed out after 60s before the first prompt
+[paratransit-routing] ACP connect failed (attempt 3): ACP session_new timed out after 60s before the first prompt
+[paratransit-routing] Agent prompt exceeded wall-clock budget 900s
+1 tasks (33%) hit agent wall-clock timeout — error in result.json has the cause (agent_timeout_info has details when set)
+1 tasks (33%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+
+• Score: 1/3 (33.3%), mean reward 0.33 over all 3 trials (unscored as 0), 
+errors=1; scored only: 1/2 (50.0%), mean reward 0.50 (0.7's mean_reward)
+  ✗ paratransit-routing: reward 0.0 — test_report_exists_and_is_json failed: 
+Missing required… (+5 more failures; 1/7 checks passed)
+  (details: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b08_no_skill/paratransit-routing__5b653d64/verifier)
+Outcomes: 2 scored (1 passed, 1 failed), 0 unscored, 1 errored
+  1 errored: the sandbox did not start: Docker compose command failed for environment lab-unit-harmonization. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-flygnssy compose --project-name lab-unit-harmonization__f953e332-e5f3a80a --project-directory /private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-stage-f128mfbe/private/var/f... (infrastructure problem): lab-unit-harmonization
+      next: `bench doctor`; error in result.json has the whole message
+  `bench explain sandbox_setup` says more
+Cost:      $0.67, 4,613,213 tokens (1 of 3 trials reported no cost)
+Time:      20m 46s
+Artifacts: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b08_no_skill
+Summary:   /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b08_no_skill/summary.json
+View:      bench view '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b08_no_skill'
+[adaptive-cruise-control] Run failed: RuntimeError: Docker compose command failed for environment adaptive-cruise-control. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-flygnssy compose --project-name adaptive-cruise-control__58d48e18-b6d47881 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b08_no_skill/adaptive-cruise-control__58d48e18/error-traceback.txt)
+[lab-unit-harmonization] Run failed: RuntimeError: Docker compose command failed for environment lab-unit-harmonization. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-flygnssy compose --project-name lab-unit-harmonization__f043d510-31014f6c --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b08_no_skill/lab-unit-harmonization__f043d510/error-traceback.txt)
+[paratransit-routing] Run failed: RuntimeError: Docker compose command failed for environment paratransit-routing. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-flygnssy compose --project-name paratransit-routing__801806a4-90277a17 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b08_no_skill/paratransit-routing__801806a4/error-traceback.txt)
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[lab-unit-harmonization] Run failed: RuntimeError: Docker compose command failed for environment lab-unit-harmonization. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-flygnssy compose --project-name lab-unit-harmonization__3ac7a321-1142c41e --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b08_no_skill/lab-unit-harmonization__3ac7a321/error-traceback.txt)
+[adaptive-cruise-control] Run failed: RuntimeError: Docker compose command failed for environment adaptive-cruise-control. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-flygnssy compose --project-name adaptive-cruise-control__8ed7a34a-fb0479e3 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b08_no_skill/adaptive-cruise-control__8ed7a34a/error-traceback.txt)
+[paratransit-routing] Run failed: RuntimeError: Docker compose command failed for environment paratransit-routing. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-flygnssy compose --project-name paratransit-routing__6305c1a4-c32ff682 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b08_no_skill/paratransit-routing__6305c1a4/error-traceback.txt)
+[paratransit-routing] Run failed: RuntimeError: Docker compose command failed for environment paratransit-routing. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-flygnssy compose --project-name paratransit-routing__07ac7b24-10d19353 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b08_no_skill/paratransit-routing__07ac7b24/error-traceback.txt)
+[lab-unit-harmonization] Run failed: RuntimeError: Docker compose command failed for environment lab-unit-harmonization. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-flygnssy compose --project-name lab-unit-harmonization__60995281-5feae5ce --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b08_no_skill/lab-unit-harmonization__60995281/error-traceback.txt)
+[adaptive-cruise-control] Run failed: RuntimeError: Docker compose command failed for environment adaptive-cruise-control. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-flygnssy compose --project-name adaptive-cruise-control__8dbfe187-7ec97d6e --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b08_no_skill/adaptive-cruise-control__8dbfe187/error-traceback.txt)
+3 tasks (100%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+
+✗ Score: 0/3 (0.0%), mean reward 0.00 over all 3 trials (unscored as 0), 
+errors=3; scored only: none scored
+Outcomes: 0 scored (0 passed, 0 failed), 0 unscored, 3 errored
+  1 errored: the sandbox did not start: Docker compose command failed for environment adaptive-cruise-control. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-flygnssy compose --project-name adaptive-cruise-control__8dbfe187-7ec97d6e --project-directory /private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-stage-ua9xbhnn/private/var... (infrastructure problem): adaptive-cruise-control
+      next: `bench doctor`; error in result.json has the whole message
+  1 errored: the sandbox did not start: Docker compose command failed for environment lab-unit-harmonization. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-flygnssy compose --project-name lab-unit-harmonization__60995281-5feae5ce --project-directory /private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-stage-0owcv0_w/private/var/f... (infrastructure problem): lab-unit-harmonization
+      next: `bench doctor`; error in result.json has the whole message
+  1 errored: the sandbox did not start: Docker compose command failed for environment paratransit-routing. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-flygnssy compose --project-name paratransit-routing__07ac7b24-10d19353 --project-directory /private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-stage-411lzv2k/private/var/folders... (infrastructure problem): paratransit-routing
+      next: `bench doctor`; error in result.json has the whole message
+  `bench explain sandbox_setup` says more
+Cost:      none: no model tokens were used
+Time:      3m 9s
+Artifacts: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b08_no_skill
+Summary:   /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b08_no_skill/summary.json
+View:      bench view '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b08_no_skill'
+Matrix summary: /Users/ndingari/Dropbox/Dingari 
+Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/matrix-summary.json
+Matrix: 3 trial job(s), 2/9 trials passed, errors=4 verifier-errors=0

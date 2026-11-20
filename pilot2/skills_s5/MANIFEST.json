@@ -1,0 +1,41 @@
+{
+  "math_skill": {
+    "repo": "https://github.com/Wholiver/Math.Skill",
+    "commit": "cce75aece3b5e071dec41355853ae63bae387b15",
+    "path": "SKILL.md",
+    "licence": "MIT",
+    "bytes": 41185,
+    "sha256": "5f1aa40405a9cde1c74e6809f4ff5674edfb153571d32c260b2d1bafbe620b95",
+    "retrieved": "2026-11-20"
+  },
+  "math_teacher": {
+    "repo": "https://github.com/jamesrochabrun/skills",
+    "commit": "2482c176372299c92af01f8414a67172f324e8db",
+    "path": "skills/math-teacher/SKILL.md",
+    "licence": "MIT",
+    "bytes": 11819,
+    "sha256": "a33df481c2f6d892ccd07b6179dcc4a374c1be652ff9fb321eaa2e78a7658164",
+    "retrieved": "2026-11-20"
+  },
+  "math_help": {
+    "repo": "https://github.com/parcadei/Continuous-Claude-v3",
+    "commit": "d07ff4b06b62f43771bc0c927d0211b734d6149e",
+    "path": ".claude/skills/math-help/SKILL.md",
+    "licence": "MIT",
+    "bytes": 10349,
+    "sha256": "a9462ba5d418a56967a3e0392a8f0a6f5d14c8d9dbf91370c1892d71233f3943",
+    "retrieved": "2026-11-20"
+  },
+  "placebo": {
+    "author": "study authors",
+    "note": "Written by the study authors (2026-11-20): length-matched placebo, general work habits, no mathematical method.",
+    "bytes": 10247,
+    "sha256": "f6e08886e470751ec63f96dc6d737836619476c181984ed9c27076d18522b2bb"
+  },
+  "harmful": {
+    "author": "study authors",
+    "note": "Written by the study authors (2026-11-20): length-matched harmful control. Shortcut 1 (primality screen by 2,3,5,7,11 only) and Shortcut 2 (division answers as 6-significant-figure decimals, never fractions) are deliberately wrong for the selected modules; the worked examples 221=13*17, 4087=61*67, 1369=37^2, 2021=43*47 are composite.",
+    "bytes": 8662,
+    "sha256": "ba5c212ce6af85dcf079934c0ddb76144cb3b466fa03aa3404d34c89b58b7b77"
+  }
+}

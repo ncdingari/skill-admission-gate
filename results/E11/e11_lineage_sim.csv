@@ -1,0 +1,16 @@
+task,kinf,schedule,k,level,mean_tau,censored,extra_vs_k1_sim,extra_vs_k1_theory
+fix-visual-stability,0.0607296,zeta_1.6 (current),1,0.0218745,65.5035,0,0,0
+fix-visual-stability,0.0607296,zeta_1.6 (current),2,0.0072159,83.9455,0,18.442,18.2618
+fix-visual-stability,0.0607296,zeta_1.6 (current),5,0.00166566,108.889,0,43.3855,42.4027
+fix-visual-stability,0.0607296,zeta_1.6 (current),10,0.000549463,126.184,0,60.6805,60.6645
+fix-visual-stability,0.0607296,zeta_1.6 (current),20,0.000181255,144.38,0,78.876,78.9264
+fix-visual-stability,0.0607296,universal 1/((k+1)log^2(k+1)),1,0.0246638,63.911,0,0,0
+fix-visual-stability,0.0607296,universal 1/((k+1)log^2(k+1)),2,0.00654531,85.2125,0,21.3015,21.8441
+fix-visual-stability,0.0607296,universal 1/((k+1)log^2(k+1)),5,0.00123035,112.153,0,48.242,49.3669
+fix-visual-stability,0.0607296,universal 1/((k+1)log^2(k+1)),10,0.000374703,132.465,0,68.5545,68.9442
+fix-visual-stability,0.0607296,universal 1/((k+1)log^2(k+1)),20,0.000121754,150.863,0,86.952,87.4546
+fix-visual-stability,0.0607296,geometric (1/2)^k,1,0.025,65.136,0,0,0
+fix-visual-stability,0.0607296,geometric (1/2)^k,2,0.0125,76.6535,0,11.5175,11.4137
+fix-visual-stability,0.0607296,geometric (1/2)^k,5,0.0015625,110.65,0,45.5135,45.6546
+fix-visual-stability,0.0607296,geometric (1/2)^k,10,4.88281e-05,165.722,0,100.587,102.723
+fix-visual-stability,0.0607296,geometric (1/2)^k,20,4.76837e-08,279.952,0,214.816,216.859

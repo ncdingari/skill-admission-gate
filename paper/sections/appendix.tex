@@ -1,0 +1,47 @@
+\section{Proofs}
+\label{app:proofs}
+
+\paragraph{Proposition~\ref{prop:valid}.} The argument holds for any predictable bets $\lambda_i\in[0,1/m_0]$, which covers both caps of Eq.~\eqref{eq:wealth} and the aGRAPA bet with $\lambda_i\le c/m_0<1/m_0$; the grid bet is an average of such processes with fixed bets, and an average of nonnegative supermartingales with $K_0=1$ is one. Each factor $1+\lambda_i(X_i-m_0)$ is nonnegative because $X_i\ge0$ and $\lambda_i m_0\le1$. Since $\lambda_i$ is $\mathcal F_{i-1}$-measurable and $\mathbb{E}[X_i\mid\mathcal F_{i-1}]\le m_0$, $\mathbb{E}[K_i\mid\mathcal F_{i-1}]=K_{i-1}(1+\lambda_i(\mathbb{E}[X_i\mid\mathcal F_{i-1}]-m_0))\le K_{i-1}$, so $(K_n)$ is a nonnegative supermartingale with $K_0=1$. Ville's inequality gives $\Pr(\sup_nK_n\ge1/\alpha)\le\alpha$. Admission requires $K_n\ge1/\alpha$ at some $n$, whatever else stops the exam, so $\Pr(\text{admit})\le\alpha$. For any stopping time $\tau$, optional stopping for nonnegative supermartingales gives $\mathbb{E}[K_\tau]\le1$. The futility process uses its own predictable bets and only ends exams, so it cannot add admissions. Nothing here requires the $X_i$ to be identically distributed.
+
+\paragraph{Remark~\ref{prop:ebh}.} At the stopping time $\tau$, $K_{\tau-1}<1/\alpha$ and $K_\tau=K_{\tau-1}(1+\lambda_\tau(X_\tau-m_0))\le K_{\tau-1}(1+\bar\lambda(1-m_0))<(1+\bar\lambda(1-m_0))/\alpha$, because $X_\tau\le1$; exams that never cross end below $1/\alpha$. e-BH admits the $k$ largest e-values only if $e_{(k)}\ge m/(\alpha k)$, which needs $(1+\bar\lambda(1-m_0))/\alpha>m/(\alpha k)$, that is $k>m/(1+\bar\lambda(1-m_0))$, and the $k$ largest must all have crossed. At $m_0=1/2$: $\bar\lambda=1/2$ gives $k>0.8m$, $\bar\lambda=3/4$ gives $k>0.727m$, and $\bar\lambda=1$ (aGRAPA, $c=1/2$) gives $k>2m/3$. Since $\bar\lambda<1/m_0$, $1+\bar\lambda(1-m_0)<1/m_0$, so $k>m_0m$ for every admissible bet.
+
+\paragraph{Proposition~\ref{prop:lineage}.} The level of the $k$-th exam is fixed when it starts. Let $\mathcal H_{k-1}$ be the history before exam $k$, including version $k$ and its comparator, and let $\nu_k\in\{0,1\}$ indicate that version $k$ is null; $\nu_k$ is $\mathcal H_{k-1}$-measurable. By Proposition~\ref{prop:valid}, on $\{\nu_k=1\}$ exam $k$ admits with probability at most its level given $\mathcal H_{k-1}$, which is at most $\alpha\gamma^{\text{lin}}_k$. A union bound over the lineage gives $\Pr(\text{some null version admitted})\le\sum_k\mathbb E[\nu_k\Pr(\text{admit}_k\mid\mathcal H_{k-1})]\le\sum_k\alpha\gamma^{\text{lin}}_k\le\alpha$, whatever the non-null versions do. Each exam's level is at most its e-LOND level, and e-LOND's FDR bound holds for any predictable levels not exceeding $\alpha\gamma_t(R_{t-1}+1)$ \citep{xu2024online}. In one line: let $\alpha'_t\le\alpha\gamma_t(R_{t-1}+1)$ be fixed when exam $t$ starts, let $e_t$ be its wealth at the stopping time, so that $\mathbb E[e_t\mid\mathcal F_{t-1}]\le1$ for a null exam by optional stopping, where $\mathcal F_{t-1}$ is the registry's history when exam $t$ starts and the null holds conditionally on it (Section~\ref{sec:setup}), and let $R\ge R_{t-1}+1$ be the total number of admissions when exam $t$ admits. Then $\mathbf 1\{\text{admit}_t\}/R\le\alpha'_t e_t/(R_{t-1}+1)\le\alpha\gamma_t e_t$, and summing over null exams gives $\mathrm{FDR}\le\alpha\sum_t\gamma_t\le\alpha$. Using fewer admissions than $R_{t-1}$, for example only those known when a window starts, lowers $\alpha'_t$ and keeps the bound.
+
+\section{Implementation details}
+\label{app:impl}
+\paragraph{Credential construction.} Each transcript is serialized as canonical JSON \citep{rundgren2020jcs} and hashed into one Merkle tree per arm with RFC~6962 domain separation \citep{laurie2013ct,merkle1988digital}. The credential body binds the agent identity, model and harness versions, $H(s)$, the commitment and reveal, $\theta$, both arms' roots, the leakage-report hash, and the statistics $(N,\hat\Delta,\mathrm{LCB},\text{decision})$. Its digest $\chi$ is signed and logged.
+
+Predictable plug-in bets follow \citet{waudbysmith2024betting}: $\hat\mu_t=(1/2+\sum_{i\le t}X_i)/(t+1)$, $\hat v_t=(1/4+\sum_{i\le t}(X_i-\hat\mu_i)^2)/(t+1)$, and $\lambda_t$ in Eq.~\eqref{eq:wealth} uses $\hat v_{t-1}$. The aGRAPA bet is $\lambda_t=\min\{c/m_0,\max\{0,(\hat\mu_{t-1}-m_0)/(\hat v_{t-1}+(\hat\mu_{t-1}-m_0)^2)\}\}$. The lower confidence bound inverts the PrPl wealth over a grid of 2{,}001 values of $m$ with a running intersection; with the PrPl bet an exam admits exactly when its bound exceeds $\delta$, and with the grid bet the bound is reported but does not decide. e-LOND uses $\gamma_t=t^{-1.6}/\zeta(1.6)$, or $\gamma_t=1/T$ over a planned horizon $T$. Signatures are Ed25519. The reference implementation passes 79 tests, including Ville's bound at the null boundary and under the worst-case two-point null, time-uniform coverage of the bound, a check that the fixed-$n$ sample size of Section~\ref{sec:eval} reaches its nominal power, and detection of tampered transcripts, skills, decisions, reveals, signatures and hidden early stopping.
+
+\section{Credential fields}
+\label{app:schema}
+The credential body contains: version and status; agent identity, controller key, model and harness versions, configuration digest; skill digest (Merkle root over canonically ordered files); comparator kind and digest; commitment, registered parameters $\theta$ and their hash, registration, commitment and beacon heights, and the reveal $(\sigma_p,\rho)$; for each arm the Merkle root, leaf count and leaf hashes; the statistics $(N,\hat\Delta,\mathrm{LCB},\text{decision},\text{test})$; the security-scan and leakage-report hashes; and, optionally, an attestation quote over $H(R^{(0)}\|R^{(1)})$. The digest $\chi$ is computed over the body without the signature and log fields, which are attached afterwards.
+
+\begin{algorithm}[!tbp]
+\caption{VerifyCredential$(\chi)$}\label{alg:verify}
+\begin{algorithmic}[1]
+\State fetch body $B$; check $H(\mathrm{JCS}(B))=\chi$, the signature, and that $\chi$ is logged and not revoked
+\State check log order: registration of $(\mathrm{id}(a),H(s))$ at $b_0<$ commitment $c$ at $b_1<b_2<$ reveal at $b_3$
+\State check $H(\sigma_p\|\rho\|\theta)=c$ and the skill digest; set $\sigma\gets H(\sigma_p\|\beta_{b_2})$
+\State fetch both arms' transcripts; check their Merkle roots against $B$
+\For{$i=1,\dots,N$}
+\State check each transcript names variant $i$, attempt $\ell$ and digest $H(G(\sigma,i))$, with the stated model and harness
+\State recompute every score from the recorded final state with the verifier; check it equals the recorded score
+\EndFor
+\State recompute $D_{1:N}$ and the wealth paths under $\theta$; check that no boundary was crossed before $N$, that $N=N_{\max}$ if no boundary was crossed, and that the decision and $\hat\Delta$ match $B$
+\end{algorithmic}
+\end{algorithm}
+
+\section{Pre-registration plan for the peer-synthesis study}
+\label{app:campus}
+\paragraph{Question.} Do skills distilled by a mentor agent from the shared traces of a study group of $k$ agents pass the gate more often, and with larger certified lift, than skills an agent writes from its own traces?
+\paragraph{Design.} Task classes with parametric practice and exam generators and deterministic verifiers (candidates: log forensics, data reconciliation, spreadsheet automation). Conditions: no skill (comparator), curated, self-generated, peer-synthesized with $k\in\{2,4,8\}$, and controls (length-matched irrelevant skills, span-shuffled skills, planted leaks). Each candidate gets a paired exam on a fresh examinee agent under the gate of Section~\ref{sec:gate}, with $\theta$ committed before the run. Primary outcome: certified admission and the lower confidence bound against no skill. Primary comparison: peer-synthesized against self-generated on matched classes. Contributor credit, reputation and version carry-over, which the original design included, are secondary and are not part of the confirmatory analysis.
+\paragraph{Parameters to fix and hash before any run.} $\alpha$, $\alpha_{\mathrm f}$, $\delta$, $\delta_{\mathrm f}$, $r$, $N_{\max}$, the bet rule and cap, the e-LOND sequence, the lineage rule, leakage thresholds, models and harnesses with exact versions, and the analysis-code hash.
+
+\section{External data}
+\label{app:data}
+We use two released files, unmodified; their SHA-256 hashes are in the supplement.
+\begin{itemize}
+\item SWE-Skills-Bench (MIT license), file \path{results/final_results/ALL_combined_cells.csv} at commit \texttt{4d3450d}, from\newline \url{https://github.com/ControllableModel/SWE-Skills-Bench}.
+\item SkillsBench (AGPL-3.0), commit \texttt{3748490}, file\newline \path{website-data/results-registry.json}, from\newline {\small\url{https://github.com/benchflow-ai/skillsbench-trajectories}}.
+\end{itemize}

@@ -1,0 +1,13 @@
+task,kinf,lam,case,C,se,beta,lower,upper,H_pi,mean_J,lower_holds,upper_holds
+paratransit-routing,0.0248937,1.29886,A_independent,178.528,1.61701,0,174.945,202.79,1.30889,2.01333,True,True
+paratransit-routing,0.0248937,1.29886,B_adaptive,232.853,1.8624,0,228.431,256.275,2.08922,3.731,True,True
+paratransit-routing,0.0248937,1.29886,C_clairvoyant,102.293,0.61136,0,168.892,196.737,0.958777,1.57917,False,True
+paratransit-routing,0.0248937,1.29886,D_adaptive_capped,229.482,1.69511,0.0231667,218.716,256.275,2.08922,3.731,True,True
+fix-visual-stability,0.0607296,1.75634,A_independent,74.6478,0.658744,0,71.8123,83.226,1.31488,2.01967,True,True
+fix-visual-stability,0.0607296,1.75634,B_adaptive,95.3272,0.749019,0,93.5604,104.974,2.08245,3.71117,True,True
+fix-visual-stability,0.0607296,1.75634,C_clairvoyant,43.2743,0.246133,0,68.6253,80.0389,0.935887,1.54517,False,True
+fix-visual-stability,0.0607296,1.75634,D_adaptive_capped,95.3233,0.748578,0.000166667,93.5182,104.974,2.08245,3.71117,True,True
+sales-pivot-analysis,0.30241,1.9,A_independent,15.6472,0.0688364,0,14.3009,17.2902,1.27788,1.972,True,True
+sales-pivot-analysis,0.30241,1.9,B_adaptive,20.4947,0.0767358,0,18.8681,22.0493,2.11581,3.807,True,True
+sales-pivot-analysis,0.30241,1.9,C_clairvoyant,12.5188,0.0303854,0,12.1109,15.0082,0.398652,1.12933,True,True
+sales-pivot-analysis,0.30241,1.9,D_adaptive_capped,20.4947,0.0767358,0,18.8681,22.0493,2.11581,3.807,True,True

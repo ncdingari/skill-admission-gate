@@ -1,0 +1,13 @@
+Data license
+
+The data, results, ledger entries, transcripts and logs that the authors produced for this paper (results/,
+pilot/, pilot2/ and the separate data archive) are licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/legalcode
+
+Copyright (c) 2026 Sai Praveen Chettupalli and Narahara C. Dingari.
+
+This license does not cover third-party material, which keeps its own license (see README.md, "Third-party
+material"). In particular, the SkillsBench outcomes in data/external/ and SkillsBench task content that appears
+in transcripts are AGPL-3.0; the SWE-Skills-Bench outcomes are MIT; the skills in pilot2/skills_s5/ are MIT.
+Model outputs in the transcripts were produced with Claude Haiku 5.5 and Nemotron 3.5 Super VL and are released
+as research records.

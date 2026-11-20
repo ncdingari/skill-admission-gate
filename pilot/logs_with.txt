@@ -1,0 +1,95 @@
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[weighted-gdp-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: jobs/openhands/trial-01/with_skill/weighted-gdp-calc__07534e99/error-traceback.txt)
+[weighted-gdp-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: jobs/openhands/trial-01/with_skill/weighted-gdp-calc__a38d0cee/error-traceback.txt)
+[weighted-gdp-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: jobs/openhands/trial-01/with_skill/weighted-gdp-calc__0b133917/error-traceback.txt)
+1 tasks (17%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+
+• Score: 1/6 (16.7%), mean reward 0.27 over all 6 trials (unscored as 0), 
+errors=2; scored only: 1/4 (25.0%), mean reward 0.40 (0.7's mean_reward)
+  ✗ azure-bgp-oscillation-route-leak: reward 0.0 — test_solution_classification 
+failed:…
+  ✗ data-to-d3: reward 0.0 — test_bubble_chart_rendering failed: 
+playwright._impl._errors.Error:… (+6 more failures; 3/10 checks passed)
+  ✗ debug-trl-grpo: reward 0.6
+  (details: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs/openhands/trial-01/with_skill/azure-bgp-oscillation-route-leak__dfba3881/verifier)
+Outcomes: 4 scored (1 passed, 3 failed), 0 unscored, 2 errored
+  1 errored: the agent reported an error (agent problem): pddl-tpp-planning
+      next: the agent's log (agent/<agent>.txt in the trial folder) has its side
+  1 errored: the sandbox did not start: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su and pkexec) and other nonstandard privileged helpers from the image, or set allow_... (infrastructure problem): weighted-gdp-calc
+      next: `bench doctor`; error in result.json has the whole message
+  `bench explain R205` says more (also sandbox_setup)
+Cost:      $0.87, 5,242,966 tokens (2 of 6 trials reported no cost)
+Time:      11m 30s
+Artifacts: jobs/openhands/trial-01/with_skill
+Summary:   jobs/openhands/trial-01/with_skill/summary.json
+View:      bench view ./jobs/openhands/trial-01/with_skill
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[weighted-gdp-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: jobs/openhands/trial-02/with_skill/weighted-gdp-calc__0f321630/error-traceback.txt)
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[weighted-gdp-calc] Run failed: AgentInstallError: Agent openhands install failed (rc=1) (traceback: jobs/openhands/trial-02/with_skill/weighted-gdp-calc__7a4a2552/error-traceback.txt)
+[weighted-gdp-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: jobs/openhands/trial-02/with_skill/weighted-gdp-calc__e809a4b3/error-traceback.txt)
+1 tasks (17%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+
+• Score: 1/6 (16.7%), mean reward 0.27 over all 6 trials (unscored as 0), 
+errors=2; scored only: 1/4 (25.0%), mean reward 0.40 (0.7's mean_reward)
+  ✗ azure-bgp-oscillation-route-leak: reward 0.0 — test_solution_classification 
+failed:…
+  ✗ data-to-d3: reward 0.0 — test_bubble_chart_rendering failed: 
+playwright._impl._errors.Error:… (+6 more failures; 3/10 checks passed)
+  ✗ debug-trl-grpo: reward 0.6
+  (details: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs/openhands/trial-02/with_skill/azure-bgp-oscillation-route-leak__accb8bd3/verifier)
+Outcomes: 4 scored (1 passed, 3 failed), 0 unscored, 2 errored
+  1 errored: the agent reported an error (agent problem): pddl-tpp-planning
+      next: the agent's log (agent/<agent>.txt in the trial folder) has its side
+  1 errored: the sandbox did not start: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su and pkexec) and other nonstandard privileged helpers from the image, or set allow_... (infrastructure problem): weighted-gdp-calc
+      next: `bench doctor`; error in result.json has the whole message
+  `bench explain R205` says more (also sandbox_setup)
+Cost:      $0.31, 2,832,067 tokens (2 of 6 trials reported no cost)
+Time:      10m 18s
+Artifacts: jobs/openhands/trial-02/with_skill
+Summary:   jobs/openhands/trial-02/with_skill/summary.json
+View:      bench view ./jobs/openhands/trial-02/with_skill
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[weighted-gdp-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: jobs/openhands/trial-03/with_skill/weighted-gdp-calc__6b0e52df/error-traceback.txt)
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[weighted-gdp-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: jobs/openhands/trial-03/with_skill/weighted-gdp-calc__1fd8e2e6/error-traceback.txt)
+[weighted-gdp-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: jobs/openhands/trial-03/with_skill/weighted-gdp-calc__8b26130d/error-traceback.txt)
+1 tasks (17%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+
+• Score: 1/6 (16.7%), mean reward 0.27 over all 6 trials (unscored as 0), 
+errors=2; scored only: 1/4 (25.0%), mean reward 0.40 (0.7's mean_reward)
+  ✗ azure-bgp-oscillation-route-leak: reward 0.0 — test_solution_classification 
+failed:…
+  ✗ data-to-d3: reward 0.0 — test_bubble_chart_rendering failed: 
+playwright._impl._errors.Error:… (+6 more failures; 3/10 checks passed)
+  ✗ debug-trl-grpo: reward 0.6
+  (details: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs/openhands/trial-03/with_skill/azure-bgp-oscillation-route-leak__f1376a69/verifier)
+Outcomes: 4 scored (1 passed, 3 failed), 0 unscored, 2 errored
+  1 errored: the agent reported an error (agent problem): pddl-tpp-planning
+      next: the agent's log (agent/<agent>.txt in the trial folder) has its side
+  1 errored: the sandbox did not start: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su and pkexec) and other nonstandard privileged helpers from the image, or set allow_... (infrastructure problem): weighted-gdp-calc
+      next: `bench doctor`; error in result.json has the whole message
+  `bench explain R205` says more (also sandbox_setup)
+Cost:      $0.32, 2,931,838 tokens (2 of 6 trials reported no cost)
+Time:      3m 45s
+Artifacts: jobs/openhands/trial-03/with_skill
+Summary:   jobs/openhands/trial-03/with_skill/summary.json
+View:      bench view ./jobs/openhands/trial-03/with_skill
+Matrix summary: jobs/matrix-summary.json
+Matrix: 3 trial job(s), 3/18 trials passed, errors=6 verifier-errors=0

@@ -1,0 +1,7 @@
+task,pi,m_completed,extra_variants_sim,KL_over_g
+fix-visual-stability,geometric mean 3,0,17.8827,17.9308
+fix-visual-stability,geometric mean 3,5,12.5512,12.3404
+fix-visual-stability,geometric mean 3,20,6.74479,6.495
+fix-visual-stability,geometric mean 3,100,2.07548,1.95539
+fix-visual-stability,geometric mean 3,500,0.631756,0.579213
+fix-visual-stability,geometric mean 3,-1,1.89216,1.93989

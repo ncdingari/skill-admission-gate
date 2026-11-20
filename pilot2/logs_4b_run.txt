@@ -1,0 +1,16 @@
+exam 1 (S1 placebo) level 0.02187 start at pair 0
+  t=1 pairs=6 valid=6 Dbar=0.167 spent=$0.01
+  t=1 pairs=12 valid=12 Dbar=0.083 spent=$0.01
+  t=1 pairs=18 valid=18 Dbar=0.056 spent=$0.02
+  t=1 pairs=24 valid=24 Dbar=0.083 spent=$0.02
+  t=1 pairs=30 valid=30 Dbar=0.133 spent=$0.03
+  t=1 pairs=36 valid=36 Dbar=0.167 spent=$0.04
+  t=1 pairs=42 valid=42 Dbar=0.167 spent=$0.04
+  t=1 pairs=48 valid=48 Dbar=0.208 spent=$0.05
+exam 1 decision admit at valid pair 44
+exam 2 (S2 real) level 0.00722 start at pair 0
+  t=2 pairs=6 valid=6 Dbar=0.667 spent=$0.06
+  t=2 pairs=12 valid=12 Dbar=0.750 spent=$0.06
+  t=2 pairs=18 valid=18 Dbar=0.778 spent=$0.07
+exam 2 decision admit at valid pair 13
+STUDY4B RUNS DONE $0.07

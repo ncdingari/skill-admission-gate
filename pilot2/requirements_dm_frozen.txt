@@ -1,0 +1,6 @@
+absl-py==2.5.1
+mathematics-dataset==1.0.1
+mpmath==1.4.1
+numpy==1.26.4
+six==1.17.0
+sympy==1.4

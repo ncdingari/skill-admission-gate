@@ -1,0 +1,149 @@
+[bike-rebalance] Run failed: RuntimeError: With web access restricted, BenchFlow runs only models it can identify as having no hosted web search or retrieval. 'anthropic/claude-haiku-5-5' is not one: its effective provider, endpoint and base model are not in the curated first-party model allowlist. Use the supported anthropic… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b05_no_skill/bike-rebalance__f0d28a5f/error-traceback.txt)
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[exceltable-in-ppt] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b05_no_skill/exceltable-in-ppt__abe022cc/error-traceback.txt)
+[jax-computing-basics] The verifier's PATH leaves out 1 folder(s) of the image's PATH: /app/kona: under /app
+[jax-computing-basics] verifier crashed: RuntimeError: Verifier hardening failed: omitted PATH entries (including relative entries) require an explicit [verifier] required_tools contract (complete PATH dependencies; [] for none). Use absolute paths for uploaded/generated helpers. Entries left out: /app/kona: under /app
+[exceltable-in-ppt] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b05_no_skill/exceltable-in-ppt__ae2c8191/error-traceback.txt)
+[exceltable-in-ppt] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b05_no_skill/exceltable-in-ppt__0562cea5/error-traceback.txt)
+[pdf-excel-diff] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b05_no_skill/pdf-excel-diff__4aee2cbe/error-traceback.txt)
+[spring-boot-jakarta-migration] ACP error -32603: Internal error
+[spring-boot-jakarta-migration] ACP error -32603: Internal error
+[pdf-excel-diff] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b05_no_skill/pdf-excel-diff__07a38aa8/error-traceback.txt)
+[spring-boot-jakarta-migration] Run failed: RuntimeError: Docker compose command failed for environment spring-boot-jakarta-migration. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-9_k7_nf2 compose --project-name spring-boot-jakarta-migration__763d82af-c7576fe2 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b05_no_skill/spring-boot-jakarta-migration__763d82af/error-traceback.txt)
+[pdf-excel-diff] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b05_no_skill/pdf-excel-diff__ba8e9739/error-traceback.txt)
+[powerlifting-coef-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b05_no_skill/powerlifting-coef-calc__63b5d5ae/error-traceback.txt)
+[spring-boot-jakarta-migration] ACP error -32603: Internal error
+[spring-boot-jakarta-migration] ACP error -32603: Internal error
+[powerlifting-coef-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b05_no_skill/powerlifting-coef-calc__387d99d5/error-traceback.txt)
+[powerlifting-coef-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b05_no_skill/powerlifting-coef-calc__f270e4da/error-traceback.txt)
+3 tasks (25%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+1 tasks (8%) had verifier errors — check verifier scripts for bugs
+
+• Score: 3/12 (25.0%), mean reward 0.25 over all 12 trials (unscored as 0), 
+errors=5 verifier-errors=1; scored only: 3/6 (50.0%), mean reward 0.50 (0.7's 
+mean_reward)
+  ✗ earthquake-plate-calculation: reward 0.0 — test_distance_within_tolerance 
+failed: 3551.98 !=…
+  ✗ financial-modeling-qa: reward 0.0 — test_answer_value_correct failed: 
+Incorrect answer.…
+  ✗ llm-prefix-cache-replay: reward 0.0 — test_total_hit_tokens failed: expected
+2394659, got… (+3 more failures; 2/6 checks passed)
+  (details: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b05_no_skill/earthquake-plate-calculation__b252da5c/verifier)
+Outcomes: 6 scored (3 passed, 3 failed), 1 unscored, 5 errored
+  1 unscored: the verifier crashed (task problem): jax-computing-basics
+      next: fix the verifier from its output (the trial's verifier/test-stdout.txt, whose last lines the summary shows), then run the task again
+  1 errored: other error: RuntimeError: With web access restricted, BenchFlow runs only models it can i... (infrastructure problem): bike-rebalance
+      next: the trial's result.json and the run's log have the details
+  3 errored: the sandbox did not start: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su and pkexec) and other nonstandard privileged helpers from the image, or set allow_... (infrastructure problem): exceltable-in-ppt, pdf-excel-diff, powerlifting-coef-calc
+      next: `bench doctor`; error in result.json has the whole message
+  1 errored: the agent reported an error (agent problem): spring-boot-jakarta-migration
+      next: the agent's log (agent/<agent>.txt in the trial folder) has its side
+  `bench explain verifier_failure` says more (also other, sandbox_setup, ...)
+Cost:      $0.47, 4,239,079 tokens (5 of 12 trials reported no cost)
+Time:      12m 48s
+Artifacts: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b05_no_skill
+Summary:   /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b05_no_skill/summary.json
+View:      bench view '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b05_no_skill'
+[exceltable-in-ppt] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b05_no_skill/exceltable-in-ppt__b677a047/error-traceback.txt)
+[bike-rebalance] Run failed: RuntimeError: With web access restricted, BenchFlow runs only models it can identify as having no hosted web search or retrieval. 'anthropic/claude-haiku-5-5' is not one: its effective provider, endpoint and base model are not in the curated first-party model allowlist. Use the supported anthropic… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b05_no_skill/bike-rebalance__3ff3305e/error-traceback.txt)
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[exceltable-in-ppt] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b05_no_skill/exceltable-in-ppt__07efcf18/error-traceback.txt)
+[jax-computing-basics] The verifier's PATH leaves out 1 folder(s) of the image's PATH: /app/kona: under /app
+[jax-computing-basics] verifier crashed: RuntimeError: Verifier hardening failed: omitted PATH entries (including relative entries) require an explicit [verifier] required_tools contract (complete PATH dependencies; [] for none). Use absolute paths for uploaded/generated helpers. Entries left out: /app/kona: under /app
+[exceltable-in-ppt] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b05_no_skill/exceltable-in-ppt__da1a4e85/error-traceback.txt)
+[pdf-excel-diff] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b05_no_skill/pdf-excel-diff__31f96496/error-traceback.txt)
+[powerlifting-coef-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b05_no_skill/powerlifting-coef-calc__47741407/error-traceback.txt)
+[pdf-excel-diff] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b05_no_skill/pdf-excel-diff__61315293/error-traceback.txt)
+[pdf-excel-diff] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b05_no_skill/pdf-excel-diff__65c277e5/error-traceback.txt)
+[powerlifting-coef-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b05_no_skill/powerlifting-coef-calc__d3567ad0/error-traceback.txt)
+[spring-boot-jakarta-migration] ACP error -32603: Internal error
+[spring-boot-jakarta-migration] ACP error -32603: Internal error
+[spring-boot-jakarta-migration] ACP error -32603: Internal error
+[spring-boot-jakarta-migration] ACP error -32603: Internal error
+[powerlifting-coef-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b05_no_skill/powerlifting-coef-calc__88fd4a0e/error-traceback.txt)
+[spring-boot-jakarta-migration] ACP error -32603: Internal error
+[spring-boot-jakarta-migration] ACP error -32603: Internal error
+3 tasks (25%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+1 tasks (8%) had verifier errors — check verifier scripts for bugs
+
+• Score: 1/12 (8.3%), mean reward 0.08 over all 12 trials (unscored as 0), 
+errors=5 verifier-errors=1; scored only: 1/6 (16.7%), mean reward 0.17 (0.7's 
+mean_reward)
+  ✗ earthquake-plate-calculation: reward 0.0 — test_distance_within_tolerance 
+failed: 3551.98 !=…
+  ✗ financial-modeling-qa: reward 0.0 — test_answer_value_correct failed: 
+Incorrect answer.…
+  ✗ jpg-ocr-stat: reward 0.0 — test_outputs failed: Mismatch in sheet 'results',
+row 15.
+  ✗ llm-prefix-cache-replay: reward 0.0 — test_total_hit_tokens failed: expected
+2394659, got… (+3 more failures; 2/6 checks passed)
+  ✗ travel-planning: reward 0.0 — test_pet_friendly_accommodation_hint failed: 
+At least one…
+  (details: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b05_no_skill/earthquake-plate-calculation__0f9320e4/verifier)
+Outcomes: 6 scored (1 passed, 5 failed), 1 unscored, 5 errored
+  1 unscored: the verifier crashed (task problem): jax-computing-basics
+      next: fix the verifier from its output (the trial's verifier/test-stdout.txt, whose last lines the summary shows), then run the task again
+  1 errored: other error: RuntimeError: With web access restricted, BenchFlow runs only models it can i... (infrastructure problem): bike-rebalance
+      next: the trial's result.json and the run's log have the details
+  3 errored: the sandbox did not start: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su and pkexec) and other nonstandard privileged helpers from the image, or set allow_... (infrastructure problem): exceltable-in-ppt, pdf-excel-diff, powerlifting-coef-calc
+      next: `bench doctor`; error in result.json has the whole message
+  1 errored: the agent reported an error (agent problem): spring-boot-jakarta-migration
+      next: the agent's log (agent/<agent>.txt in the trial folder) has its side
+  `bench explain verifier_failure` says more (also other, sandbox_setup, ...)
+Cost:      $0.46, 4,208,221 tokens (5 of 12 trials reported no cost)
+Time:      8m 9s
+Artifacts: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b05_no_skill
+Summary:   /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b05_no_skill/summary.json
+View:      bench view '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b05_no_skill'
+[exceltable-in-ppt] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b05_no_skill/exceltable-in-ppt__959f11d1/error-traceback.txt)
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[bike-rebalance] Run failed: RuntimeError: With web access restricted, BenchFlow runs only models it can identify as having no hosted web search or retrieval. 'anthropic/claude-haiku-5-5' is not one: its effective provider, endpoint and base model are not in the curated first-party model allowlist. Use the supported anthropic… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b05_no_skill/bike-rebalance__1f234658/error-traceback.txt)
+[exceltable-in-ppt] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b05_no_skill/exceltable-in-ppt__c7ee5a1b/error-traceback.txt)
+[exceltable-in-ppt] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b05_no_skill/exceltable-in-ppt__c9a0f0da/error-traceback.txt)
+[jax-computing-basics] The verifier's PATH leaves out 1 folder(s) of the image's PATH: /app/kona: under /app
+[jax-computing-basics] verifier crashed: RuntimeError: Verifier hardening failed: omitted PATH entries (including relative entries) require an explicit [verifier] required_tools contract (complete PATH dependencies; [] for none). Use absolute paths for uploaded/generated helpers. Entries left out: /app/kona: under /app
+[powerlifting-coef-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b05_no_skill/powerlifting-coef-calc__d6c2a486/error-traceback.txt)
+[pdf-excel-diff] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b05_no_skill/pdf-excel-diff__856ca580/error-traceback.txt)
+[pdf-excel-diff] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b05_no_skill/pdf-excel-diff__1d7d7163/error-traceback.txt)
+[powerlifting-coef-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b05_no_skill/powerlifting-coef-calc__f96579b6/error-traceback.txt)
+[spring-boot-jakarta-migration] ACP error -32603: Internal error
+[spring-boot-jakarta-migration] ACP error -32603: Internal error
+[pdf-excel-diff] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b05_no_skill/pdf-excel-diff__2fd2cf88/error-traceback.txt)
+[powerlifting-coef-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b05_no_skill/powerlifting-coef-calc__a2816690/error-traceback.txt)
+[spring-boot-jakarta-migration] ACP error -32603: Internal error
+[spring-boot-jakarta-migration] ACP error -32603: Internal error
+[spring-boot-jakarta-migration] ACP error -32603: Internal error
+[spring-boot-jakarta-migration] ACP error -32603: Internal error
+3 tasks (25%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+1 tasks (8%) had verifier errors — check verifier scripts for bugs
+
+• Score: 2/12 (16.7%), mean reward 0.17 over all 12 trials (unscored as 0), 
+errors=5 verifier-errors=1; scored only: 2/6 (33.3%), mean reward 0.33 (0.7's 
+mean_reward)
+  ✗ earthquake-plate-calculation: reward 0.0 — test_distance_within_tolerance 
+failed: 3561.87 !=…
+  ✗ financial-modeling-qa: reward 0.0 — test_answer_value_correct failed: 
+Incorrect answer.…
+  ✗ jpg-ocr-stat: reward 0.0 — test_outputs failed: Mismatch in sheet 'results',
+row 7.
+  ✗ llm-prefix-cache-replay: reward 0.0 — test_total_hit_tokens failed: expected
+2394659, got… (+3 more failures; 2/6 checks passed)
+  (details: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b05_no_skill/earthquake-plate-calculation__e9f76c59/verifier)
+Outcomes: 6 scored (2 passed, 4 failed), 1 unscored, 5 errored
+  1 unscored: the verifier crashed (task problem): jax-computing-basics
+      next: fix the verifier from its output (the trial's verifier/test-stdout.txt, whose last lines the summary shows), then run the task again
+  1 errored: other error: RuntimeError: With web access restricted, BenchFlow runs only models it can i... (infrastructure problem): bike-rebalance
+      next: the trial's result.json and the run's log have the details
+  3 errored: the sandbox did not start: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su and pkexec) and other nonstandard privileged helpers from the image, or set allow_... (infrastructure problem): exceltable-in-ppt, pdf-excel-diff, powerlifting-coef-calc
+      next: `bench doctor`; error in result.json has the whole message
+  1 errored: the agent reported an error (agent problem): spring-boot-jakarta-migration
+      next: the agent's log (agent/<agent>.txt in the trial folder) has its side
+  `bench explain verifier_failure` says more (also other, sandbox_setup, ...)
+Cost:      $0.29, 2,537,232 tokens (5 of 12 trials reported no cost)
+Time:      10m 14s
+Artifacts: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b05_no_skill
+Summary:   /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b05_no_skill/summary.json
+View:      bench view '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b05_no_skill'
+Matrix summary: /Users/ndingari/Dropbox/Dingari 
+Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/matrix-summary.json
+Matrix: 3 trial job(s), 6/36 trials passed, errors=15 verifier-errors=3

@@ -1,0 +1,194 @@
+[mario-coin-counting] Run failed: AgentInstallError: Agent openhands install failed (rc=1) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b04_with_skill/mario-coin-counting__ec339655/error-traceback.txt)
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[mario-coin-counting] Run failed: RuntimeError: Docker compose command failed for environment mario-coin-counting. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-vhrhe2d6 compose --project-name mario-coin-counting__337e628d-153f433f --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b04_with_skill/mario-coin-counting__337e628d/error-traceback.txt)
+[pptx-reference-formatting] Run failed: RuntimeError: Docker compose command failed for environment pptx-reference-formatting. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-vhrhe2d6 compose --project-name pptx-reference-formatting__79e47ce6-3b90e1f4 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b04_with_skill/pptx-reference-formatting__79e47ce6/error-traceback.txt)
+[pptx-reference-formatting] Run failed: RuntimeError: Docker compose command failed for environment pptx-reference-formatting. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-vhrhe2d6 compose --project-name pptx-reference-formatting__760635fb-2af21362 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b04_with_skill/pptx-reference-formatting__760635fb/error-traceback.txt)
+[pptx-reference-formatting] Run failed: RuntimeError: Docker compose command failed for environment pptx-reference-formatting. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-vhrhe2d6 compose --project-name pptx-reference-formatting__f7dd097a-873ad5c7 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b04_with_skill/pptx-reference-formatting__f7dd097a/error-traceback.txt)
+[manufacturing-equipment-maintenance] Verifier scored 0: verifier exited with rc=7; no reward file found at <reachable:verifier/reward.txt> or <reachable:verifier/reward.json>
+[react-performance-debugging] Run failed: RuntimeError: Docker compose command failed for environment react-performance-debugging. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-vhrhe2d6 compose --project-name react-performance-debugging__6ca35b73-466954df --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b04_with_skill/react-performance-debugging__6ca35b73/error-traceback.txt)
+[suricata-custom-exfil] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b04_with_skill/suricata-custom-exfil__5be58b41/error-traceback.txt)
+[suricata-custom-exfil] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b04_with_skill/suricata-custom-exfil__bcbc5dd1/error-traceback.txt)
+[suricata-custom-exfil] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b04_with_skill/suricata-custom-exfil__4c56fe6a/error-traceback.txt)
+[exam-block-sequencing] Agent prompt exceeded wall-clock budget 1500s
+1 tasks (9%) hit agent wall-clock timeout — error in result.json has the cause (agent_timeout_info has details when set)
+1 tasks (9%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+
+• Score: 1/11 (9.1%), mean reward 0.13 over all 11 trials (unscored as 0), 
+errors=3; scored only: 1/8 (12.5%), mean reward 0.18 (0.7's mean_reward)
+  ✗ ada-bathroom-plan-repair: reward 0.0 — 
+test_violation_list_is_consistent_with_plan_view_rules… (+2 more failures; 3/6 
+checks passed)
+  ✗ crystallographic-wyckoff-position-analysis: reward 0.45
+  ✗ exam-block-sequencing: reward 0.0 — 
+test_objective_value_is_reported_correctly failed: Missing… (+2 more failures; 
+0/3 checks passed)
+  ✗ manufacturing-equipment-maintenance: reward 0.0
+  ✗ react-performance-debugging: reward 0.0 — 1 failed, 10 passed, 3 warnings in
+4.77s
+  … and 2 more
+  (details: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b04_with_skill/ada-bathroom-plan-repair__a165cd43/verifier)
+Outcomes: 8 scored (1 passed, 7 failed), 0 unscored, 3 errored
+  1 errored: other error: RuntimeError: Docker compose command failed for environment mario-coin-counti... (infrastructure problem): mario-coin-counting
+      next: the trial's result.json and the run's log have the details
+  1 errored: other error: RuntimeError: Docker compose command failed for environment pptx-reference-fo... (infrastructure problem): pptx-reference-formatting
+      next: the trial's result.json and the run's log have the details
+  1 errored: the sandbox did not start: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su and pkexec) and other nonstandard privileged helpers from the image, or set allow_... (infrastructure problem): suricata-custom-exfil
+      next: `bench doctor`; error in result.json has the whole message
+  `bench explain other` says more (also sandbox_setup)
+Cost:      $3.42, 12,276,355 tokens (3 of 11 trials reported no cost)
+Time:      29m 25s
+Artifacts: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b04_with_skill
+Summary:   /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b04_with_skill/summary.json
+View:      bench view '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b04_with_skill'
+[mario-coin-counting] ACP error -32603: Internal error
+[mario-coin-counting] ACP error -32603: Internal error
+[pptx-reference-formatting] ACP error -32603: Internal error
+[pptx-reference-formatting] ACP error -32603: Internal error
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[mario-coin-counting] ACP error -32603: Internal error
+[mario-coin-counting] ACP error -32603: Internal error
+[pptx-reference-formatting] ACP error -32603: Internal error
+[pptx-reference-formatting] ACP error -32603: Internal error
+[ada-bathroom-plan-repair] ACP error -32603: Internal error
+[ada-bathroom-plan-repair] ACP error -32603: Internal error
+[mario-coin-counting] ACP error -32603: Internal error
+[mario-coin-counting] ACP error -32603: Internal error
+[pptx-reference-formatting] ACP error -32603: Internal error
+[pptx-reference-formatting] ACP error -32603: Internal error
+[exam-block-sequencing] ACP error -32603: Internal error
+[exam-block-sequencing] ACP error -32603: Internal error
+[ada-bathroom-plan-repair] ACP error -32603: Internal error
+[ada-bathroom-plan-repair] ACP error -32603: Internal error
+[software-dependency-audit] ACP error -32603: Internal error
+[software-dependency-audit] ACP error -32603: Internal error
+[exam-block-sequencing] ACP error -32603: Internal error
+[exam-block-sequencing] ACP error -32603: Internal error
+[ada-bathroom-plan-repair] ACP error -32603: Internal error
+[ada-bathroom-plan-repair] ACP error -32603: Internal error
+[react-performance-debugging] Run failed: ExecTimeoutError: Command timed out after 120 seconds (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b04_with_skill/react-performance-debugging__2c4f8ea4/error-traceback.txt)
+[software-dependency-audit] ACP error -32603: Internal error
+[software-dependency-audit] ACP error -32603: Internal error
+[suricata-custom-exfil] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b04_with_skill/suricata-custom-exfil__b208ba0e/error-traceback.txt)
+[exam-block-sequencing] ACP error -32603: Internal error
+[exam-block-sequencing] ACP error -32603: Internal error
+[software-dependency-audit] ACP error -32603: Internal error
+[software-dependency-audit] ACP error -32603: Internal error
+[syzkaller-ppdev-syzlang] ACP error -32603: Internal error
+[syzkaller-ppdev-syzlang] ACP error -32603: Internal error
+[suricata-custom-exfil] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b04_with_skill/suricata-custom-exfil__cc32d399/error-traceback.txt)
+[syzkaller-ppdev-syzlang] ACP error -32603: Internal error
+[syzkaller-ppdev-syzlang] ACP error -32603: Internal error
+[react-performance-debugging] ACP error -32603: Internal error
+[react-performance-debugging] ACP error -32603: Internal error
+[suricata-custom-exfil] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b04_with_skill/suricata-custom-exfil__941403b2/error-traceback.txt)
+[suricata-custom-exfil] Disconnect failed; the sandbox is still torn down: Verifier hardening failed: sandbox-user process quiescence check exited with rc=2
+[suricata-custom-exfil] stderr: Cannot inspect process 5354
+[syzkaller-ppdev-syzlang] ACP error -32603: Internal error
+[syzkaller-ppdev-syzlang] ACP error -32603: Internal error
+[react-performance-debugging] ACP error -32603: Internal error
+[react-performance-debugging] ACP error -32603: Internal error
+[ERR] suricata-custom-exfil: unexpected exception: Verifier hardening failed: sandbox-user process quiescence check exited with rc=2
+stderr: Cannot inspect process 5354
+
+• Score: 2/11 (18.2%), mean reward 0.22 over all 11 trials (unscored as 0), 
+errors=8; scored only: 2/3 (66.7%), mean reward 0.82 (0.7's mean_reward)
+  ✗ crystallographic-wyckoff-position-analysis: reward 0.45
+  (details: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b04_with_skill/crystallographic-wyckoff-position-analysis__a11b366e/verifier)
+Outcomes: 3 scored (2 passed, 1 failed), 0 unscored, 8 errored
+  7 errored: the agent reported an error (agent problem): ada-bathroom-plan-repair, exam-block-sequencing, mario-coin-counting, pptx-reference-formatting, react-performance-debugging and 2 more
+      next: the agent's log (agent/<agent>.txt in the trial folder) has its side
+  1 errored: other error: Unexpected: Verifier hardening failed: sandbox-user process quiescence check ... (infrastructure problem): suricata-custom-exfil
+      next: the trial's result.json and the run's log have the details
+  `bench explain R205` says more (also other)
+Cost:      $0.29, 1,695,851 tokens (8 of 11 trials reported no cost)
+Time:      15m 10s
+Artifacts: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b04_with_skill
+Summary:   /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b04_with_skill/summary.json
+View:      bench view '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b04_with_skill'
+[exam-block-sequencing] ACP error -32603: Internal error
+[crystallographic-wyckoff-position-analysis] ACP error -32603: Internal error
+[exam-block-sequencing] ACP error -32603: Internal error
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[crystallographic-wyckoff-position-analysis] ACP error -32603: Internal error
+[ada-bathroom-plan-repair] ACP error -32603: Internal error
+[ada-bathroom-plan-repair] ACP error -32603: Internal error
+[3d-scan-calc] ACP error -32603: Internal error
+[3d-scan-calc] ACP error -32603: Internal error
+[exam-block-sequencing] ACP error -32603: Internal error
+[exam-block-sequencing] ACP error -32603: Internal error
+[ada-bathroom-plan-repair] ACP error -32603: Internal error
+[ada-bathroom-plan-repair] ACP error -32603: Internal error
+[crystallographic-wyckoff-position-analysis] ACP error -32603: Internal error
+[crystallographic-wyckoff-position-analysis] ACP error -32603: Internal error
+[crystallographic-wyckoff-position-analysis] ACP error -32603: Internal error
+[crystallographic-wyckoff-position-analysis] ACP error -32603: Internal error
+[ada-bathroom-plan-repair] ACP error -32603: Internal error
+[exam-block-sequencing] ACP error -32603: Internal error
+[ada-bathroom-plan-repair] ACP error -32603: Internal error
+[exam-block-sequencing] ACP error -32603: Internal error
+[3d-scan-calc] ACP error -32603: Internal error
+[3d-scan-calc] ACP error -32603: Internal error
+[mario-coin-counting] ACP error -32603: Internal error
+[manufacturing-equipment-maintenance] ACP error -32603: Internal error
+[mario-coin-counting] ACP error -32603: Internal error
+[manufacturing-equipment-maintenance] ACP error -32603: Internal error
+[pptx-reference-formatting] ACP error -32603: Internal error
+[pptx-reference-formatting] ACP error -32603: Internal error
+[3d-scan-calc] ACP error -32603: Internal error
+[3d-scan-calc] ACP error -32603: Internal error
+[manufacturing-equipment-maintenance] ACP error -32603: Internal error
+[manufacturing-equipment-maintenance] ACP error -32603: Internal error
+[mario-coin-counting] ACP error -32603: Internal error
+[mario-coin-counting] ACP error -32603: Internal error
+[pptx-reference-formatting] ACP error -32603: Internal error
+[pptx-reference-formatting] ACP error -32603: Internal error
+[manufacturing-equipment-maintenance] ACP error -32603: Internal error
+[manufacturing-equipment-maintenance] ACP error -32603: Internal error
+[mario-coin-counting] ACP error -32603: Internal error
+[mario-coin-counting] ACP error -32603: Internal error
+[react-performance-debugging] Run failed: ExecTimeoutError: Command timed out after 120 seconds (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b04_with_skill/react-performance-debugging__05fb26f5/error-traceback.txt)
+[suricata-custom-exfil] Run failed: RuntimeError: Docker compose command failed for environment suricata-custom-exfil. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-vhrhe2d6 compose --project-name suricata-custom-exfil__4a626cc6-4223b5a9 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b04_with_skill/suricata-custom-exfil__4a626cc6/error-traceback.txt)
+[react-performance-debugging] Run failed: RuntimeError: Docker compose command failed for environment react-performance-debugging. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-vhrhe2d6 compose --project-name react-performance-debugging__7504b3d3-6625a2d7 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b04_with_skill/react-performance-debugging__7504b3d3/error-traceback.txt)
+[suricata-custom-exfil] Run failed: AgentInstallError: Agent openhands install failed (rc=2) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b04_with_skill/suricata-custom-exfil__00f54a8f/error-traceback.txt)
+[software-dependency-audit] ACP connect failed (attempt 1): ACP session_new timed out after 60s before the first prompt
+[pptx-reference-formatting] ACP connect failed (attempt 1): ACP session_new timed out after 60s before the first prompt
+[suricata-custom-exfil] Run failed: RuntimeError: Docker compose command failed for environment suricata-custom-exfil. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-vhrhe2d6 compose --project-name suricata-custom-exfil__e2996f8e-ef809d07 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b04_with_skill/suricata-custom-exfil__e2996f8e/error-traceback.txt)
+[syzkaller-ppdev-syzlang] Run failed: RuntimeError: Docker compose command failed for environment syzkaller-ppdev-syzlang. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-vhrhe2d6 compose --project-name syzkaller-ppdev-syzlang__9822a9be-b25ffc50 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b04_with_skill/syzkaller-ppdev-syzlang__9822a9be/error-traceback.txt)
+[react-performance-debugging] Run failed: AgentInstallError: Agent openhands install failed (rc=1) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b04_with_skill/react-performance-debugging__ac7d8fa1/error-traceback.txt)
+[syzkaller-ppdev-syzlang] Run failed: RuntimeError: Docker compose command failed for environment syzkaller-ppdev-syzlang. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-vhrhe2d6 compose --project-name syzkaller-ppdev-syzlang__4c84fe4e-228435f2 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b04_with_skill/syzkaller-ppdev-syzlang__4c84fe4e/error-traceback.txt)
+[software-dependency-audit] ACP connect failed (attempt 2): ACP session_new timed out after 60s before the first prompt
+[pptx-reference-formatting] ACP connect failed (attempt 2): ACP session_new timed out after 60s before the first prompt
+[syzkaller-ppdev-syzlang] Run failed: RuntimeError: Docker compose command failed for environment syzkaller-ppdev-syzlang. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-vhrhe2d6 compose --project-name syzkaller-ppdev-syzlang__6d0ec233-65d1c181 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b04_with_skill/syzkaller-ppdev-syzlang__6d0ec233/error-traceback.txt)
+[software-dependency-audit] ACP connect failed (attempt 3): ACP session_new timed out after 60s before the first prompt
+[pptx-reference-formatting] ACP connect failed (attempt 3): ACP session_new timed out after 60s before the first prompt
+[software-dependency-audit] Agent connection lost: ACP session_new timed out after 60s before the first prompt
+[pptx-reference-formatting] Agent connection lost: ACP session_new timed out after 60s before the first prompt
+[software-dependency-audit] Run failed: RuntimeError: Docker compose command failed for environment software-dependency-audit. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-vhrhe2d6 compose --project-name software-dependency-audit__82a7662d-0f55976e --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b04_with_skill/software-dependency-audit__82a7662d/error-traceback.txt)
+[software-dependency-audit] Run failed: RuntimeError: Docker compose command failed for environment software-dependency-audit. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-vhrhe2d6 compose --project-name software-dependency-audit__63284f06-b2eab218 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b04_with_skill/software-dependency-audit__63284f06/error-traceback.txt)
+3 tasks (27%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+1 tasks (9%) lost transport (pipe closed / rc=255) — error in result.json has the cause (transport_error_info has details when set)
+
+✗ Score: 0/11 (0.0%), mean reward 0.00 over all 11 trials (unscored as 0), 
+errors=11; scored only: none scored
+Outcomes: 0 scored (0 passed, 0 failed), 0 unscored, 11 errored
+  6 errored: the agent reported an error (agent problem): 3d-scan-calc, ada-bathroom-plan-repair, crystallographic-wyckoff-position-analysis, exam-block-sequencing, manufacturing-equipment-maintenance and 1 more
+      next: the agent's log (agent/<agent>.txt in the trial folder) has its side
+  1 errored: the connection to the agent closed (infrastructure problem): pptx-reference-formatting
+      next: `bench eval resume '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b04_with_skill'` reruns it; transport_error_info in result.json says why
+  1 errored: the agent's install failed (infrastructure problem): react-performance-debugging
+      next: `bench doctor` checks the network to npm and Node.js; the trial's agent/install-stdout.txt has the log
+  1 errored: the sandbox did not start: Docker compose command failed for environment software-dependency-audit. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-vhrhe2d6 compose --project-name software-dependency-audit__63284f06-b2eab218 --project-directory /private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-stage-4q90ibhv/private... (infrastructure problem): software-dependency-audit
+      next: `bench doctor`; error in result.json has the whole message
+  1 errored: the sandbox did not start: Docker compose command failed for environment suricata-custom-exfil. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-vhrhe2d6 compose --project-name suricata-custom-exfil__e2996f8e-ef809d07 --project-directory /private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-stage-0_j2uq45/private/var/fol... (infrastructure problem): suricata-custom-exfil
+      next: `bench doctor`; error in result.json has the whole message
+  1 errored: the sandbox did not start: Docker compose command failed for environment syzkaller-ppdev-syzlang. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-vhrhe2d6 compose --project-name syzkaller-ppdev-syzlang__6d0ec233-65d1c181 --project-directory /private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-stage-b31mlipk/private/var... (infrastructure problem): syzkaller-ppdev-syzlang
+      next: `bench doctor`; error in result.json has the whole message
+  `bench explain R205` says more (also pipe_closed, install_failure, ...)
+Cost:      none: no model tokens were used
+Time:      16m 5s
+Artifacts: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b04_with_skill
+Summary:   /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b04_with_skill/summary.json
+View:      bench view '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b04_with_skill'
+Matrix summary: /Users/ndingari/Dropbox/Dingari 
+Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/matrix-summary.json
+Matrix: 3 trial job(s), 3/33 trials passed, errors=22 verifier-errors=0

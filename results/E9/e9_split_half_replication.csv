@@ -1,0 +1,8 @@
+rule,admitted,mean_lift_B_admitted,share_B_positive,mean_lift_B_not_admitted
+betting_c075,0,,,0.158637
+betting_ebh,0,,,0.158637
+betting_grid,4.23,0.732825,1,0.130671
+betting_grid_ebh,0,,,0.158637
+betting_per_exam,0,,,0.158637
+t_bh,14.84,0.569766,0.988902,0.0748033
+t_uncorrected,22.758,0.453017,0.9203,0.0552383

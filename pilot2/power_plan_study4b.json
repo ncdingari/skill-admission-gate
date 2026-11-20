@@ -1,0 +1,18 @@
+{
+ "exams": [
+  [
+   "S",
+   1,
+   "placebo"
+  ],
+  [
+   "S",
+   2,
+   "real"
+  ]
+ ],
+ "n_max": 600,
+ "note": "Additional real skill (newsroom-style (AP Style)), added on 18 Nov 2026 at Dr. Dingari's request after calibration. Its Haiku calibration lift (0.80; real 16/20 vs 0/20, placebo 2/20 vs 0/20) is above the [0.05, 0.40] window of the primary selection rule, so it is reported as an additional study, not the primary one. Design and N_max as in live studies 2 and 3 (placebo first, N_max 600); no power simulation needed at this lift.",
+ "calibration_transcript": "transcripts4/calibration_cand1_newsroom.jsonl",
+ "calibration_sha256": "0f37a152aa6027e2f8a80f2f6cd28b84e36641adac72beb615e4195ab4df1e93"
+}

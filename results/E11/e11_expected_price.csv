@@ -1,0 +1,13 @@
+pi,schedule,H_pi_nats,KL_pi_q_nats,price_nats,price_variants_median_skill,floor_variants_median_skill
+one_attempt,zeta_1.6 (current),-0,0.826701,0.826701,13.6128,-0
+one_attempt,universal 1/((k+1)log^2(k+1)),-0,0.706687,0.706687,11.6366,-0
+one_attempt,geometric (1/2)^k,-0,0.693147,0.693147,11.4137,-0
+geometric mean 1.5,zeta_1.6 (current),0.954771,0.336824,1.2916,21.268,15.7217
+geometric mean 1.5,universal 1/((k+1)log^2(k+1)),0.954771,0.303809,1.25858,20.7243,15.7217
+geometric mean 1.5,geometric (1/2)^k,0.954771,0.0849495,1.03972,17.1205,15.7217
+geometric mean 3,zeta_1.6 (current),1.90954,0.242929,2.15247,35.4435,31.4433
+geometric mean 3,universal 1/((k+1)log^2(k+1)),1.90954,0.347272,2.25681,37.1617,31.4433
+geometric mean 3,geometric (1/2)^k,1.90954,0.169899,2.07944,34.241,31.4433
+zipf s=2,zeta_1.6 (current),1.59973,0.111025,1.71075,28.17,26.3418
+zipf s=2,universal 1/((k+1)log^2(k+1)),1.59973,0.122418,1.72214,28.3576,26.3418
+zipf s=2,geometric (1/2)^k,1.59973,0.884708,2.48443,40.9098,26.3418

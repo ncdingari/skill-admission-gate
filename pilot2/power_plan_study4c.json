@@ -1,0 +1,18 @@
+{
+ "exams": [
+  [
+   "S",
+   1,
+   "placebo"
+  ],
+  [
+   "S",
+   2,
+   "real"
+  ]
+ ],
+ "n_max": 600,
+ "note": "Additional real skill (commit (Sentry)), added on 18 Nov 2026 at Dr. Dingari's request after calibration. Its Haiku calibration lift (0.90; real 20/20 vs 2/20, placebo 1/20 vs 1/20) is above the [0.05, 0.40] window of the primary selection rule, so it is reported as an additional study, not the primary one. Design and N_max as in live studies 2 and 3 (placebo first, N_max 600); no power simulation needed at this lift.",
+ "calibration_transcript": "transcripts4/calibration_cand2_commit.jsonl",
+ "calibration_sha256": "8e777f707f99bbdf099ce5c87afe7d8f7986e691cc3413fffd79b3928d5c7b25"
+}

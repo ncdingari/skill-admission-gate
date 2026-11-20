@@ -1,0 +1,11 @@
+exam 1 (S1 placebo) level 0.02187 start at pair 0
+Traceback (most recent call last):
+  File "/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot2/run4bn.py", line 381, in <module>
+    {"calibrate": calibrate, "commit": commit, "run": run, "build": build, "verify": verify}[sys.argv[1]]()
+  File "/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot2/run4bn.py", line 278, in run
+    with (TR / f"exam{t}.jsonl").open("a") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot2/transcripts_n4b/exam1.jsonl'

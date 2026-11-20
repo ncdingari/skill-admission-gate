@@ -1,0 +1,154 @@
+[earthquake-phase-association] Run failed: the task's image did not build: environment/Dockerfile:25 `PY` exited with code 1 (import pkg_resources; ModuleNotFoundError: No module named 'pkg_resources')
+[earthquake-phase-association]   next: fix that line in the task's environment/Dockerfile; `docker build <task>/environment` prints the whole build log
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[multilingual-video-dubbing] Run failed: the task's image did not build: environment/Dockerfile:41 `    --extra-index-url https://download.pytorch.org/whl/cpu` exited with code 1 (ERROR: Could not find a version that satisfies the requirement torchaudio==2.6.0+cpu (from versions: 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0, 2.10.0+cpu, 2.11.0, 2.11.0+cpu, 2.11.1, 2.11.1+cpu); ERROR: No matching distri…
+[multilingual-video-dubbing]   next: fix that line in the task's environment/Dockerfile; `docker build <task>/environment` prints the whole build log
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[energy-unit-commitment] Agent prompt exceeded wall-clock budget 900s
+[organize-messy-files] Run failed: AgentInstallError: Agent openhands install failed (rc=2) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b02_with_skill/organize-messy-files__2de83be2/error-traceback.txt)
+[organize-messy-files] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b02_with_skill/organize-messy-files__5304a27f/error-traceback.txt)
+[organize-messy-files] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b02_with_skill/organize-messy-files__23f8a007/error-traceback.txt)
+[reserves-at-risk-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b02_with_skill/reserves-at-risk-calc__78b01a5f/error-traceback.txt)
+[weighted-gdp-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b02_with_skill/weighted-gdp-calc__cc919087/error-traceback.txt)
+[reserves-at-risk-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b02_with_skill/reserves-at-risk-calc__d4e97e22/error-traceback.txt)
+[weighted-gdp-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b02_with_skill/weighted-gdp-calc__9df6941e/error-traceback.txt)
+[weighted-gdp-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b02_with_skill/weighted-gdp-calc__b4d97516/error-traceback.txt)
+[reserves-at-risk-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b02_with_skill/reserves-at-risk-calc__3fe51084/error-traceback.txt)
+1 tasks (8%) hit agent wall-clock timeout — error in result.json has the cause (agent_timeout_info has details when set)
+3 tasks (25%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+
+• Score: 2/12 (16.7%), mean reward 0.22 over all 12 trials (unscored as 0), 
+errors=6; scored only: 2/6 (33.3%), mean reward 0.44 (0.7's mean_reward)
+  ✗ data-to-d3: reward 0.0 — test_bubble_chart_rendering failed: 
+playwright._impl._errors.Error:… (+6 more failures; 3/10 checks passed)
+  ✗ dialogue-parser: reward 0.667 — test_system_basics failed: Node End has 
+invalid type 'end' (+1 more failure; 4/6 checks passed)
+  ✗ energy-unit-commitment: reward 0.0 — test_required_schema failed: Output 
+file /root/report.json… (+13 more failures; 0/14 checks passed)
+  ✗ quantum-numerical-simulation: reward 0.0 — test_all_files_exist failed: 
+Failed: Missing CSV for… (+6 more failures; 0/7 checks passed)
+  (details: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b02_with_skill/data-to-d3__4f49c363/verifier)
+Outcomes: 6 scored (2 passed, 4 failed), 0 unscored, 6 errored
+  1 errored: the task's image did not build: environment/Dockerfile:25 `PY` exited with code 1 (import pkg_resources; ModuleNotFoundError: No module named 'pkg_resources') (task problem): earthquake-phase-association
+      next: fix that line in the task's environment/Dockerfile; `docker build '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/vendor/skillsbench/tasks/earthquake-phase-association'/environment` prints the whole build log
+  1 errored: the task's image did not build: environment/Dockerfile:41 ` --extra-index-url https://download.pytorch.org/whl/cpu` exited with code 1 (ERROR: Could not find a version that satisfies the re... (task problem): multilingual-video-dubbing
+      next: fix that line in the task's environment/Dockerfile; `docker build '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/vendor/skillsbench/tasks/multilingual-video-dubbing'/environment` prints the whole build log
+  3 errored: the sandbox did not start: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su and pkexec) and other nonstandard privileged helpers from the image, or set allow_... (infrastructure problem): organize-messy-files, reserves-at-risk-calc, weighted-gdp-calc
+      next: `bench doctor`; error in result.json has the whole message
+  1 errored: the agent reported an error (agent problem): pddl-tpp-planning
+      next: the agent's log (agent/<agent>.txt in the trial folder) has its side
+  `bench explain image_build` says more (also sandbox_setup, R205)
+Cost:      $1.24, 6,030,347 tokens (6 of 12 trials reported no cost)
+Time:      57m 17s
+Artifacts: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b02_with_skill
+Summary:   /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b02_with_skill/summary.json
+View:      bench view '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/b02_with_skill'
+[earthquake-phase-association] Run failed: the task's image did not build: environment/Dockerfile:25 `PY` exited with code 1 (import pkg_resources; ModuleNotFoundError: No module named 'pkg_resources')
+[earthquake-phase-association]   next: fix that line in the task's environment/Dockerfile; `docker build <task>/environment` prints the whole build log
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[multilingual-video-dubbing] Run failed: the task's image did not build: environment/Dockerfile:41 `    --extra-index-url https://download.pytorch.org/whl/cpu` exited with code 1 (ERROR: Could not find a version that satisfies the requirement torchaudio==2.6.0+cpu (from versions: 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0, 2.10.0+cpu, 2.11.0, 2.11.0+cpu, 2.11.1, 2.11.1+cpu); ERROR: No matching distri…
+[multilingual-video-dubbing]   next: fix that line in the task's environment/Dockerfile; `docker build <task>/environment` prints the whole build log
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[organize-messy-files] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b02_with_skill/organize-messy-files__bfbf55a9/error-traceback.txt)
+[organize-messy-files] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b02_with_skill/organize-messy-files__46d3c27d/error-traceback.txt)
+[organize-messy-files] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b02_with_skill/organize-messy-files__6a2a1d7c/error-traceback.txt)
+[energy-unit-commitment] Agent prompt exceeded wall-clock budget 900s
+[reserves-at-risk-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b02_with_skill/reserves-at-risk-calc__330be048/error-traceback.txt)
+[reserves-at-risk-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b02_with_skill/reserves-at-risk-calc__1195edf5/error-traceback.txt)
+[weighted-gdp-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b02_with_skill/weighted-gdp-calc__585e4ed6/error-traceback.txt)
+[weighted-gdp-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b02_with_skill/weighted-gdp-calc__dc50e8a8/error-traceback.txt)
+[reserves-at-risk-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b02_with_skill/reserves-at-risk-calc__8837968f/error-traceback.txt)
+[weighted-gdp-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b02_with_skill/weighted-gdp-calc__732e32ee/error-traceback.txt)
+1 tasks (8%) hit agent wall-clock timeout — error in result.json has the cause (agent_timeout_info has details when set)
+3 tasks (25%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+
+• Score: 2/12 (16.7%), mean reward 0.22 over all 12 trials (unscored as 0), 
+errors=6; scored only: 2/6 (33.3%), mean reward 0.44 (0.7's mean_reward)
+  ✗ data-to-d3: reward 0.0 — test_bubble_chart_rendering failed: 
+playwright._impl._errors.Error:… (+6 more failures; 3/10 checks passed)
+  ✗ dialogue-parser: reward 0.667 — test_system_basics failed: Node End has 
+invalid type 'end' (+1 more failure; 4/6 checks passed)
+  ✗ energy-unit-commitment: reward 0.0 — test_required_schema failed: Output 
+file /root/report.json… (+13 more failures; 0/14 checks passed)
+  ✗ quantum-numerical-simulation: reward 0.0 — test_all_files_exist failed: 
+Failed: Missing CSV for… (+6 more failures; 0/7 checks passed)
+  (details: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b02_with_skill/data-to-d3__ec587e11/verifier)
+Outcomes: 6 scored (2 passed, 4 failed), 0 unscored, 6 errored
+  1 errored: the task's image did not build: environment/Dockerfile:25 `PY` exited with code 1 (import pkg_resources; ModuleNotFoundError: No module named 'pkg_resources') (task problem): earthquake-phase-association
+      next: fix that line in the task's environment/Dockerfile; `docker build '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/vendor/skillsbench/tasks/earthquake-phase-association'/environment` prints the whole build log
+  1 errored: the task's image did not build: environment/Dockerfile:41 ` --extra-index-url https://download.pytorch.org/whl/cpu` exited with code 1 (ERROR: Could not find a version that satisfies the re... (task problem): multilingual-video-dubbing
+      next: fix that line in the task's environment/Dockerfile; `docker build '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/vendor/skillsbench/tasks/multilingual-video-dubbing'/environment` prints the whole build log
+  3 errored: the sandbox did not start: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su and pkexec) and other nonstandard privileged helpers from the image, or set allow_... (infrastructure problem): organize-messy-files, reserves-at-risk-calc, weighted-gdp-calc
+      next: `bench doctor`; error in result.json has the whole message
+  1 errored: the agent reported an error (agent problem): pddl-tpp-planning
+      next: the agent's log (agent/<agent>.txt in the trial folder) has its side
+  `bench explain image_build` says more (also sandbox_setup, R205)
+Cost:      $1.44, 7,684,941 tokens (6 of 12 trials reported no cost)
+Time:      2h 18m
+Artifacts: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b02_with_skill
+Summary:   /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b02_with_skill/summary.json
+View:      bench view '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/b02_with_skill'
+[earthquake-phase-association] Run failed: the task's image did not build: environment/Dockerfile:25 `PY` exited with code 1 (import pkg_resources; ModuleNotFoundError: No module named 'pkg_resources')
+[earthquake-phase-association]   next: fix that line in the task's environment/Dockerfile; `docker build <task>/environment` prints the whole build log
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[multilingual-video-dubbing] Run failed: the task's image did not build: environment/Dockerfile:41 `    --extra-index-url https://download.pytorch.org/whl/cpu` exited with code 1 (ERROR: Could not find a version that satisfies the requirement torchaudio==2.6.0+cpu (from versions: 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0, 2.10.0+cpu, 2.11.0, 2.11.0+cpu, 2.11.1, 2.11.1+cpu); ERROR: No matching distri…
+[multilingual-video-dubbing]   next: fix that line in the task's environment/Dockerfile; `docker build <task>/environment` prints the whole build log
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[organize-messy-files] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b02_with_skill/organize-messy-files__b6106160/error-traceback.txt)
+[pddl-tpp-planning] ACP error -32603: Internal error
+[pddl-tpp-planning] ACP error -32603: Internal error
+[organize-messy-files] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b02_with_skill/organize-messy-files__fd3ba923/error-traceback.txt)
+[organize-messy-files] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b02_with_skill/organize-messy-files__68ee0184/error-traceback.txt)
+[energy-unit-commitment] Agent prompt exceeded wall-clock budget 900s
+[reserves-at-risk-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b02_with_skill/reserves-at-risk-calc__c4838d74/error-traceback.txt)
+[reserves-at-risk-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b02_with_skill/reserves-at-risk-calc__d5836145/error-traceback.txt)
+[weighted-gdp-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b02_with_skill/weighted-gdp-calc__51964f9e/error-traceback.txt)
+[weighted-gdp-calc] Run failed: RuntimeError: experiment_fidelity/skill_deployment_missing: expected=xlsx; exit code 1; command: mkdir -p /home/agent/.agents && rm -rf /home/agent/.agents/skills && ln -sfn /skills /home/agent/.agents/skills && test -d /skills && test -d /home/agent/.agents/skills && source_catalog="$(find -L… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b02_with_skill/weighted-gdp-calc__4f3020b6/error-traceback.txt)
+[reserves-at-risk-calc] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b02_with_skill/reserves-at-risk-calc__717b8584/error-traceback.txt)
+1 tasks (8%) hit agent wall-clock timeout — error in result.json has the cause (agent_timeout_info has details when set)
+2 tasks (17%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+
+• Score: 2/12 (16.7%), mean reward 0.22 over all 12 trials (unscored as 0), 
+errors=6; scored only: 2/6 (33.3%), mean reward 0.44 (0.7's mean_reward)
+  ✗ data-to-d3: reward 0.0 — test_bubble_chart_rendering failed: 
+playwright._impl._errors.Error:… (+6 more failures; 3/10 checks passed)
+  ✗ dialogue-parser: reward 0.667 — test_system_basics failed: Node End has 
+invalid type 'end' (+1 more failure; 4/6 checks passed)
+  ✗ energy-unit-commitment: reward 0.0 — test_required_schema failed: Output 
+file /root/report.json… (+13 more failures; 0/14 checks passed)
+  ✗ quantum-numerical-simulation: reward 0.0 — test_all_files_exist failed: 
+Failed: Missing CSV for… (+6 more failures; 0/7 checks passed)
+  (details: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b02_with_skill/data-to-d3__fe33c2bb/verifier)
+Outcomes: 6 scored (2 passed, 4 failed), 0 unscored, 6 errored
+  1 errored: the task's image did not build: environment/Dockerfile:25 `PY` exited with code 1 (import pkg_resources; ModuleNotFoundError: No module named 'pkg_resources') (task problem): earthquake-phase-association
+      next: fix that line in the task's environment/Dockerfile; `docker build '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/vendor/skillsbench/tasks/earthquake-phase-association'/environment` prints the whole build log
+  1 errored: the task's image did not build: environment/Dockerfile:41 ` --extra-index-url https://download.pytorch.org/whl/cpu` exited with code 1 (ERROR: Could not find a version that satisfies the re... (task problem): multilingual-video-dubbing
+      next: fix that line in the task's environment/Dockerfile; `docker build '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/vendor/skillsbench/tasks/multilingual-video-dubbing'/environment` prints the whole build log
+  2 errored: the sandbox did not start: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su and pkexec) and other nonstandard privileged helpers from the image, or set allow_... (infrastructure problem): organize-messy-files, reserves-at-risk-calc
+      next: `bench doctor`; error in result.json has the whole message
+  1 errored: the agent reported an error (agent problem): pddl-tpp-planning
+      next: the agent's log (agent/<agent>.txt in the trial folder) has its side
+  1 errored: other error: RuntimeError: experiment_fidelity/skill_deployment_missing: expected=xlsx; ex... (infrastructure problem): weighted-gdp-calc
+      next: the trial's result.json and the run's log have the details
+  `bench explain image_build` says more (also sandbox_setup, R205, ...)
+Cost:      $1.82, 9,068,013 tokens (6 of 12 trials reported no cost)
+Time:      2h 8m
+Artifacts: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b02_with_skill
+Summary:   /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b02_with_skill/summary.json
+View:      bench view '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/b02_with_skill'
+Matrix summary: /Users/ndingari/Dropbox/Dingari 
+Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/matrix-summary.json
+Matrix: 3 trial job(s), 6/36 trials passed, errors=18 verifier-errors=0

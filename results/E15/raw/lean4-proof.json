@@ -1,0 +1,2114 @@
+{
+  "multi_skill": true,
+  "skill_count": 2,
+  "max_risk_score": 47,
+  "risk_severity": "MEDIUM",
+  "execution_successful": true,
+  "risk_recommendation": "CAUTION",
+  "analysis_completeness": {
+    "is_complete": true,
+    "execution_successful": true,
+    "status": "complete",
+    "coverage_percent": 100.0,
+    "fully_inspected_files": 2,
+    "partially_inspected_files": 0,
+    "entirely_uninspected_files": 0,
+    "total_files": 2,
+    "limitations": [],
+    "scope": "recursive_skills"
+  },
+  "skills_scanned": 2,
+  "skills_omitted": 0,
+  "skills_output_omitted": 0,
+  "public_finding_records": 15,
+  "report_characters": 65430,
+  "transitive_finding_count": 0,
+  "transitive_sources": [],
+  "skills": [
+    {
+      "name": "lean4-memories",
+      "path": "lean4-memories",
+      "risk_score": 47,
+      "risk_severity": "MEDIUM",
+      "finding_count": 4,
+      "execution_successful": true,
+      "transitive_finding_count": 0,
+      "transitive_sources": [],
+      "skill": {
+        "name": "lean4-memories",
+        "source": "/private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/e15_clean_qax5uau_/tasks/lean4-proof/environment/skills/lean4-memories",
+        "scanned_at": "2026-11-16T18:16:39.279175+00:00"
+      },
+      "risk_assessment": {
+        "score": 47,
+        "severity": "MEDIUM",
+        "recommendation": "CAUTION",
+        "max_issue_severity": "HIGH"
+      },
+      "components": [
+        {
+          "path": "SKILL.md",
+          "type": "markdown",
+          "lines": 443,
+          "executable": false,
+          "size_bytes": 12785,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/memory-patterns.md",
+          "type": "markdown",
+          "lines": 602,
+          "executable": false,
+          "size_bytes": 17498,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "scripts/memory_helper.py",
+          "type": "python",
+          "lines": 315,
+          "executable": true,
+          "size_bytes": 11978,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        }
+      ],
+      "structured_summaries": [],
+      "issues": [
+        {
+          "id": "AR2",
+          "finding_id": "finding-12b8046d0afb4dafb38084a3155d8203",
+          "category": "Anti-Refusal",
+          "pattern": "Anti-Refusal Statement",
+          "severity": "HIGH",
+          "confidence": 0.8,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 93,
+            "end_line": 93,
+            "start_column": 33,
+            "end_column": 44
+          },
+          "finding": "no warnings",
+          "explanation": "Skill instructs the agent to omit warnings, disclaimers, or ethical commentary. Stripping safety caveats hides risk from the user and is a common jailbreak preamble.",
+          "remediation": "Remove instructions that suppress warnings, disclaimers, or ethical commentary. Let the agent surface safety-relevant caveats to the user.",
+          "code_snippet": "- Confidence: high (proof clean, no warnings)",
+          "intent": null,
+          "tags": [
+            "Anti-Refusal",
+            "contextual-triage",
+            "likely-benign-context"
+          ],
+          "evidence": {},
+          "match_fingerprint": "6c8054857f33a9ba7845d7c88384ccfa0cdb75d2cd98c594df12b25a3c301d9c",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 93,
+              "end_line": 93,
+              "start_column": 33,
+              "end_column": 44
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AR2",
+          "finding_id": "finding-c19f3841c4c24edcac92f8d140d8eee1",
+          "category": "Anti-Refusal",
+          "pattern": "Anti-Refusal Statement",
+          "severity": "HIGH",
+          "confidence": 0.8,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 300,
+            "end_line": 300,
+            "start_column": 36,
+            "end_column": 47
+          },
+          "finding": "no warnings",
+          "explanation": "Skill instructs the agent to omit warnings, disclaimers, or ethical commentary. Stripping safety caveats hides risk from the user and is a common jailbreak preamble.",
+          "remediation": "Remove instructions that suppress warnings, disclaimers, or ethical commentary. Let the agent surface safety-relevant caveats to the user.",
+          "code_snippet": "### Memory Hygiene\n\n**Confidence scoring:**\n- **High (0.8-1.0)** - Clean proof, no warnings, well-tested\n- **Medium (0.5-0.8)** - Works but has minor issues\n- **Low (0.0-0.5)** - Hacky solution, needs refinement\n",
+          "intent": null,
+          "tags": [
+            "Anti-Refusal"
+          ],
+          "evidence": {},
+          "match_fingerprint": "6c8054857f33a9ba7845d7c88384ccfa0cdb75d2cd98c594df12b25a3c301d9c",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 300,
+              "end_line": 300,
+              "start_column": 36,
+              "end_column": 47
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AR2",
+          "finding_id": "finding-b97e4146e7d74402a63e16567bc04e91",
+          "category": "Anti-Refusal",
+          "pattern": "Anti-Refusal Statement",
+          "severity": "HIGH",
+          "confidence": 0.8,
+          "location": {
+            "file": "references/memory-patterns.md",
+            "start_line": 589,
+            "end_line": 589,
+            "start_column": 28,
+            "end_column": 39
+          },
+          "finding": "no warnings",
+          "explanation": "Skill instructs the agent to omit warnings, disclaimers, or ethical commentary. Stripping safety caveats hides risk from the user and is a common jailbreak preamble.",
+          "remediation": "Remove instructions that suppress warnings, disclaimers, or ethical commentary. Let the agent surface safety-relevant caveats to the user.",
+          "code_snippet": "\n### Confidence Scoring Guidelines\n\n- **0.9-1.0:** Clean proof, no warnings, used successfully multiple times\n- **0.7-0.9:** Works well, minor issues or single use\n- **0.5-0.7:** Works but has problems, needs refinement\n- **0.3-0.5:** Hacky solution, use only if nothing else works",
+          "intent": null,
+          "tags": [
+            "Anti-Refusal"
+          ],
+          "evidence": {},
+          "match_fingerprint": "6c8054857f33a9ba7845d7c88384ccfa0cdb75d2cd98c594df12b25a3c301d9c",
+          "occurrences": [
+            {
+              "file": "references/memory-patterns.md",
+              "start_line": 589,
+              "end_line": 589,
+              "start_column": 28,
+              "end_column": 39
+            }
+          ],
+          "surface": "docs"
+        },
+        {
+          "id": "AE4",
+          "finding_id": "finding-6dfae362970547a9a9f5d2902789634e",
+          "category": "analysis-evasion",
+          "pattern": null,
+          "severity": "MEDIUM",
+          "confidence": 0.8,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 1,
+            "end_line": null
+          },
+          "finding": null,
+          "explanation": "Suspicious Unicode normalization or mixed-script content",
+          "remediation": "Review the flagged content for security risks. Ensure no credentials, secrets, or sensitive data are exposed.",
+          "code_snippet": null,
+          "intent": null,
+          "tags": [
+            "artifact-integrity"
+          ],
+          "evidence": {},
+          "match_fingerprint": null,
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 1,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE4",
+          "finding_id": "finding-7adb07bcf93c43499a363a1ef7d95cc4",
+          "category": "analysis-evasion",
+          "pattern": null,
+          "severity": "MEDIUM",
+          "confidence": 0.8,
+          "location": {
+            "file": "references/memory-patterns.md",
+            "start_line": 1,
+            "end_line": null
+          },
+          "finding": null,
+          "explanation": "Suspicious Unicode normalization or mixed-script content",
+          "remediation": "Review the flagged content for security risks. Ensure no credentials, secrets, or sensitive data are exposed.",
+          "code_snippet": null,
+          "intent": null,
+          "tags": [
+            "artifact-integrity"
+          ],
+          "evidence": {},
+          "match_fingerprint": null,
+          "occurrences": [
+            {
+              "file": "references/memory-patterns.md",
+              "start_line": 1,
+              "end_line": null
+            }
+          ],
+          "surface": "docs"
+        }
+      ],
+      "suppressed_count": 0,
+      "suppressed": [],
+      "metadata": {
+        "has_executable_scripts": true,
+        "skillspector_version": "2.12.0",
+        "llm_requested": false,
+        "llm_available": false,
+        "meta_analysis_applied": false,
+        "inference_usage": [],
+        "llm_provenance": {
+          "schema_version": 1,
+          "provider": {
+            "configured_adapter": "unknown",
+            "resolved_adapter": "unknown",
+            "effective_adapter": "not_applicable",
+            "effective_adapters": [],
+            "service": "unknown",
+            "routing": {
+              "deployment_override": null,
+              "deployment_source": "unknown",
+              "api_version": null,
+              "api_version_source": "unknown"
+            }
+          },
+          "analyzers": [
+            {
+              "analyzer_id": "mcp_tool_poisoning",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            },
+            {
+              "analyzer_id": "semantic_developer_intent",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            },
+            {
+              "analyzer_id": "semantic_quality_policy",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            },
+            {
+              "analyzer_id": "semantic_security_discovery",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            },
+            {
+              "analyzer_id": "meta_analyzer",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            }
+          ],
+          "sampling": {
+            "temperature": {
+              "requested": null,
+              "source": "provider_default",
+              "forwarded_to_client": null,
+              "adapter_support": false,
+              "provider_support": "unknown"
+            },
+            "seed": {
+              "requested": null,
+              "source": "unset",
+              "forwarded_to_client": null,
+              "adapter_support": false,
+              "provider_support": "unknown"
+            },
+            "reasoning_effort": {
+              "requested": null,
+              "source": "provider_default",
+              "forwarded_to_client": null,
+              "adapter_support": false,
+              "provider_support": "unknown"
+            }
+          },
+          "determinism": {
+            "classification": "not_applicable",
+            "control_status": "not_applied",
+            "provider_guarantee": false,
+            "reason": "LLM analysis was not executed for this scan."
+          }
+        },
+        "filtering_mode": "heuristic"
+      },
+      "analysis_completeness": {
+        "total_components": 3,
+        "scanned_components": 3,
+        "coverage_percent": 100.0,
+        "is_complete": true,
+        "status": "complete_with_caveats",
+        "execution_successful": true,
+        "fully_inspected_files": 3,
+        "partially_inspected_files": 0,
+        "entirely_uninspected_files": 0,
+        "ledger_exceptions": [
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 117,
+            "end_line": 117,
+            "fatal": false
+          }
+        ],
+        "scope_exclusions": [],
+        "analyzer_statuses": [
+          {
+            "analyzer_id": "artifact_integrity",
+            "status": "completed",
+            "planned_work": 3,
+            "completed": 3,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "behavioral_ast",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "behavioral_taint_tracking",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "bundled_execution_surface",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "mcp_least_privilege",
+            "status": "completed",
+            "planned_work": 2,
+            "completed": 2,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "mcp_rug_pull",
+            "status": "completed",
+            "planned_work": 3,
+            "completed": 3,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "mcp_tool_poisoning",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "meta_analyzer",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "semantic_developer_intent",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "semantic_quality_policy",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "semantic_security_discovery",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "static_patterns_agent_snooping",
+            "status": "completed",
+            "planned_work": 3,
+            "completed": 3,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_anti_refusal",
+            "status": "completed",
+            "planned_work": 3,
+            "completed": 3,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_data_exfiltration",
+            "status": "completed",
+            "planned_work": 3,
+            "completed": 3,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_deserialization",
+            "status": "completed",
+            "planned_work": 3,
+            "completed": 3,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_excessive_agency",
+            "status": "completed",
+            "planned_work": 3,
+            "completed": 3,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_harmful_content",
+            "status": "completed",
+            "planned_work": 3,
+            "completed": 3,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_memory_poisoning",
+            "status": "completed",
+            "planned_work": 3,
+            "completed": 3,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_output_handling",
+            "status": "completed",
+            "planned_work": 3,
+            "completed": 3,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_privilege_escalation",
+            "status": "completed",
+            "planned_work": 3,
+            "completed": 3,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_prompt_injection",
+            "status": "completed",
+            "planned_work": 3,
+            "completed": 3,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_rogue_agent",
+            "status": "completed",
+            "planned_work": 3,
+            "completed": 3,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_ssrf",
+            "status": "completed",
+            "planned_work": 3,
+            "completed": 3,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_supply_chain",
+            "status": "completed",
+            "planned_work": 3,
+            "completed": 3,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_system_prompt_leakage",
+            "status": "completed",
+            "planned_work": 3,
+            "completed": 3,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_tool_misuse",
+            "status": "completed",
+            "planned_work": 3,
+            "completed": 3,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_yara",
+            "status": "completed",
+            "planned_work": 3,
+            "completed": 3,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          }
+        ],
+        "references": [
+          {
+            "source_path": "SKILL.md",
+            "line": 117,
+            "column": 10,
+            "evidence": "- Files: DeFinetti/ViaL2.lean, Core.lean, Contractability.lean",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 443,
+            "column": 5,
+            "evidence": "- **references/memory-patterns.md** - Detailed memory operation examples",
+            "target_path": "references/memory-patterns.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          }
+        ],
+        "limitations": [],
+        "findings_before_filtering": 5,
+        "findings_after_filtering": 5,
+        "dependency_inspection": {
+          "enabled": false,
+          "status": "not_requested",
+          "mode": "static_local",
+          "locked_entries": 0,
+          "inspected_artifacts": 0,
+          "artifacts": []
+        }
+      }
+    },
+    {
+      "name": "lean4-theorem-proving",
+      "path": "lean4-theorem-proving",
+      "risk_score": 25,
+      "risk_severity": "MEDIUM",
+      "finding_count": 9,
+      "execution_successful": true,
+      "transitive_finding_count": 0,
+      "transitive_sources": [],
+      "skill": {
+        "name": "lean4-theorem-proving",
+        "source": "/private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/e15_clean_qax5uau_/tasks/lean4-proof/environment/skills/lean4-theorem-proving",
+        "scanned_at": "2026-11-16T18:16:55.308998+00:00"
+      },
+      "risk_assessment": {
+        "score": 25,
+        "severity": "MEDIUM",
+        "recommendation": "CAUTION",
+        "max_issue_severity": "MEDIUM"
+      },
+      "components": [
+        {
+          "path": "SKILL.md",
+          "type": "markdown",
+          "lines": 155,
+          "executable": false,
+          "size_bytes": 9006,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/axiom-elimination.md",
+          "type": "markdown",
+          "lines": 252,
+          "executable": false,
+          "size_bytes": 6011,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/calc-patterns.md",
+          "type": "markdown",
+          "lines": 246,
+          "executable": false,
+          "size_bytes": 8865,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/compilation-errors.md",
+          "type": "markdown",
+          "lines": 695,
+          "executable": false,
+          "size_bytes": 20585,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/compiler-guided-repair.md",
+          "type": "markdown",
+          "lines": 717,
+          "executable": false,
+          "size_bytes": 18713,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/domain-patterns.md",
+          "type": "markdown",
+          "lines": 751,
+          "executable": false,
+          "size_bytes": 25461,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/instance-pollution.md",
+          "type": "markdown",
+          "lines": 423,
+          "executable": false,
+          "size_bytes": 16176,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/lean-lsp-server.md",
+          "type": "markdown",
+          "lines": 277,
+          "executable": false,
+          "size_bytes": 9155,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/lean-lsp-tools-api.md",
+          "type": "markdown",
+          "lines": 868,
+          "executable": false,
+          "size_bytes": 25937,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/lean-phrasebook.md",
+          "type": "markdown",
+          "lines": 847,
+          "executable": false,
+          "size_bytes": 17026,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/mathlib-guide.md",
+          "type": "markdown",
+          "lines": 491,
+          "executable": false,
+          "size_bytes": 13881,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/mathlib-style.md",
+          "type": "markdown",
+          "lines": 360,
+          "executable": false,
+          "size_bytes": 8709,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/measure-theory.md",
+          "type": "markdown",
+          "lines": 799,
+          "executable": false,
+          "size_bytes": 28139,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/performance-optimization.md",
+          "type": "markdown",
+          "lines": 498,
+          "executable": false,
+          "size_bytes": 16706,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/proof-golfing-patterns.md",
+          "type": "markdown",
+          "lines": 469,
+          "executable": false,
+          "size_bytes": 11462,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/proof-golfing-safety.md",
+          "type": "markdown",
+          "lines": 241,
+          "executable": false,
+          "size_bytes": 5934,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/proof-golfing.md",
+          "type": "markdown",
+          "lines": 69,
+          "executable": false,
+          "size_bytes": 3646,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/proof-refactoring.md",
+          "type": "markdown",
+          "lines": 880,
+          "executable": false,
+          "size_bytes": 28903,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/sorry-filling.md",
+          "type": "markdown",
+          "lines": 192,
+          "executable": false,
+          "size_bytes": 4875,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/subagent-workflows.md",
+          "type": "markdown",
+          "lines": 578,
+          "executable": false,
+          "size_bytes": 18179,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/tactics-reference.md",
+          "type": "markdown",
+          "lines": 618,
+          "executable": false,
+          "size_bytes": 16421,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        }
+      ],
+      "structured_summaries": [],
+      "issues": [
+        {
+          "id": "AE4",
+          "finding_id": "finding-c91100b0599342ec84a5979de4e3e63f",
+          "category": "analysis-evasion",
+          "pattern": null,
+          "severity": "MEDIUM",
+          "confidence": 0.8,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 1,
+            "end_line": null
+          },
+          "finding": null,
+          "explanation": "Suspicious Unicode normalization or mixed-script content",
+          "remediation": "Review the flagged content for security risks. Ensure no credentials, secrets, or sensitive data are exposed.",
+          "code_snippet": null,
+          "intent": null,
+          "tags": [
+            "artifact-integrity"
+          ],
+          "evidence": {},
+          "match_fingerprint": null,
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 1,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE4",
+          "finding_id": "finding-8ba6b4abbe1941d6b20f8569af9af244",
+          "category": "analysis-evasion",
+          "pattern": null,
+          "severity": "MEDIUM",
+          "confidence": 0.8,
+          "location": {
+            "file": "references/compilation-errors.md",
+            "start_line": 1,
+            "end_line": null
+          },
+          "finding": null,
+          "explanation": "Suspicious Unicode normalization or mixed-script content",
+          "remediation": "Review the flagged content for security risks. Ensure no credentials, secrets, or sensitive data are exposed.",
+          "code_snippet": null,
+          "intent": null,
+          "tags": [
+            "artifact-integrity"
+          ],
+          "evidence": {},
+          "match_fingerprint": null,
+          "occurrences": [
+            {
+              "file": "references/compilation-errors.md",
+              "start_line": 1,
+              "end_line": null
+            }
+          ],
+          "surface": "docs"
+        },
+        {
+          "id": "AE4",
+          "finding_id": "finding-ac54b2e753034f9997105065ebf3fa95",
+          "category": "analysis-evasion",
+          "pattern": null,
+          "severity": "MEDIUM",
+          "confidence": 0.8,
+          "location": {
+            "file": "references/domain-patterns.md",
+            "start_line": 1,
+            "end_line": null
+          },
+          "finding": null,
+          "explanation": "Suspicious Unicode normalization or mixed-script content",
+          "remediation": "Review the flagged content for security risks. Ensure no credentials, secrets, or sensitive data are exposed.",
+          "code_snippet": null,
+          "intent": null,
+          "tags": [
+            "artifact-integrity"
+          ],
+          "evidence": {},
+          "match_fingerprint": null,
+          "occurrences": [
+            {
+              "file": "references/domain-patterns.md",
+              "start_line": 1,
+              "end_line": null
+            }
+          ],
+          "surface": "docs"
+        },
+        {
+          "id": "AE4",
+          "finding_id": "finding-f06a916c583040b6bb3760e7fd50b862",
+          "category": "analysis-evasion",
+          "pattern": null,
+          "severity": "MEDIUM",
+          "confidence": 0.8,
+          "location": {
+            "file": "references/instance-pollution.md",
+            "start_line": 1,
+            "end_line": null
+          },
+          "finding": null,
+          "explanation": "Suspicious Unicode normalization or mixed-script content",
+          "remediation": "Review the flagged content for security risks. Ensure no credentials, secrets, or sensitive data are exposed.",
+          "code_snippet": null,
+          "intent": null,
+          "tags": [
+            "artifact-integrity"
+          ],
+          "evidence": {},
+          "match_fingerprint": null,
+          "occurrences": [
+            {
+              "file": "references/instance-pollution.md",
+              "start_line": 1,
+              "end_line": null
+            }
+          ],
+          "surface": "docs"
+        },
+        {
+          "id": "EA2",
+          "finding_id": "finding-e6d3e69d28214989a7c48a32cf0c9893",
+          "category": "Excessive Agency",
+          "pattern": "Autonomous Decision Making",
+          "severity": "MEDIUM",
+          "confidence": 0.75,
+          "location": {
+            "file": "references/lean-lsp-server.md",
+            "start_line": 51,
+            "end_line": null,
+            "start_column": 16
+          },
+          "finding": "without checking",
+          "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+          "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+          "code_snippet": "\n## Critical Rules\n\n1. **NEVER edit without checking goal state first** (`lean_goal`)\n2. **ALWAYS check diagnostics after edits** (don't wait for build)\n3. **Search before guessing** - use `lean_local_search` FIRST (fast & unlimited!)\n4. **Check goals between tactics** - see intermediate progress",
+          "intent": null,
+          "tags": [
+            "Excessive Agency"
+          ],
+          "evidence": {},
+          "match_fingerprint": "9341b6f34d6af9081a0d6673f4217b7307d273da9f43357efd9029e15c5da76c",
+          "occurrences": [
+            {
+              "file": "references/lean-lsp-server.md",
+              "start_line": 51,
+              "end_line": null,
+              "start_column": 16
+            }
+          ],
+          "surface": "docs"
+        },
+        {
+          "id": "EA2",
+          "finding_id": "finding-c2ae97b4d5754f678e1db430bf034818",
+          "category": "Excessive Agency",
+          "pattern": "Autonomous Decision Making",
+          "severity": "MEDIUM",
+          "confidence": 0.75,
+          "location": {
+            "file": "references/lean-lsp-server.md",
+            "start_line": 213,
+            "end_line": null,
+            "start_column": 22
+          },
+          "finding": "without checking",
+          "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+          "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+          "code_snippet": "\u274c **DON'T:**\n- Edit \u2192 build \u2192 see error (too slow!)\n- Guess lemma names without searching\n- Apply tactics blind without checking goal\n- Use rate-limited search when `lean_local_search` works\n- Skip intermediate goal checks in multi-step proofs\n",
+          "intent": null,
+          "tags": [
+            "Excessive Agency"
+          ],
+          "evidence": {},
+          "match_fingerprint": "9341b6f34d6af9081a0d6673f4217b7307d273da9f43357efd9029e15c5da76c",
+          "occurrences": [
+            {
+              "file": "references/lean-lsp-server.md",
+              "start_line": 213,
+              "end_line": null,
+              "start_column": 22
+            }
+          ],
+          "surface": "docs"
+        },
+        {
+          "id": "AE4",
+          "finding_id": "finding-bda35644b9104412a7258c81397df116",
+          "category": "analysis-evasion",
+          "pattern": null,
+          "severity": "MEDIUM",
+          "confidence": 0.8,
+          "location": {
+            "file": "references/measure-theory.md",
+            "start_line": 1,
+            "end_line": null
+          },
+          "finding": null,
+          "explanation": "Suspicious Unicode normalization or mixed-script content",
+          "remediation": "Review the flagged content for security risks. Ensure no credentials, secrets, or sensitive data are exposed.",
+          "code_snippet": null,
+          "intent": null,
+          "tags": [
+            "artifact-integrity"
+          ],
+          "evidence": {},
+          "match_fingerprint": null,
+          "occurrences": [
+            {
+              "file": "references/measure-theory.md",
+              "start_line": 1,
+              "end_line": null
+            }
+          ],
+          "surface": "docs"
+        },
+        {
+          "id": "AE4",
+          "finding_id": "finding-7662eccf50734e00a105bc5d8171f03b",
+          "category": "analysis-evasion",
+          "pattern": null,
+          "severity": "MEDIUM",
+          "confidence": 0.8,
+          "location": {
+            "file": "references/proof-golfing-patterns.md",
+            "start_line": 1,
+            "end_line": null
+          },
+          "finding": null,
+          "explanation": "Suspicious Unicode normalization or mixed-script content",
+          "remediation": "Review the flagged content for security risks. Ensure no credentials, secrets, or sensitive data are exposed.",
+          "code_snippet": null,
+          "intent": null,
+          "tags": [
+            "artifact-integrity"
+          ],
+          "evidence": {},
+          "match_fingerprint": null,
+          "occurrences": [
+            {
+              "file": "references/proof-golfing-patterns.md",
+              "start_line": 1,
+              "end_line": null
+            }
+          ],
+          "surface": "docs"
+        },
+        {
+          "id": "AE4",
+          "finding_id": "finding-0ddba43c2dc8441599435ec55fe65b3b",
+          "category": "analysis-evasion",
+          "pattern": null,
+          "severity": "MEDIUM",
+          "confidence": 0.8,
+          "location": {
+            "file": "references/proof-golfing-safety.md",
+            "start_line": 1,
+            "end_line": null
+          },
+          "finding": null,
+          "explanation": "Suspicious Unicode normalization or mixed-script content",
+          "remediation": "Review the flagged content for security risks. Ensure no credentials, secrets, or sensitive data are exposed.",
+          "code_snippet": null,
+          "intent": null,
+          "tags": [
+            "artifact-integrity"
+          ],
+          "evidence": {},
+          "match_fingerprint": null,
+          "occurrences": [
+            {
+              "file": "references/proof-golfing-safety.md",
+              "start_line": 1,
+              "end_line": null
+            }
+          ],
+          "surface": "docs"
+        },
+        {
+          "id": "AE4",
+          "finding_id": "finding-50f563e4cd624a5d9e56569067e70d2b",
+          "category": "analysis-evasion",
+          "pattern": null,
+          "severity": "MEDIUM",
+          "confidence": 0.8,
+          "location": {
+            "file": "references/proof-refactoring.md",
+            "start_line": 1,
+            "end_line": null
+          },
+          "finding": null,
+          "explanation": "Suspicious Unicode normalization or mixed-script content",
+          "remediation": "Review the flagged content for security risks. Ensure no credentials, secrets, or sensitive data are exposed.",
+          "code_snippet": null,
+          "intent": null,
+          "tags": [
+            "artifact-integrity"
+          ],
+          "evidence": {},
+          "match_fingerprint": null,
+          "occurrences": [
+            {
+              "file": "references/proof-refactoring.md",
+              "start_line": 1,
+              "end_line": null
+            }
+          ],
+          "surface": "docs"
+        }
+      ],
+      "suppressed_count": 0,
+      "suppressed": [],
+      "metadata": {
+        "has_executable_scripts": false,
+        "skillspector_version": "2.12.0",
+        "llm_requested": false,
+        "llm_available": false,
+        "meta_analysis_applied": false,
+        "inference_usage": [],
+        "llm_provenance": {
+          "schema_version": 1,
+          "provider": {
+            "configured_adapter": "unknown",
+            "resolved_adapter": "unknown",
+            "effective_adapter": "not_applicable",
+            "effective_adapters": [],
+            "service": "unknown",
+            "routing": {
+              "deployment_override": null,
+              "deployment_source": "unknown",
+              "api_version": null,
+              "api_version_source": "unknown"
+            }
+          },
+          "analyzers": [
+            {
+              "analyzer_id": "mcp_tool_poisoning",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            },
+            {
+              "analyzer_id": "semantic_developer_intent",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            },
+            {
+              "analyzer_id": "semantic_quality_policy",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            },
+            {
+              "analyzer_id": "semantic_security_discovery",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            },
+            {
+              "analyzer_id": "meta_analyzer",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            }
+          ],
+          "sampling": {
+            "temperature": {
+              "requested": null,
+              "source": "provider_default",
+              "forwarded_to_client": null,
+              "adapter_support": false,
+              "provider_support": "unknown"
+            },
+            "seed": {
+              "requested": null,
+              "source": "unset",
+              "forwarded_to_client": null,
+              "adapter_support": false,
+              "provider_support": "unknown"
+            },
+            "reasoning_effort": {
+              "requested": null,
+              "source": "provider_default",
+              "forwarded_to_client": null,
+              "adapter_support": false,
+              "provider_support": "unknown"
+            }
+          },
+          "determinism": {
+            "classification": "not_applicable",
+            "control_status": "not_applied",
+            "provider_guarantee": false,
+            "reason": "LLM analysis was not executed for this scan."
+          }
+        },
+        "filtering_mode": "heuristic"
+      },
+      "analysis_completeness": {
+        "total_components": 21,
+        "scanned_components": 21,
+        "coverage_percent": 100.0,
+        "is_complete": true,
+        "status": "complete_with_caveats",
+        "execution_successful": true,
+        "fully_inspected_files": 21,
+        "partially_inspected_files": 0,
+        "entirely_uninspected_files": 0,
+        "ledger_exceptions": [
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 19,
+            "end_line": 19,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 34,
+            "end_line": 34,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 73,
+            "end_line": 73,
+            "fatal": false
+          }
+        ],
+        "scope_exclusions": [],
+        "analyzer_statuses": [
+          {
+            "analyzer_id": "artifact_integrity",
+            "status": "completed",
+            "planned_work": 21,
+            "completed": 21,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "behavioral_ast",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "behavioral_taint_tracking",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "bundled_execution_surface",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "mcp_least_privilege",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "mcp_rug_pull",
+            "status": "completed",
+            "planned_work": 21,
+            "completed": 21,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "mcp_tool_poisoning",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "meta_analyzer",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "semantic_developer_intent",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "semantic_quality_policy",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "semantic_security_discovery",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "static_patterns_agent_snooping",
+            "status": "completed",
+            "planned_work": 21,
+            "completed": 21,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_anti_refusal",
+            "status": "completed",
+            "planned_work": 21,
+            "completed": 21,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_data_exfiltration",
+            "status": "completed",
+            "planned_work": 21,
+            "completed": 21,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_deserialization",
+            "status": "completed",
+            "planned_work": 21,
+            "completed": 21,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_excessive_agency",
+            "status": "completed",
+            "planned_work": 21,
+            "completed": 21,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_harmful_content",
+            "status": "completed",
+            "planned_work": 21,
+            "completed": 21,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_memory_poisoning",
+            "status": "completed",
+            "planned_work": 21,
+            "completed": 21,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_output_handling",
+            "status": "completed",
+            "planned_work": 21,
+            "completed": 21,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_privilege_escalation",
+            "status": "completed",
+            "planned_work": 21,
+            "completed": 21,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_prompt_injection",
+            "status": "completed",
+            "planned_work": 21,
+            "completed": 21,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_rogue_agent",
+            "status": "completed",
+            "planned_work": 21,
+            "completed": 21,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_ssrf",
+            "status": "completed",
+            "planned_work": 21,
+            "completed": 21,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_supply_chain",
+            "status": "completed",
+            "planned_work": 21,
+            "completed": 21,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_system_prompt_leakage",
+            "status": "completed",
+            "planned_work": 21,
+            "completed": 21,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_tool_misuse",
+            "status": "completed",
+            "planned_work": 21,
+            "completed": 21,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_yara",
+            "status": "completed",
+            "planned_work": 21,
+            "completed": 21,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          }
+        ],
+        "references": [
+          {
+            "source_path": "SKILL.md",
+            "line": 18,
+            "column": 135,
+            "evidence": "| **Interactive Commands** | 10 slash commands for search, analysis, optimization, repair | Type `/lean` in Claude Code ([full guide](../../COMMANDS.md)) |",
+            "target_path": null,
+            "status": "rejected",
+            "disposition": "out_of_scope",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 19,
+            "column": 134,
+            "evidence": "| **Automation Scripts** | 19 tools for search, verification, refactoring, repair | Plugin `scripts/` directory ([scripts/README.md](../../scripts/README.md)) |",
+            "target_path": null,
+            "status": "rejected",
+            "disposition": "out_of_scope",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 19,
+            "column": 115,
+            "evidence": "| **Automation Scripts** | 19 tools for search, verification, refactoring, repair | Plugin `scripts/` directory ([scripts/README.md](../../scripts/README.md)) |",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 20,
+            "column": 93,
+            "evidence": "| **Subagents** | 4 specialized agents for batch tasks (optional) | [subagent-workflows.md](references/subagent-workflows.md) |",
+            "target_path": "references/subagent-workflows.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 21,
+            "column": 99,
+            "evidence": "| **LSP Server** | 30x faster feedback with instant proof state (optional) | [lean-lsp-server.md](references/lean-lsp-server.md) |",
+            "target_path": "references/lean-lsp-server.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 22,
+            "column": 120,
+            "evidence": "| **Reference Files** | 18 detailed guides (phrasebook, tactics, patterns, errors, repair, performance) | [List below](#reference-files) |",
+            "target_path": null,
+            "status": "rejected",
+            "disposition": "out_of_scope",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 32,
+            "column": 110,
+            "evidence": "ch, analysis, and optimization - type `/lean` in Claude Code. See [COMMANDS.md](../../COMMANDS.md) for full guide with examples and workflows.",
+            "target_path": null,
+            "status": "rejected",
+            "disposition": "out_of_scope",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 34,
+            "column": 94,
+            "evidence": "**16 automation scripts** for search, verification, and refactoring. See [scripts/README.md](../../scripts/README.md) for complete documentation.",
+            "target_path": null,
+            "status": "rejected",
+            "disposition": "out_of_scope",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 34,
+            "column": 75,
+            "evidence": "**16 automation scripts** for search, verification, and refactoring. See [scripts/README.md](../../scripts/README.md) for complete documentation.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 36,
+            "column": 140,
+            "evidence": " with instant proof state and parallel tactic testing. See [lean-lsp-server.md](references/lean-lsp-server.md) for setup and workflows.",
+            "target_path": "references/lean-lsp-server.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 38,
+            "column": 109,
+            "evidence": "**Subagent delegation** (optional, Claude Code users) enables batch automation. See [subagent-workflows.md](references/subagent-workflows.md) for patterns.",
+            "target_path": "references/subagent-workflows.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 55,
+            "column": 109,
+            "evidence": "command, LSP server search tools, or automation scripts. See [mathlib-guide.md](references/mathlib-guide.md) for detailed search techniques, naming conventions,",
+            "target_path": "references/mathlib-guide.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 59,
+            "column": 130,
+            "evidence": "ct`, `refine`, `by_cases`, `rcases`, `ext`/`funext`. See [tactics-reference.md](references/tactics-reference.md) for comprehensive guide with examples and decis",
+            "target_path": "references/tactics-reference.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 67,
+            "column": 182,
+            "evidence": ".e. properties. Tactics: `measurability`, `positivity`. See [measure-theory.md](references/measure-theory.md) for detailed patterns.",
+            "target_path": "references/measure-theory.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 69,
+            "column": 49,
+            "evidence": "**Complete domain guide:** [domain-patterns.md](references/domain-patterns.md)",
+            "target_path": "references/domain-patterns.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 73,
+            "column": 44,
+            "evidence": "**Standard mathlib axioms (acceptable):** `Classical.choice`, `propext`, `quot.sound`. Check with `#print axioms theorem_name` or `/check-axioms`.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 73,
+            "column": 75,
+            "evidence": "**Standard mathlib axioms (acceptable):** `Classical.choice`, `propext`, `quot.sound`. Check with `#print axioms theorem_name` or `/check-axioms`.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 110,
+            "column": 49,
+            "evidence": "**Detailed guide:** [compiler-guided-repair.md](references/compiler-guided-repair.md)",
+            "target_path": "references/compiler-guided-repair.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 123,
+            "column": 29,
+            "evidence": "See [compilation-errors.md](references/compilation-errors.md) for detailed debugging workflows.",
+            "target_path": "references/compilation-errors.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 143,
+            "column": 229,
+            "evidence": "e` blocks (>30 lines should be extracted as lemmas - see [proof-refactoring.md](references/proof-refactoring.md)).",
+            "target_path": "references/proof-refactoring.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 147,
+            "column": 43,
+            "evidence": "**Core references:** [lean-phrasebook.md](references/lean-phrasebook.md), [mathlib-guide.md](references/mathlib-guide.md), [tactics-reference.md](references/tac",
+            "target_path": "references/lean-phrasebook.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 147,
+            "column": 94,
+            "evidence": "nces:** [lean-phrasebook.md](references/lean-phrasebook.md), [mathlib-guide.md](references/mathlib-guide.md), [tactics-reference.md](references/tactics-referenc",
+            "target_path": "references/mathlib-guide.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 147,
+            "column": 147,
+            "evidence": "ok.md), [mathlib-guide.md](references/mathlib-guide.md), [tactics-reference.md](references/tactics-reference.md), [compilation-errors.md](references/compilation",
+            "target_path": "references/tactics-reference.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 147,
+            "column": 205,
+            "evidence": "tactics-reference.md](references/tactics-reference.md), [compilation-errors.md](references/compilation-errors.md)",
+            "target_path": "references/compilation-errors.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 149,
+            "column": 43,
+            "evidence": "**Domain-specific:** [domain-patterns.md](references/domain-patterns.md), [measure-theory.md](references/measure-theory.md), [instance-pollution.md](references/",
+            "target_path": "references/domain-patterns.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 149,
+            "column": 95,
+            "evidence": "fic:** [domain-patterns.md](references/domain-patterns.md), [measure-theory.md](references/measure-theory.md), [instance-pollution.md](references/instance-pollu",
+            "target_path": "references/measure-theory.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 149,
+            "column": 150,
+            "evidence": "md), [measure-theory.md](references/measure-theory.md), [instance-pollution.md](references/instance-pollution.md), [calc-patterns.md](references/calc-patterns.m",
+            "target_path": "references/instance-pollution.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 149,
+            "column": 204,
+            "evidence": ", [instance-pollution.md](references/instance-pollution.md), [calc-patterns.md](references/calc-patterns.md)",
+            "target_path": "references/calc-patterns.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 151,
+            "column": 43,
+            "evidence": "**Incomplete proofs:** [sorry-filling.md](references/sorry-filling.md), [axiom-elimination.md](references/axiom-elimination.md)",
+            "target_path": "references/sorry-filling.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 151,
+            "column": 96,
+            "evidence": "**Incomplete proofs:** [sorry-filling.md](references/sorry-filling.md), [axiom-elimination.md](references/axiom-elimination.md)",
+            "target_path": "references/axiom-elimination.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 153,
+            "column": 63,
+            "evidence": "**Optimization & refactoring:** [performance-optimization.md](references/performance-optimization.md), [proof-golfing.md](references/proof-golfing.md), [proof-r",
+            "target_path": "references/performance-optimization.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 153,
+            "column": 123,
+            "evidence": "ce-optimization.md](references/performance-optimization.md), [proof-golfing.md](references/proof-golfing.md), [proof-refactoring.md](references/proof-refactorin",
+            "target_path": "references/proof-golfing.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 153,
+            "column": 176,
+            "evidence": "on.md), [proof-golfing.md](references/proof-golfing.md), [proof-refactoring.md](references/proof-refactoring.md), [mathlib-style.md](references/mathlib-style.md",
+            "target_path": "references/proof-refactoring.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 153,
+            "column": 229,
+            "evidence": "d), [proof-refactoring.md](references/proof-refactoring.md), [mathlib-style.md](references/mathlib-style.md)",
+            "target_path": "references/mathlib-style.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 155,
+            "column": 45,
+            "evidence": "**Automation:** [compiler-guided-repair.md](references/compiler-guided-repair.md), [lean-lsp-server.md](references/lean-lsp-server.md), [lean-lsp-tools-api.md](",
+            "target_path": "references/compiler-guided-repair.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 155,
+            "column": 105,
+            "evidence": "r-guided-repair.md](references/compiler-guided-repair.md), [lean-lsp-server.md](references/lean-lsp-server.md), [lean-lsp-tools-api.md](references/lean-lsp-tool",
+            "target_path": "references/lean-lsp-server.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 155,
+            "column": 161,
+            "evidence": "), [lean-lsp-server.md](references/lean-lsp-server.md), [lean-lsp-tools-api.md](references/lean-lsp-tools-api.md), [subagent-workflows.md](references/subagent-w",
+            "target_path": "references/lean-lsp-tools-api.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 155,
+            "column": 220,
+            "evidence": "an-lsp-tools-api.md](references/lean-lsp-tools-api.md), [subagent-workflows.md](references/subagent-workflows.md)",
+            "target_path": "references/subagent-workflows.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          }
+        ],
+        "limitations": [],
+        "findings_before_filtering": 10,
+        "findings_after_filtering": 10,
+        "dependency_inspection": {
+          "enabled": false,
+          "status": "not_requested",
+          "mode": "static_local",
+          "locked_entries": 0,
+          "inspected_artifacts": 0,
+          "artifacts": []
+        }
+      }
+    }
+  ]
+}

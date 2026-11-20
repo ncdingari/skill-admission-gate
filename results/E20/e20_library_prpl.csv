@@ -1,0 +1,5 @@
+rule,method,fdr,fdr_se,power,mean_n
+prpl,ebh_nmax,0.00159724,0.000452178,0.890369,421.656
+prpl,ebh_suprema,0,0,0.588555,395.12
+prpl,elond,0.000334821,0.000236688,0.801509,369.05
+prpl,stopped_ebh,0.00411383,0.000707792,0.896991,350.827

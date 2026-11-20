@@ -1,0 +1,121 @@
+[3d-scan-calc] ACP connect failed (attempt 1): ACP session_new timed out after 60s before the first prompt
+[crystallographic-wyckoff-position-analysis] Run failed: AgentInstallError: Agent openhands install failed (rc=1) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/sec04_no_skill/crystallographic-wyckoff-position-analysis__cc66028f/error-traceback.txt)
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[suricata-custom-exfil] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/sec04_no_skill/suricata-custom-exfil__b8ef9047/error-traceback.txt)
+[suricata-custom-exfil] Run failed: AgentInstallError: Agent openhands install failed (rc=2) (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/sec04_no_skill/suricata-custom-exfil__299e890c/error-traceback.txt)
+[suricata-custom-exfil] Run failed: RuntimeError: Docker compose command failed for environment suricata-custom-exfil. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-6ccmyqst compose --project-name suricata-custom-exfil__50097901-e095a06c --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/sec04_no_skill/suricata-custom-exfil__50097901/error-traceback.txt)
+[exam-block-sequencing] Agent prompt exceeded wall-clock budget 1500s
+budget reached: 15,851,213 tokens spent of a 15,000,000 cap; stopping: no new rollouts, 0 running trial(s) cancelled
+1 tasks (9%) hit agent wall-clock timeout — error in result.json has the cause (agent_timeout_info has details when set)
+1 tasks (9%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+
+• Score: 3/11 (27.3%), mean reward 0.31 over all 11 trials (unscored as 0), 
+errors=1; scored only: 3/10 (30.0%), mean reward 0.35 (0.7's mean_reward)
+Budget: budget reached: 15,851,213 tokens spent of a 15,000,000 cap; 0 running 
+trial(s) cancelled, 0 not started (not counted as failures; resume the job to 
+run them)
+  ✗ ada-bathroom-plan-repair: reward 0.0 — 
+test_violation_list_is_consistent_with_plan_view_rules… (+1 more failure; 4/6 
+checks passed)
+  ✗ crystallographic-wyckoff-position-analysis: reward 0.45
+  ✗ exam-block-sequencing: reward 0.0 — 
+test_objective_value_is_reported_correctly failed: Missing… (+2 more failures; 
+0/3 checks passed)
+  ✗ manufacturing-equipment-maintenance: reward 0.0 — test_Q02_tal_loose failed:
+TAL mismatch for…
+  ✗ mario-coin-counting: reward 0.0 — test_counting_results failed: assert False
+  … and 2 more
+  (details: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/sec04_no_skill/ada-bathroom-plan-repair__b361c251/verifier)
+Outcomes: 10 scored (3 passed, 7 failed), 0 unscored, 1 errored
+  1 errored: the sandbox did not start: Docker compose command failed for environment suricata-custom-exfil. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-6ccmyqst compose --project-name suricata-custom-exfil__50097901-e095a06c --project-directory /private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-stage-9kmzgeov/private/var/fol... (infrastructure problem): suricata-custom-exfil
+      next: `bench doctor`; error in result.json has the whole message
+  `bench explain sandbox_setup` says more
+Cost:      $4.86, 15,851,213 tokens (1 of 11 trials reported no cost)
+Time:      34m 54s
+Artifacts: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/sec04_no_skill
+Summary:   /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/sec04_no_skill/summary.json
+View:      bench view '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-01/sec04_no_skill'
+[software-dependency-audit] ACP connect failed (attempt 1): ACP session_new timed out after 60s before the first prompt
+[suricata-custom-exfil] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/sec04_no_skill/suricata-custom-exfil__c1f2b1fb/error-traceback.txt)
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[suricata-custom-exfil] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/sec04_no_skill/suricata-custom-exfil__2276b23a/error-traceback.txt)
+[suricata-custom-exfil] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/sec04_no_skill/suricata-custom-exfil__2bab7ddd/error-traceback.txt)
+[exam-block-sequencing] Agent prompt exceeded wall-clock budget 1500s
+1 tasks (9%) hit agent wall-clock timeout — error in result.json has the cause (agent_timeout_info has details when set)
+1 tasks (9%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+
+• Score: 4/11 (36.4%), mean reward 0.41 over all 11 trials (unscored as 0), 
+errors=1; scored only: 4/10 (40.0%), mean reward 0.45 (0.7's mean_reward)
+  ✗ ada-bathroom-plan-repair: reward 0.0 — 
+test_violation_list_is_consistent_with_plan_view_rules…
+  ✗ crystallographic-wyckoff-position-analysis: reward 0.55
+  ✗ exam-block-sequencing: reward 0.0 — 
+test_objective_value_is_reported_correctly failed: Missing… (+2 more failures; 
+0/3 checks passed)
+  ✗ mario-coin-counting: reward 0.0 — test_counting_results failed: assert False
+  ✗ software-dependency-audit: reward 0.0 — test_csv_matches_ground_truth 
+failed: Generated CSV…
+  … and 1 more
+  (details: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/sec04_no_skill/ada-bathroom-plan-repair__367a76e7/verifier)
+Outcomes: 10 scored (4 passed, 6 failed), 0 unscored, 1 errored
+  1 errored: the sandbox did not start: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su and pkexec) and other nonstandard privileged helpers from the image, or set allow_... (infrastructure problem): suricata-custom-exfil
+      next: `bench doctor`; error in result.json has the whole message
+  `bench explain sandbox_setup` says more
+Cost:      $3.56, 12,218,840 tokens (1 of 11 trials reported no cost)
+Time:      26m 5s
+Artifacts: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/sec04_no_skill
+Summary:   /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/sec04_no_skill/summary.json
+View:      bench view '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-02/sec04_no_skill'
+[pptx-reference-formatting] ACP connect failed (attempt 1): ACP session_new timed out after 60s before the first prompt
+[react-performance-debugging] Run failed: ImageBuildNetworkError: Sandbox startup failed: network or registry failure while the image built: environment/Dockerfile:34 ` curl -fsSL "https://nodejs.org/dist/v20.18.1/node-v20.18.1-linux-${NODE_ARCH}.tar.xz" | tar -xJ -C /usr/local --strip-components=1` (curl: (7) Failed to connect to… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/sec04_no_skill/react-performance-debugging__6e67ac69/error-traceback.txt)
+A rollout finished without a USD cost; --max-cost-usd counts only rollouts that report one (see summary.json budget.spent).
+[pptx-reference-formatting] ACP connect failed (attempt 2): ACP session_new timed out after 60s before the first prompt
+[react-performance-debugging] Run failed: RuntimeError: Docker compose command failed for environment react-performance-debugging. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-6ccmyqst compose --project-name react-performance-debugging__0a609785-a45b10a6 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/sec04_no_skill/react-performance-debugging__0a609785/error-traceback.txt)
+[react-performance-debugging] Run failed: RuntimeError: Docker compose command failed for environment react-performance-debugging. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-6ccmyqst compose --project-name react-performance-debugging__ffe2ce6b-16eb7390 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/sec04_no_skill/react-performance-debugging__ffe2ce6b/error-traceback.txt)
+[pptx-reference-formatting] ACP connect failed (attempt 3): ACP session_new timed out after 60s before the first prompt
+[software-dependency-audit] Run failed: RuntimeError: Docker compose command failed for environment software-dependency-audit. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-6ccmyqst compose --project-name software-dependency-audit__fee11c9b-00d03f53 --project-directory… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/sec04_no_skill/software-dependency-audit__fee11c9b/error-traceback.txt)
+[suricata-custom-exfil] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/sec04_no_skill/suricata-custom-exfil__baad936a/error-traceback.txt)
+[suricata-custom-exfil] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/sec04_no_skill/suricata-custom-exfil__f09f096f/error-traceback.txt)
+[suricata-custom-exfil] Run failed: CloudMetadataPowerError: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su… (traceback: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/sec04_no_skill/suricata-custom-exfil__c33300ba/error-traceback.txt)
+[syzkaller-ppdev-syzlang] ACP error -32603: Internal error
+[syzkaller-ppdev-syzlang] ACP error -32603: Internal error
+[syzkaller-ppdev-syzlang] ACP error -32603: Internal error
+[syzkaller-ppdev-syzlang] ACP error -32603: Internal error
+[exam-block-sequencing] ACP error -32603: Internal error
+[exam-block-sequencing] ACP error -32603: Internal error
+[syzkaller-ppdev-syzlang] ACP error -32603: Internal error
+[syzkaller-ppdev-syzlang] ACP error -32603: Internal error
+[exam-block-sequencing] ACP error -32603: Internal error
+[exam-block-sequencing] ACP error -32603: Internal error
+[exam-block-sequencing] ACP error -32603: Internal error
+[exam-block-sequencing] ACP error -32603: Internal error
+2 tasks (18%) failed during sandbox startup — error in result.json has the cause (sandbox_startup_info has details when set)
+
+• Score: 2/11 (18.2%), mean reward 0.22 over all 11 trials (unscored as 0), 
+errors=4; scored only: 2/7 (28.6%), mean reward 0.35 (0.7's mean_reward)
+  ✗ ada-bathroom-plan-repair: reward 0.0 — 
+test_required_outputs_are_valid_json_and_match_schemas… (+5 more failures; 0/6 
+checks passed)
+  ✗ crystallographic-wyckoff-position-analysis: reward 0.45
+  ✗ manufacturing-equipment-maintenance: reward 0.0 — test_Q02_tal_loose failed:
+TAL mismatch for…
+  ✗ mario-coin-counting: reward 0.0 — test_counting_results failed: assert False
+  ✗ software-dependency-audit: reward 0.0 — test_csv_matches_ground_truth 
+failed: Generated CSV…
+  (details: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/sec04_no_skill/ada-bathroom-plan-repair__3579d791/verifier)
+Outcomes: 7 scored (2 passed, 5 failed), 0 unscored, 4 errored
+  2 errored: the agent reported an error (agent problem): exam-block-sequencing, syzkaller-ppdev-syzlang
+      next: the agent's log (agent/<agent>.txt in the trial folder) has its side
+  1 errored: the sandbox did not start: Docker compose command failed for environment react-performance-debugging. Command: docker --config /var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-docker-config-6ccmyqst compose --project-name react-performance-debugging__ffe2ce6b-16eb7390 --project-directory /private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/benchflow-stage-ty_a372n/pri... (infrastructure problem): react-performance-debugging
+      next: `bench doctor`; error in result.json has the whole message
+  1 errored: the sandbox did not start: sandbox startup refused: a firewall delegate may acquire root or NET_ADMIN, or its file privilege inventory did not finish. Provide trusted find and getcap utilities, remove powerful file capabilities and setuid/setgid command or identity launchers (including sudo, doas, su and pkexec) and other nonstandard privileged helpers from the image, or set allow_... (infrastructure problem): suricata-custom-exfil
+      next: `bench doctor`; error in result.json has the whole message
+  `bench explain R205` says more (also sandbox_setup)
+Cost:      $1.39, 5,289,165 tokens (4 of 11 trials reported no cost)
+Time:      24m 27s
+Artifacts: /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/sec04_no_skill
+Summary:   /Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/sec04_no_skill/summary.json
+View:      bench view '/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/openhands/trial-03/sec04_no_skill'
+Matrix summary: /Users/ndingari/Dropbox/Dingari 
+Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot/jobs_study/matrix-summary.json
+Matrix: 3 trial job(s), 9/33 trials passed, errors=6 verifier-errors=0

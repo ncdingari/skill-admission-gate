@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot2/run4n.py", line 381, in <module>
+    {"calibrate": calibrate, "commit": commit, "run": run, "build": build, "verify": verify}[sys.argv[1]]()
+  File "/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot2/run4n.py", line 330, in build
+    body = body_from(entries(), sigma_from(sp, th), th, com)
+                                ^^^^^^^^^^^^^^^^^^
+  File "/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot2/run4n.py", line 218, in sigma_from
+    return hashlib.sha256(sp + bytes.fromhex(beacon(th["beacon_round"]))).digest()
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ndingari/Dropbox/Dingari Papers/Manuscripts/P9_Nixi_Admission_Gate/pilot2/run4n.py", line 213, in beacon
+    with urllib.request.urlopen(f"{DRAND}/public/{rnd}", timeout=20) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 425: Too Early

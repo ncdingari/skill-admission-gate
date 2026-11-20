@@ -1,0 +1,74 @@
+geometric_mean3 zeta1.6 50 done
+geometric_mean3 zeta1.6 200 done
+geometric_mean3 zeta1.6 500 done
+geometric_mean3 zeta1.6 2000 done
+geometric_mean3 universal 50 done
+geometric_mean3 universal 200 done
+geometric_mean3 universal 500 done
+geometric_mean3 universal 2000 done
+geometric_mean3 uniform20 50 done
+geometric_mean3 uniform20 200 done
+geometric_mean3 uniform20 500 done
+geometric_mean3 uniform20 2000 done
+geometric_mean3 oracle_pi 50 done
+geometric_mean3 oracle_pi 200 done
+geometric_mean3 oracle_pi 500 done
+geometric_mean3 oracle_pi 2000 done
+zipf2 zeta1.6 50 done
+zipf2 zeta1.6 200 done
+zipf2 zeta1.6 500 done
+zipf2 zeta1.6 2000 done
+zipf2 universal 50 done
+zipf2 universal 200 done
+zipf2 universal 500 done
+zipf2 universal 2000 done
+zipf2 uniform20 50 done
+zipf2 uniform20 200 done
+zipf2 uniform20 500 done
+zipf2 uniform20 2000 done
+zipf2 oracle_pi 50 done
+zipf2 oracle_pi 200 done
+zipf2 oracle_pi 500 done
+zipf2 oracle_pi 2000 done
+uniform20 zeta1.6 50 done
+uniform20 zeta1.6 200 done
+uniform20 zeta1.6 500 done
+uniform20 zeta1.6 2000 done
+uniform20 universal 50 done
+uniform20 universal 200 done
+uniform20 universal 500 done
+uniform20 universal 2000 done
+uniform20 uniform20 50 done
+uniform20 uniform20 200 done
+uniform20 uniform20 500 done
+uniform20 uniform20 2000 done
+uniform20 oracle_pi 50 done
+uniform20 oracle_pi 200 done
+uniform20 oracle_pi 500 done
+uniform20 oracle_pi 2000 done
+                  pi   schedule  delta_helpful  variants_useless  variants_helpful  predicted_helpful  honest_admitted  null_lineage_admitted  share_lineage_binds
+8    geometric_mean3    zeta1.6          0.100           758.478           469.981            470.169            0.648                    0.0                0.000
+9    geometric_mean3    zeta1.6          0.166           787.610           208.867            208.634            1.000                    0.0                0.000
+24   geometric_mean3  universal          0.100           725.056           476.094            470.169            0.624                    0.0                0.000
+25   geometric_mean3  universal          0.166           764.351           208.849            208.634            1.000                    0.0                0.000
+40   geometric_mean3  uniform20          0.100           767.392           471.773            470.169            0.640                    0.0                0.000
+41   geometric_mean3  uniform20          0.166           750.247           210.181            208.634            1.000                    0.0                0.000
+56   geometric_mean3  oracle_pi          0.100           766.551           473.994            470.222            0.630                    0.0                0.003
+57   geometric_mean3  oracle_pi          0.166           757.859           210.747            208.661            1.000                    0.0                0.002
+72             zipf2    zeta1.6          0.100           471.184           478.392            469.813            0.606                    0.0                0.000
+73             zipf2    zeta1.6          0.166           486.330           210.026            208.447            1.000                    0.0                0.000
+88             zipf2  universal          0.100           483.122           477.360            469.813            0.624                    0.0                0.000
+89             zipf2  universal          0.166           480.782           210.139            208.447            1.000                    0.0                0.000
+104            zipf2  uniform20          0.100           495.352           478.653            469.813            0.606                    0.0                0.000
+105            zipf2  uniform20          0.166           502.189           208.197            208.447            1.000                    0.0                0.000
+120            zipf2  oracle_pi          0.100           498.560           481.925            469.813            0.595                    0.0                0.000
+121            zipf2  oracle_pi          0.166           506.344           208.395            208.447            1.000                    0.0                0.000
+136        uniform20    zeta1.6          0.100          3579.642           482.828            473.362            0.594                    0.0                0.000
+137        uniform20    zeta1.6          0.166          3583.178           210.490            210.307            0.999                    0.0                0.000
+152        uniform20  universal          0.100          3588.474           480.186            473.362            0.602                    0.0                0.000
+153        uniform20  universal          0.166          3556.952           206.864            210.307            0.999                    0.0                0.000
+168        uniform20  uniform20          0.100          3562.200           477.558            473.362            0.614                    0.0                0.000
+169        uniform20  uniform20          0.166          3542.526           210.806            210.307            1.000                    0.0                0.000
+184        uniform20  oracle_pi          0.100          3665.964           475.756            473.362            0.614                    0.0                0.000
+185        uniform20  oracle_pi          0.166          3688.470           211.946            210.307            0.999                    0.0                0.000
+{"exp": "E19", "quick": false, "wall_s": 2812.01, "seed": 20261114, "nixigate": "0.1.0", "python": "3.12.7", "numpy": "1.26.3", "pandas": "2.3.3", "time": "2026-11-20 10:26:39 EST", "rule": "prpl", "lineages": 2000}

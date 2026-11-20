@@ -1,0 +1,25 @@
+\section{The admission problem}
+\label{sec:setup}
+
+Table~\ref{tab:notation} in Appendix~\ref{app:notation} collects the notation.
+
+\paragraph{Exam.} Fix an agent $a$ (model, harness and configuration), a candidate skill $s$ and a comparator $s_0$ (no skill, or the incumbent skill for the same task class). A task class has a generator $G$ that maps a seed $\sigma$ and an index $i$ to a task instance with a deterministic verifier. For variant $i$ the agent attempts the instance $r$ times in each arm, in identical sandboxes, with arm order randomized; $Y^{(1)}_{i\ell},Y^{(0)}_{i\ell}\in[0,1]$ are the verifier scores. The paired difference is
+\begin{equation}
+D_i=\frac1r\sum_{\ell=1}^r\bigl(Y^{(1)}_{i\ell}-Y^{(0)}_{i\ell}\bigr)\in[-1,1],
+\label{eq:D}
+\end{equation}
+Let $\mathcal F_{i-1}$ hold everything fixed before variant $i$ is scored: the registry's history when the exam starts (earlier exams, their decisions and levels), the skill, the comparator, the commitment, any state fixed for the whole exam, and the first $i-1$ variants' transcripts, taken in index order. The lift of variant $i$ given the exam so far is $\Delta_i=\mathbb E[D_i\mid\mathcal F_{i-1}]$. For a margin $\delta\ge0$ fixed in advance the registry tests
+\begin{equation}
+H_0:\ \Delta_i\le\delta\ \text{for every } i\quad\text{against}\quad H_1:\ \Delta=\mathbb E[D_i]>\delta .
+\label{eq:H}
+\end{equation}
+The null is stated conditionally because that is what sequential validity needs. A null on the marginal mean is not enough: if one fair coin decides, for a whole exam, whether every difference is $+1$ or $-1$, then $\mathbb E[D_i]=0$, yet a constant bet of $1/2$ in Eq.~\eqref{eq:wealth} reaches $1/\alpha=20$ after 14 differences, so the exam admits with probability $1/2$. The two nulls coincide under the design we require: variants drawn i.i.d.\ from $G$ with seeds $H(\sigma,i)$ that no one knows before the exam (Section~\ref{sec:gate}); agent calls independent given the variant, with no memory, caching or batching shared across variants; arm order randomized; outcomes consumed in index order, not in order of completion; no repeated seeds; and exclusion rules that do not depend on the arm. The $D_i$ are then i.i.d.\ given the exam-level state and $\Delta_i=\Delta$. State that is fixed for the whole exam, such as the model snapshot the provider serves, belongs to $\mathcal F_0$, so a certificate is conditional on it: it says that the skill helped this agent as it was served during the exam. Section~\ref{sec:discussion} lists the departures that break the condition. Pairing removes between-variant difficulty from $\operatorname{Var}(D_i)$, which is what makes small lifts detectable.
+
+\paragraph{Requirements.} We ask four things of a registry's decision rule.
+\begin{description}
+\item[R1, validity under optional stopping.] $\Pr_{H_0}(\text{admit})\le\alpha$ whatever rule the proctor uses to stop the exam, including stopping as soon as the evidence looks good.
+\item[R2, validity across the library and over time.] Each exam tests one null, Eq.~\eqref{eq:H} for its version against its comparator, and an admission is a false discovery when that null is true. The expected share of false admissions among all admissions (the false discovery rate) is at most $\alpha$ over the registry's history, under any dependence between exams, such as shared agents and generators, that leaves each null exam's conditional null intact given the registry's history. Section~\ref{sec:gate} fixes the convention under which exams and admitted skills are the same unit.
+\item[R3, resubmission.] An author who resubmits versions of a skill any number of times gets a version with $\Delta\le\delta$ admitted with probability at most $\alpha$ over the skill's lineage, whatever helpful versions the lineage also contains.
+\item[R4, recomputability.] A third party can check, from published material, that the variants were fixed after the skill, that the stopping rule was the registered one, and that the reported decision follows from the transcripts.
+\end{description}
+R1 rules out re-checking a fixed-$n$ test or interval; R2 rules out per-skill testing at $\alpha$ without correction; R3 rules out any rule whose per-exam level does not shrink with resubmissions; R4 requires that the exam seed and stopping rule be committed before the evidence exists. Section~\ref{sec:results} measures how far current practice is from each requirement.

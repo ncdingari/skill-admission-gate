@@ -1,0 +1,35 @@
+[
+ {
+  "t": 1,
+  "lineage": "S",
+  "attempt": 1,
+  "skill": "placebo",
+  "level": 0.021874508288723685,
+  "decision": "admit",
+  "decision_pair": 68,
+  "pairs_run": 72,
+  "pairs_excluded": 0,
+  "Dbar_at_decision": 0.11764705882352941,
+  "LCB_at_decision": -0.124,
+  "pass_with": 8,
+  "pass_without": 0,
+  "root": "sha256:2033f8035722c7bfaf11e129e528c5a66233b72e98672b4542f2f0effe078d69"
+ },
+ {
+  "t": 2,
+  "lineage": "S",
+  "attempt": 2,
+  "skill": "real",
+  "level": 0.007215896682809537,
+  "decision": "admit",
+  "decision_pair": 16,
+  "pairs_run": 18,
+  "pairs_excluded": 0,
+  "Dbar_at_decision": 0.625,
+  "LCB_at_decision": -0.841,
+  "pass_with": 12,
+  "pass_without": 1,
+  "root": "sha256:b899febc319e33a65d12074ec8d4896f583ad1e8bc984c395e14da72e7c202a4"
+ }
+] 
+cost 0.0873

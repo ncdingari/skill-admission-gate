@@ -1,0 +1,35 @@
+helpful 0 with True without True refund matters False $0.002
+helpful 1 with True without True refund matters False $0.004
+helpful 2 with True without False refund matters True $0.006
+helpful 3 with True without True refund matters False $0.007
+helpful 4 with True without False refund matters True $0.009
+placebo 0 with True without True refund matters False $0.011
+placebo 1 with True without True refund matters False $0.012
+placebo 2 with True without True refund matters False $0.014
+placebo 3 with True without True refund matters False $0.016
+placebo 4 with False without False refund matters True $0.017
+harmful 0 with False without False refund matters True $0.019
+harmful 1 with False without True refund matters False $0.022
+harmful 2 with False without True refund matters False $0.024
+harmful 3 with False without True refund matters False $0.028
+harmful 4 with False without True refund matters False $0.030
+{
+ "helpful": {
+  "with": 5,
+  "without": 3,
+  "ok_pairs": 5,
+  "pairs": 5
+ },
+ "placebo": {
+  "with": 4,
+  "without": 4,
+  "ok_pairs": 5,
+  "pairs": 5
+ },
+ "harmful": {
+  "with": 0,
+  "without": 4,
+  "ok_pairs": 5,
+  "pairs": 5
+ }
+}

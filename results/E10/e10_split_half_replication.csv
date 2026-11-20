@@ -1,0 +1,7 @@
+rule,admitted,mean_lift_B_admitted,share_B_positive
+signflip_bh,2.21,0.594348,0.998724
+signflip_bonferroni,0,,
+signflip_by,0,,
+t_bh,14.975,0.568206,0.986317
+t_bonferroni,5.37,0.685529,1
+t_by,6.41,0.675154,0.9995

@@ -1,0 +1,179 @@
+{
+ "calibration": {
+  "pairs": 20,
+  "p_plus": 0.2,
+  "p_minus": 0.0,
+  "lift": 0.2,
+  "se": 0.09176629354822471,
+  "p_plus_conservative": 0.2082337064517753,
+  "p_minus_conservative": 0.1,
+  "placebo_noise_per_side": 0.1,
+  "amendment": "v2"
+ },
+ "rule": "first design with power >= 0.80 at the conservative law; order placebo-first, then real-first; N_max 600, 900, 1200, 1800",
+ "reps": 2000,
+ "curve": [
+  {
+   "exams": [
+    [
+     "S",
+     1,
+     "placebo"
+    ],
+    [
+     "S",
+     2,
+     "real"
+    ]
+   ],
+   "real_t": 2,
+   "level": 0.007215896682809537,
+   "n_max": 600,
+   "power_cal": 1.0,
+   "power_conservative": 0.865,
+   "mean_pairs_cal": 50.2525,
+   "mean_pairs_conservative": 332.1835
+  },
+  {
+   "exams": [
+    [
+     "S",
+     1,
+     "placebo"
+    ],
+    [
+     "S",
+     2,
+     "real"
+    ]
+   ],
+   "real_t": 2,
+   "level": 0.007215896682809537,
+   "n_max": 900,
+   "power_cal": 1.0,
+   "power_conservative": 0.977,
+   "mean_pairs_cal": 49.4255,
+   "mean_pairs_conservative": 351.3835
+  },
+  {
+   "exams": [
+    [
+     "S",
+     1,
+     "placebo"
+    ],
+    [
+     "S",
+     2,
+     "real"
+    ]
+   ],
+   "real_t": 2,
+   "level": 0.007215896682809537,
+   "n_max": 1200,
+   "power_cal": 1.0,
+   "power_conservative": 0.9985,
+   "mean_pairs_cal": 50.492,
+   "mean_pairs_conservative": 348.1485
+  },
+  {
+   "exams": [
+    [
+     "S",
+     1,
+     "placebo"
+    ],
+    [
+     "S",
+     2,
+     "real"
+    ]
+   ],
+   "real_t": 2,
+   "level": 0.007215896682809537,
+   "n_max": 1800,
+   "power_cal": 1.0,
+   "power_conservative": 0.9995,
+   "mean_pairs_cal": 49.848,
+   "mean_pairs_conservative": 351.748
+  },
+  {
+   "exams": [
+    [
+     "S",
+     1,
+     "real"
+    ]
+   ],
+   "real_t": 1,
+   "level": 0.021874508288723685,
+   "n_max": 600,
+   "power_cal": 1.0,
+   "power_conservative": 0.9315,
+   "mean_pairs_cal": 40.0305,
+   "mean_pairs_conservative": 263.152
+  },
+  {
+   "exams": [
+    [
+     "S",
+     1,
+     "real"
+    ]
+   ],
+   "real_t": 1,
+   "level": 0.021874508288723685,
+   "n_max": 900,
+   "power_cal": 1.0,
+   "power_conservative": 0.9935,
+   "mean_pairs_cal": 39.854,
+   "mean_pairs_conservative": 274.8715
+  },
+  {
+   "exams": [
+    [
+     "S",
+     1,
+     "real"
+    ]
+   ],
+   "real_t": 1,
+   "level": 0.021874508288723685,
+   "n_max": 1200,
+   "power_cal": 1.0,
+   "power_conservative": 0.9995,
+   "mean_pairs_cal": 39.7495,
+   "mean_pairs_conservative": 276.8435
+  },
+  {
+   "exams": [
+    [
+     "S",
+     1,
+     "real"
+    ]
+   ],
+   "real_t": 1,
+   "level": 0.021874508288723685,
+   "n_max": 1800,
+   "power_cal": 1.0,
+   "power_conservative": 0.997,
+   "mean_pairs_cal": 40.014,
+   "mean_pairs_conservative": 281.33
+  }
+ ],
+ "chosen": true,
+ "exams": [
+  [
+   "S",
+   1,
+   "placebo"
+  ],
+  [
+   "S",
+   2,
+   "real"
+  ]
+ ],
+ "n_max": 600
+}

@@ -1,0 +1,4 @@
+method,fdr,fdr_se,power,admitted
+elond_horizon,0.0020915,0.000298472,0.886351,353.05
+elond_infinite,5.19211e-05,5.19211e-05,0.755633,300.383
+per_exam_alpha,0.0571195,0.00186134,0.963859,406.333

@@ -1,0 +1,29 @@
+exam 1 (S1 placebo) level 0.02187 start at pair 0
+  t=1 pairs=6 valid=6 Dbar=-0.167 spent=$0.11
+  t=1 pairs=12 valid=12 Dbar=-0.167 spent=$0.12
+  t=1 pairs=18 valid=18 Dbar=-0.222 spent=$0.12
+  t=1 pairs=24 valid=24 Dbar=-0.208 spent=$0.13
+  t=1 pairs=30 valid=30 Dbar=-0.133 spent=$0.14
+  t=1 pairs=36 valid=36 Dbar=-0.139 spent=$0.14
+  t=1 pairs=42 valid=42 Dbar=-0.095 spent=$0.15
+  t=1 pairs=48 valid=48 Dbar=-0.104 spent=$0.16
+  t=1 pairs=54 valid=54 Dbar=-0.074 spent=$0.16
+  t=1 pairs=60 valid=60 Dbar=-0.083 spent=$0.17
+  t=1 pairs=66 valid=66 Dbar=-0.091 spent=$0.18
+  t=1 pairs=72 valid=72 Dbar=-0.111 spent=$0.18
+exam 1 decision futility at valid pair 69
+exam 2 (S2 real) level 0.00722 start at pair 0
+  t=2 pairs=6 valid=6 Dbar=0.167 spent=$0.19
+  t=2 pairs=12 valid=12 Dbar=0.250 spent=$0.20
+  t=2 pairs=18 valid=18 Dbar=0.167 spent=$0.20
+  t=2 pairs=24 valid=24 Dbar=0.125 spent=$0.21
+  t=2 pairs=30 valid=30 Dbar=0.100 spent=$0.22
+  t=2 pairs=36 valid=36 Dbar=0.139 spent=$0.22
+  t=2 pairs=42 valid=42 Dbar=0.143 spent=$0.23
+  t=2 pairs=48 valid=48 Dbar=0.125 spent=$0.24
+  t=2 pairs=54 valid=54 Dbar=0.130 spent=$0.24
+  t=2 pairs=60 valid=60 Dbar=0.133 spent=$0.25
+  t=2 pairs=66 valid=66 Dbar=0.121 spent=$0.26
+  t=2 pairs=72 valid=72 Dbar=0.139 spent=$0.26
+exam 2 decision admit at valid pair 72
+STUDY4 RUNS DONE $0.26

@@ -1,0 +1,602 @@
+\begin{thebibliography}{104}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Agent Skills}(2026)]{agentskills2026spec}
+{Agent Skills}.
+\newblock {Agent Skills Overview (open specification)}, 2026.
+\newblock URL \url{https://agentskills.io/home}.
+\newblock Accessed 14 Nov 2026.
+
+\bibitem[{agentskill.sh}(2026)]{agentskill2026}
+{agentskill.sh}.
+\newblock {agentskill.sh: AI Agent Skills Directory and Marketplace}, 2026.
+\newblock URL \url{https://agentskill.sh/}.
+\newblock Homepage advertises 276,000+ skills (checked 14 Nov 2026; returned HTTP 503 earlier the same day). Accessed 14 Nov 2026.
+
+\bibitem[Agrawal et~al.(2025)Agrawal, Ram, and Ramdas]{agrawal2025stopping}
+Shubhada Agrawal, Ashwin Ram, and Aaditya Ramdas.
+\newblock {On stopping times of power-one sequential tests: Tight lower and upper bounds}, 2025.
+
+\bibitem[Anand et~al.(2026)Anand, Wang, Jiang, Masson, Zheng, and Zhou]{anand2026aeval}
+Tejas~Singh Anand, Yuet Ying~Christina Wang, Wanting Jiang, Steve Masson, Tian Zheng, and Bingjie Zhou.
+\newblock {AEVAL: From Anecdotal to Deterministic Testing for Agentic Skill Workflows}, 2026.
+\newblock ICML 2026 Workshop on Statistical Frameworks for Uncertainty in Agentic Systems. arXiv:2607.16345 (v2).
+
+\bibitem[{Anthropic}(2025)]{anthropic2025introducingskills}
+{Anthropic}.
+\newblock {Introducing Agent Skills}, 2025.
+\newblock URL \url{https://claude.com/resources/articles/skills}.
+\newblock Announcement dated 16 Oct 2025; www.anthropic.com/news/skills redirects here. Accessed 14 Nov 2026.
+
+\bibitem[Ardebili(2026)]{seyedkazemi2026novafabric}
+Mohsen~Seyedkazemi Ardebili.
+\newblock {NovaFabric: Tamper-Evident, Replayable Evidence for Autonomous AI Agent Runs}, 2026.
+\newblock arXiv:2609.12582 (v1).
+
+\bibitem[Arimoto(1972)]{arimoto1972algorithm}
+Suguru Arimoto.
+\newblock An algorithm for computing the capacity of arbitrary discrete memoryless channels.
+\newblock \emph{IEEE Transactions on Information Theory}, 18\penalty0 (1):\penalty0 14--20, 1972.
+\newblock \doi{10.1109/TIT.1972.1054753}.
+
+\bibitem[Bates et~al.(2022)Bates, Jordan, Sklar, and Soloff]{bates2022principal}
+Stephen Bates, Michael~I. Jordan, Michael Sklar, and Jake~A. Soloff.
+\newblock {Principal-agent hypothesis testing}, 2022.
+
+\bibitem[Blahut(1972)]{blahut1972computation}
+Richard~E. Blahut.
+\newblock Computation of channel capacity and rate-distortion functions.
+\newblock \emph{IEEE Transactions on Information Theory}, 18\penalty0 (4):\penalty0 460--473, 1972.
+\newblock \doi{10.1109/TIT.1972.1054855}.
+
+\bibitem[Blum \& Hardt(2015)Blum and Hardt]{blum2015ladder}
+Avrim Blum and Moritz Hardt.
+\newblock {The Ladder: A reliable leaderboard for machine learning competitions}.
+\newblock In \emph{Proceedings of the 32nd International Conference on Machine Learning}, volume~37 of \emph{Proceedings of Machine Learning Research}, pp.\  1006--1014, 2015.
+\newblock URL \url{https://proceedings.mlr.press/v37/blum15.html}.
+
+\bibitem[Boucheron et~al.(2009)Boucheron, Garivier, and Gassiat]{boucheron2009coding}
+St{\'e}phane Boucheron, Aur{\'e}lien Garivier, and Elisabeth Gassiat.
+\newblock Coding on countably infinite alphabets.
+\newblock \emph{IEEE Transactions on Information Theory}, 55\penalty0 (1):\penalty0 358--373, 2009.
+\newblock \doi{10.1109/TIT.2008.2008150}.
+
+\bibitem[Br{\"o}mme(2026)]{bromme2026blackbox}
+Arslan Br{\"o}mme.
+\newblock {A Black Box for Agentic Processes: Blockchain-Anchored Evidence for AI Agent Communication, Human Oversight, and GRC Audits}, 2026.
+\newblock arXiv:2609.04017 (v1).
+
+\bibitem[Chen(2023)]{chen2023credo}
+Eli Chen.
+\newblock {Systems and methods for provable provenance for artificial intelligence model assessments}.
+\newblock US Patent Application Publication US 2023/0370274 A1; granted as US 12,192,372 B2 (7 Jan 2025), 2023.
+\newblock URL \url{https://patents.google.com/patent/US20230370274A1/en}.
+\newblock Assignee: Credo.AI Corp. Appl. US 17/743,254, priority 12 May 2022; published 16 Nov 2023.
+
+\bibitem[Chen \& Kasiviswanathan(2020)Chen and Kasiviswanathan]{chen2020contextual}
+Shiyun Chen and Shiva Kasiviswanathan.
+\newblock Contextual online false discovery rate control.
+\newblock In \emph{Proceedings of the Twenty Third International Conference on Artificial Intelligence and Statistics}, volume 108 of \emph{Proceedings of Machine Learning Research}, pp.\  952--961, 2020.
+
+\bibitem[Dayama et~al.(2022)Dayama, Singh, Vinayagamurthy, and Pandit]{dayama2022ibm}
+Pankaj~S. Dayama, Nitin Singh, Dhinakaran Vinayagamurthy, and Vinayaka Pandit.
+\newblock {Verifying confidential machine learning models}.
+\newblock US Patent 11,481,680 B2, 2022.
+\newblock URL \url{https://patents.google.com/patent/US11481680B2/en}.
+\newblock Assignee: International Business Machines Corp. Appl. US 16/851,507, priority 17 Apr 2020; granted 25 Oct 2022.
+
+\bibitem[Dembowski(2026)]{dembowski2026agentledger}
+Jakub Dembowski.
+\newblock {Proof-of-Behavior Protocol for Autonomous AI Agents}, 2026.
+\newblock URL \url{https://datatracker.ietf.org/doc/html/draft-dembowski-agentledger-proof-of-behavior-00}.
+\newblock IETF Internet-Draft draft-dembowski-agentledger-proof-of-behavior-00, published 20 Apr 2026; expired 22 Oct 2026. Accessed 14 Nov 2026.
+
+\bibitem[{drand}(2026)]{drand2026beacon}
+{drand}.
+\newblock {drand: Distributed Randomness Beacon}, 2026.
+\newblock URL \url{https://drand.love/}.
+\newblock Documentation at https://docs.drand.love/. Accessed 14 Nov 2026.
+
+\bibitem[Du et~al.(2026)Du, Liu, Shan, Zhang, Li, Sun, and Zhang]{du2026multievoskill}
+Kounianhua Du, Jianxing Liu, Ruoshui Shan, Yucheng Zhang, Ke~Li, Xing Sun, and Weinan Zhang.
+\newblock {MultiEvoSkill: Structure-Aware Multi-Agent Skill Evolution for Generalizable Skill Artifacts}, 2026.
+\newblock arXiv:2610.34260 (v1).
+
+\bibitem[Dwork et~al.(2015)Dwork, Feldman, Hardt, Pitassi, Reingold, and Roth]{dwork2015reusable}
+Cynthia Dwork, Vitaly Feldman, Moritz Hardt, Toniann Pitassi, Omer Reingold, and Aaron Roth.
+\newblock {The reusable holdout: Preserving validity in adaptive data analysis}.
+\newblock \emph{Science}, 349\penalty0 (6248):\penalty0 636--638, 2015.
+\newblock \doi{10.1126/science.aaa9375}.
+
+\bibitem[Elias(1975)]{elias1975universal}
+P.~Elias.
+\newblock {Universal codeword sets and representations of the integers}.
+\newblock \emph{IEEE Transactions on Information Theory}, 21\penalty0 (2):\penalty0 194--203, 1975.
+\newblock \doi{10.1109/TIT.1975.1055349}.
+
+\bibitem[Farrell(1964)]{farrell1964asymptotic}
+R.~H. Farrell.
+\newblock {Asymptotic behavior of expected sample size in certain one sided tests}.
+\newblock \emph{The Annals of Mathematical Statistics}, 35\penalty0 (1):\penalty0 36--72, 1964.
+\newblock \doi{10.1214/aoms/1177703731}.
+
+\bibitem[Figuera(2026)]{figuera2026notarized}
+Juan Figuera.
+\newblock {Notarized Agents: Receiver-Attested Confidential Receipts for AI Agent Actions}, 2026.
+\newblock arXiv:2606.04193 (v1).
+
+\bibitem[Foster \& Stine(2013)Foster and Stine]{foster2013risk}
+Dean~P. Foster and Robert~A. Stine.
+\newblock {Risk inflation of sequential tests controlled by alpha investing}.
+\newblock Working paper, Department of Statistics, The Wharton School, University of Pennsylvania, 2013.
+\newblock URL \url{https://faculty.wharton.upenn.edu/wp-content/uploads/2015/07/seq_risk.pdf}.
+
+\bibitem[Gao et~al.(2026)Gao, Zhang, Xie, Jing, Wang, and Liu]{gao2026bbedge}
+Hongfu Gao, Songxin Zhang, Zejian Xie, Bingyi Jing, Zhou Wang, and Yiming Liu.
+\newblock {Anytime-Valid LLM Leaderboards via Benchmark-weighted and Block-Factorized e-Processes}, 2026.
+\newblock BB-EDGE. arXiv:2609.32248 (v1).
+
+\bibitem[Garivier et~al.(2019)Garivier, M{\'e}nard, and Stoltz]{garivier2019explore}
+Aur{\'e}lien Garivier, Pierre M{\'e}nard, and Gilles Stoltz.
+\newblock {Explore first, exploit next: The true shape of regret in bandit problems}.
+\newblock \emph{Mathematics of Operations Research}, 44\penalty0 (2):\penalty0 377--399, 2019.
+\newblock \doi{10.1287/moor.2017.0928}.
+\newblock arXiv:1602.07182.
+
+\bibitem[Genovese et~al.(2006)Genovese, Roeder, and Wasserman]{genovese2006weighting}
+Christopher~R. Genovese, Kathryn Roeder, and Larry Wasserman.
+\newblock {False discovery control with p-value weighting}.
+\newblock \emph{Biometrika}, 93\penalty0 (3):\penalty0 509--524, 2006.
+\newblock \doi{10.1093/biomet/93.3.509}.
+
+\bibitem[Gr{\"u}nwald et~al.(2024)Gr{\"u}nwald, de~Heide, and Koolen]{grunwald2024safe}
+Peter Gr{\"u}nwald, Rianne de~Heide, and Wouter Koolen.
+\newblock {Safe testing}.
+\newblock \emph{Journal of the Royal Statistical Society Series B: Statistical Methodology}, 86\penalty0 (5):\penalty0 1091--1128, 2024.
+\newblock \doi{10.1093/jrsssb/qkae011}.
+\newblock Discussion paper. arXiv:1906.07801.
+
+\bibitem[Han et~al.(2026)Han, Zhang, Song, Fang, Chen, Sun, and Hu]{han2026sweskillsbench}
+Tingxu Han, Yi~Zhang, Wei Song, Chunrong Fang, Zhenyu Chen, Youcheng Sun, and Lijie Hu.
+\newblock {SWE-Skills-Bench: Do Agent Skills Actually Help in Real-World Software Engineering?}, 2026.
+\newblock arXiv:2603.15401 (v2).
+
+\bibitem[Haussler(1997)]{haussler1997general}
+David Haussler.
+\newblock A general minimax result for relative entropy.
+\newblock \emph{IEEE Transactions on Information Theory}, 43\penalty0 (4):\penalty0 1276--1280, 1997.
+\newblock \doi{10.1109/18.605594}.
+
+\bibitem[Honda \& Takemura(2010)Honda and Takemura]{honda2010asymptotically}
+Junya Honda and Akimichi Takemura.
+\newblock {An asymptotically optimal bandit algorithm for bounded support models}.
+\newblock In \emph{Proceedings of the 23rd Conference on Learning Theory (COLT)}, pp.\  67--79, 2010.
+\newblock URL \url{http://www.learningtheory.org/colt2010/papers/29honda.pdf}.
+
+\bibitem[Honda \& Takemura(2015)Honda and Takemura]{honda2015nonasymptotic}
+Junya Honda and Akimichi Takemura.
+\newblock {Non-asymptotic analysis of a new bandit algorithm for semi-bounded rewards}.
+\newblock \emph{Journal of Machine Learning Research}, 16\penalty0 (113):\penalty0 3721--3756, 2015.
+\newblock URL \url{https://jmlr.org/papers/v16/honda15a.html}.
+
+\bibitem[Howard et~al.(2021)Howard, Ramdas, McAuliffe, and Sekhon]{howard2021timeuniform}
+Steven~R. Howard, Aaditya Ramdas, Jon McAuliffe, and Jasjeet Sekhon.
+\newblock {Time-uniform, nonparametric, nonasymptotic confidence sequences}.
+\newblock \emph{The Annals of Statistics}, 49\penalty0 (2):\penalty0 1055--1080, 2021.
+\newblock \doi{10.1214/20-AOS1991}.
+\newblock arXiv:1810.08240.
+
+\bibitem[Hu et~al.(2026{\natexlab{a}})Hu, Sandhu, and Wasif]{hu2026prompt}
+Bin Hu, Avneek Sandhu, and Shahryar Wasif.
+\newblock {PROMPT: A Pre-registered Randomized Protocol for Component-Level Evaluation of Clinical AI Prompts}, 2026{\natexlab{a}}.
+\newblock arXiv:2606.22318 (v1).
+
+\bibitem[Hu et~al.(2026{\natexlab{b}})Hu, Hu, Su, Wang, Shi, Wu, Li, Chen, and Zhang]{hu2026selm}
+Mengxi Hu, Yuxuan Hu, Jinbo Su, Ke~Wang, Honghao Shi, Wenli Wu, Cuiping Li, Hong Chen, and Jing Zhang.
+\newblock {Selm: Self-Evolving Library Management for Multi-Skill Agent Optimization}, 2026{\natexlab{b}}.
+\newblock arXiv:2610.24630 (v1).
+
+\bibitem[Johari et~al.(2022)Johari, Koomen, Pekelis, and Walsh]{johari2022always}
+Ramesh Johari, Pete Koomen, Leonid Pekelis, and David Walsh.
+\newblock {Always valid inference: Continuous monitoring of A/B tests}.
+\newblock \emph{Operations Research}, 70\penalty0 (3):\penalty0 1806--1821, 2022.
+\newblock \doi{10.1287/opre.2021.2135}.
+\newblock Earlier version: arXiv:1512.04922, ``Always Valid Inference: Bringing Sequential Analysis to A/B Testing'' (Johari, Pekelis, Walsh, 2015).
+
+\bibitem[Kaufmann \& Koolen(2021)Kaufmann and Koolen]{kaufmann2021mixture}
+Emilie Kaufmann and Wouter~M. Koolen.
+\newblock {Mixture martingales revisited with applications to sequential tests and confidence intervals}.
+\newblock \emph{Journal of Machine Learning Research}, 22\penalty0 (246):\penalty0 1--44, 2021.
+\newblock URL \url{https://jmlr.org/papers/v22/18-798.html}.
+\newblock arXiv:1811.11419.
+
+\bibitem[Kaufmann et~al.(2016)Kaufmann, Capp{\'e}, and Garivier]{kaufmann2016complexity}
+Emilie Kaufmann, Olivier Capp{\'e}, and Aur{\'e}lien Garivier.
+\newblock {On the complexity of best-arm identification in multi-armed bandit models}.
+\newblock \emph{Journal of Machine Learning Research}, 17\penalty0 (1):\penalty0 1--42, 2016.
+\newblock URL \url{https://jmlr.org/papers/v17/kaufman16a.html}.
+\newblock arXiv:1407.4443. Change-of-measure inequality is Lemma 1.
+
+\bibitem[Kevin et~al.(2026)Kevin, Raghavan, Puget, Malani, Puvvadi, Abramovitch, Gupta, Akkiraju, Prabhu, Dangi, et~al.]{kevin2026aces}
+Christopher Kevin, Narendran Raghavan, Jean-Francois Puget, Roshni Malani, Meghana Puvvadi, Moshe Abramovitch, Mohit Gupta, Rama Akkiraju, Subodh Prabhu, Yogesh Dangi, et~al.
+\newblock {Evaluating Skills, Not Just Agents: Agentic Continuous Evaluation of Skills}, 2026.
+\newblock ACES; extended preprint of versions accepted at Agent Skills 2026 (ACM CAIS 2026) and the KDD 2026 Workshop on Enterprise AI Agents. arXiv:2608.20614 (v1).
+
+\bibitem[Kotawala(2026{\natexlab{a}})]{kotawala2026pairwise}
+Anany Kotawala.
+\newblock {Anytime-Valid Pairwise Testing for Incrementally Revealed LLM Benchmarks}.
+\newblock In \emph{NeurIPS 2026 Workshop on E-Values: From Statistics to ML}, 2026{\natexlab{a}}.
+\newblock URL \url{https://neurips.cc/virtual/2026/172171}.
+
+\bibitem[Kotawala(2026{\natexlab{b}})]{kotawala2026resolution}
+Anany Kotawala.
+\newblock {Resolution Diagnostics for Paired LLM Evaluation}, 2026{\natexlab{b}}.
+\newblock ICML 2026 Workshop on Hypothesis Testing. arXiv:2605.30315 (v1).
+
+\bibitem[Langford(2005)]{langford2005tutorial}
+John Langford.
+\newblock {Tutorial on practical prediction theory for classification}.
+\newblock \emph{Journal of Machine Learning Research}, 6\penalty0 (10):\penalty0 273--306, 2005.
+\newblock URL \url{https://jmlr.org/papers/v6/langford05a.html}.
+
+\bibitem[Larsson et~al.(2025)Larsson, Ramdas, and Ruf]{larsson2025numeraire}
+Martin Larsson, Aaditya Ramdas, and Johannes Ruf.
+\newblock {The numeraire e-variable and reverse information projection}.
+\newblock \emph{The Annals of Statistics}, 53\penalty0 (3):\penalty0 1015--1043, 2025.
+\newblock \doi{10.1214/24-AOS2487}.
+
+\bibitem[Laurie et~al.(2013)Laurie, Langley, and Kasper]{laurie2013ct}
+Ben Laurie, Adam Langley, and Emilia Kasper.
+\newblock {Certificate Transparency}.
+\newblock RFC 6962, June 2013.
+\newblock URL \url{https://www.rfc-editor.org/info/rfc6962}.
+\newblock Experimental RFC; obsoleted by RFC 9162.
+
+\bibitem[Laurie et~al.(2021)Laurie, Messeri, and Stradling]{laurie2021ctv2}
+Ben Laurie, Eran Messeri, and Rob Stradling.
+\newblock {Certificate Transparency Version 2.0}.
+\newblock RFC 9162, December 2021.
+\newblock URL \url{https://www.rfc-editor.org/info/rfc9162}.
+\newblock Experimental RFC.
+
+\bibitem[Li et~al.(2026{\natexlab{a}})Li, Chen, and Huang]{li2026avaivat}
+Boning Li, Yu~Chen, and Longbo Huang.
+\newblock {AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games}, 2026{\natexlab{a}}.
+\newblock AV-AIVAT. arXiv:2608.06362 (v1).
+
+\bibitem[Li et~al.(2026{\natexlab{b}})Li, Liu, Chen, You, Di, He, Zheng, Choe, Sun, Wang, et~al.]{li2026skillsbench}
+Xiangyi Li, Yimin Liu, Wenbo Chen, Bingran You, Zonglin Di, Yifeng He, Shenghan Zheng, Kyoung~Whan Choe, Jiankai Sun, Shuyi Wang, et~al.
+\newblock {SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks}, 2026{\natexlab{b}}.
+\newblock arXiv:2602.12670 (v4).
+
+\bibitem[Li(2026)]{li2026whodrifted}
+Yitao Li.
+\newblock {Who Drifted: the System or the Judge? Anytime-Valid Attribution in LLM Evaluation Pipelines}, 2026.
+\newblock arXiv:2606.15474 (v1).
+
+\bibitem[Li et~al.(2026{\natexlab{c}})Li, Cai, Xiao, Wang, Deng, and An]{li2026mindskill}
+Yixuan Li, Mingshu Cai, Ziyang Xiao, Wanyuan Wang, Yanchen Deng, and Bo~An.
+\newblock {MIND-Skill: Quality-Guaranteed Skill Generation via Multi-Agent Induction and Deduction}, 2026{\natexlab{c}}.
+\newblock arXiv:2605.08670 (v1).
+
+\bibitem[Liu et~al.(2026{\natexlab{a}})Liu, Dong, Dong, Mao, Zhao, Yang, Chuai, Chen, Xing, and Yan]{liu2026skillvine}
+Kaiwei Liu, Jiqian Dong, Liran Dong, Shuai Mao, Mingming Zhao, Bufang Yang, Jie Chuai, Zhitang Chen, Guoliang Xing, and Zhenyu Yan.
+\newblock {SkillVine: Agent Skill Evolution via Branching Exploration}, 2026{\natexlab{a}}.
+\newblock arXiv:2609.32731 (v1).
+
+\bibitem[Liu et~al.(2026{\natexlab{b}})Liu, Su, Zhang, Guo, Xie, Jing, Xie, Zong, Yim, Zhang, et~al.]{liu2026rethinking}
+Yuxuan Liu, Zhaochen Su, Yuhao Zhang, Jiahe Guo, Zhongwei Xie, Huihao Jing, Lingyun Xie, Qing Zong, Yauwai Yim, Zhixiong Zhang, et~al.
+\newblock {Rethinking Self-Evolving Agent Skills: Feedback Dynamics over Multiple Rounds}, 2026{\natexlab{b}}.
+\newblock arXiv:2608.02636 (v1).
+
+\bibitem[Ma et~al.(2026{\natexlab{a}})Ma, Miao, Chen, Yang, Fang, Zheng, Zhang, Xu, Yu, Li, et~al.]{ma2026skillneo}
+Enze Ma, Chunyu Miao, Yankai Chen, Jie Yang, Liancheng Fang, Kening Zheng, Hanrong Zhang, Muyao Xu, Xinle Yu, Chengze Li, et~al.
+\newblock {SkillNEO: Non-Elitist Evolutionary Optimization of Agent Skills}, 2026{\natexlab{a}}.
+\newblock arXiv:2610.20926 (v2).
+
+\bibitem[Ma et~al.(2026{\natexlab{b}})Ma, Qian, Ma, Liang, Ji, Cai, Chen, Jiang, and Sun]{ma2026skillv}
+Jie Ma, Zhipeng Qian, Yufei Ma, Zihan Liang, Jiayi Ji, Qingpeng Cai, Ben Chen, Peng Jiang, and Xiaoshuai Sun.
+\newblock {Skill-V: Verifiable Self-Evolving Skill Library for Interactive Agents}, 2026{\natexlab{b}}.
+\newblock arXiv:2610.11781 (v1).
+
+\bibitem[Merhav \& Feder(1995)Merhav and Feder]{merhav1995strong}
+Neri Merhav and Meir Feder.
+\newblock A strong version of the redundancy-capacity theorem of universal coding.
+\newblock \emph{IEEE Transactions on Information Theory}, 41\penalty0 (3):\penalty0 714--722, 1995.
+\newblock \doi{10.1109/18.382017}.
+
+\bibitem[Merkle(1988)]{merkle1988digital}
+Ralph~C. Merkle.
+\newblock {A digital signature based on a conventional encryption function}.
+\newblock In \emph{Advances in Cryptology -- CRYPTO '87}, Lecture Notes in Computer Science, pp.\  369--378. Springer, 1988.
+\newblock \doi{10.1007/3-540-48184-2_32}.
+
+\bibitem[Mysore et~al.(2026)Mysore, Rao, Jain, et~al.]{mysore2026citibank}
+Vishal Mysore, Prithvi~Narayana Rao, Payal Jain, et~al.
+\newblock {Allocating resources among autonomous artificial intelligence agents within a distributed computational network}.
+\newblock US Patent 12,621,253 B2; pre-grant publication US 2026/0012431 A1 (8 Jan 2026), 2026.
+\newblock URL \url{https://patents.google.com/patent/US12621253B2/en}.
+\newblock Assignee: Citibank NA. Appl. US 19/333,639; granted 5 May 2026.
+
+\bibitem[Newman et~al.(2022)Newman, Meyers, and Torres-Arias]{newman2022sigstore}
+Zachary Newman, John~Speed Meyers, and Santiago Torres-Arias.
+\newblock {Sigstore: Software signing for everybody}.
+\newblock In \emph{Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications Security (CCS)}, pp.\  2353--2367, 2022.
+\newblock \doi{10.1145/3548606.3560596}.
+
+\bibitem[Ni et~al.(2026)Ni, Liu, Liu, Sun, Zhou, Cheng, Wang, Zhao, Jiang, and Jiang]{ni2026trace2skill}
+Jingwei Ni, Yihao Liu, Xinpeng Liu, Yutao Sun, Mengyu Zhou, Pengyu Cheng, Dexin Wang, Erchao Zhao, Xiaoxi Jiang, and Guanjun Jiang.
+\newblock {Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills}, 2026.
+\newblock arXiv:2603.25158 (v5).
+
+\bibitem[{NVIDIA}(2026{\natexlab{a}})]{nvidia2026skillevaluator}
+{NVIDIA}.
+\newblock {SkillEvaluator}, 2026{\natexlab{a}}.
+\newblock URL \url{https://github.com/NVIDIA/SkillEvaluator}.
+\newblock GitHub repository, Apache-2.0. Accessed 14 Nov 2026.
+
+\bibitem[{NVIDIA}(2026{\natexlab{b}})]{nvidia2026skillspector}
+{NVIDIA}.
+\newblock {SkillSpector}, 2026{\natexlab{b}}.
+\newblock URL \url{https://github.com/NVIDIA/SkillSpector}.
+\newblock GitHub repository, Apache-2.0; security scanner for agent skills. Accessed 14 Nov 2026.
+
+\bibitem[{NVIDIA}(2026{\natexlab{c}})]{nvidia2026trustpipeline}
+{NVIDIA}.
+\newblock {A Trust Pipeline for Agent Skills}, 2026{\natexlab{c}}.
+\newblock URL \url{https://docs.nvidia.com/skills/agent-skill-trust-pipeline}.
+\newblock See also https://docs.nvidia.com/skills/signing-agent-skills (Verify Signed Agent Skills). Accessed 14 Nov 2026.
+
+\bibitem[Orabona(2026)]{orabona2026optimal}
+Francesco Orabona.
+\newblock {Optimal priors for betting tests with bounded payoffs: An exact expected-time characterization}, 2026.
+\newblock arXiv:2610.25821.
+
+\bibitem[Pardasani \& Singh(2026)Pardasani and Singh]{pardasani2026whoverifies}
+Sahil Pardasani and Madhusudan Singh.
+\newblock {Who Verifies the Benchmark? Decentralizing Trust in Large Language Model Evaluation}, 2026.
+\newblock QASC 2026. arXiv:2608.07762 (v1).
+
+\bibitem[Pollak(1978)]{pollak1978optimality}
+Moshe Pollak.
+\newblock {Optimality and almost optimality of mixture stopping rules}.
+\newblock \emph{The Annals of Statistics}, 6\penalty0 (4):\penalty0 910--916, 1978.
+\newblock \doi{10.1214/aos/1176344264}.
+
+\bibitem[Ramdas et~al.(2023)Ramdas, Gr{\"u}nwald, Vovk, and Shafer]{ramdas2023gametheoretic}
+Aaditya Ramdas, Peter Gr{\"u}nwald, Vladimir Vovk, and Glenn Shafer.
+\newblock {Game-theoretic statistics and safe anytime-valid inference}.
+\newblock \emph{Statistical Science}, 38\penalty0 (4):\penalty0 576--601, 2023.
+\newblock \doi{10.1214/23-STS894}.
+\newblock arXiv:2210.01948.
+
+\bibitem[Rissanen(1983)]{rissanen1983universal}
+Jorma Rissanen.
+\newblock {A universal prior for integers and estimation by minimum description length}.
+\newblock \emph{The Annals of Statistics}, 11\penalty0 (2):\penalty0 416--431, 1983.
+\newblock \doi{10.1214/aos/1176346150}.
+
+\bibitem[Roeder \& Wasserman(2009)Roeder and Wasserman]{roeder2009genome}
+Kathryn Roeder and Larry Wasserman.
+\newblock {Genome-wide significance levels and weighted hypothesis testing}.
+\newblock \emph{Statistical Science}, 24\penalty0 (4):\penalty0 398--413, 2009.
+\newblock \doi{10.1214/09-STS289}.
+
+\bibitem[Rossi et~al.(2025)Rossi, Crapis, Ellis, and Reppel]{derossi2025erc8004}
+Marco~De Rossi, Davide Crapis, Jordan Ellis, and Erik Reppel.
+\newblock {ERC-8004: Trustless Agents}, 2025.
+\newblock URL \url{https://eips.ethereum.org/EIPS/eip-8004}.
+\newblock Ethereum Improvement Proposal (draft), created 13 Aug 2025. Accessed 14 Nov 2026.
+
+\bibitem[Rundgren et~al.(2020)Rundgren, Jordan, and Erdtman]{rundgren2020jcs}
+Anders Rundgren, Bret Jordan, and Samuel Erdtman.
+\newblock {JSON Canonicalization Scheme (JCS)}.
+\newblock RFC 8785, June 2020.
+\newblock URL \url{https://www.rfc-editor.org/info/rfc8785}.
+\newblock Informational RFC.
+
+\bibitem[Sadhuka et~al.(2025)Sadhuka, Prinster, Fannjiang, Scalia, Berger, Regev, and Wang]{sadhuka2025evaluator}
+Shuvom Sadhuka, Drew Prinster, Clara Fannjiang, Gabriele Scalia, Bonnie Berger, Aviv Regev, and Hanchen Wang.
+\newblock {E-valuator: Reliable Agent Verifiers with Sequential Hypothesis Testing}, 2025.
+\newblock arXiv:2512.03109 (v2).
+
+\bibitem[Saha et~al.(2026)Saha, Faghih, and Feizi]{saha2026skillmd}
+Shoumik Saha, Kazem Faghih, and Soheil Feizi.
+\newblock {Under the Hood of SKILL.md: Semantic Supply-chain Attacks on AI Agent Skill Registry}, 2026.
+\newblock arXiv:2605.11418 (v1).
+
+\bibitem[Saxton et~al.(2019)Saxton, Grefenstette, Hill, and Kohli]{saxton2019analysing}
+David Saxton, Edward Grefenstette, Felix Hill, and Pushmeet Kohli.
+\newblock Analysing mathematical reasoning abilities of neural models.
+\newblock In \emph{International Conference on Learning Representations}, 2019.
+
+\bibitem[Shaposhnikov et~al.(2026)Shaposhnikov, Fortuin, Stipcich, Gorinova, Heineike, and Willoughby]{shaposhnikov2026framework}
+Maksim Shaposhnikov, Nicolas Fortuin, Simon Stipcich, Maria~I. Gorinova, Amy Heineike, and Rob Willoughby.
+\newblock {A Framework for Evaluating Agentic Skills at Scale}, 2026.
+\newblock arXiv:2606.17819 (v1).
+
+\bibitem[Shekhar \& Ramdas(2024)Shekhar and Ramdas]{shekhar2024nonparametric}
+Shubhanshu Shekhar and Aaditya Ramdas.
+\newblock {Nonparametric two-sample testing by betting}.
+\newblock \emph{IEEE Transactions on Information Theory}, 70\penalty0 (2):\penalty0 1178--1203, 2024.
+\newblock \doi{10.1109/TIT.2023.3305867}.
+\newblock Corrections: IEEE Trans. Inf. Theory 71(12):9804--9806, 2025, doi:10.1109/TIT.2025.3614420.
+
+\bibitem[Shinn et~al.(2023)Shinn, Cassano, Gopinath, Narasimhan, and Yao]{shinn2023reflexion}
+Noah Shinn, Federico Cassano, Ashwin Gopinath, Karthik Narasimhan, and Shunyu Yao.
+\newblock {Reflexion: Language agents with verbal reinforcement learning}.
+\newblock In \emph{Advances in Neural Information Processing Systems}, volume~36, pp.\  8634--8652, 2023.
+\newblock URL \url{https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html}.
+
+\bibitem[Sicular et~al.(2026{\natexlab{a}})Sicular, Longoria, and Khandelwal]{drivehealth2026credentialing}
+Alexander Sicular, Kevin Longoria, and Rajkumar Khandelwal.
+\newblock {Verifiable credentialing of deployed AI agents}.
+\newblock US Patent Application Publication US 2026/0244728 A1, 2026{\natexlab{a}}.
+\newblock URL \url{https://patents.google.com/patent/US20260244728A1/en}.
+\newblock Assignee: Rpm One Inc dba Drive Health. Appl. US 19/540,392, filed 13 Feb 2026; claims priority to US Provisional 63/760,607; published 20 Aug 2026.
+
+\bibitem[Sicular et~al.(2026{\natexlab{b}})Sicular, Longoria, and Khandelwal]{drivehealth2026targeted}
+Alexander Sicular, Kevin Longoria, and Rajkumar Khandelwal.
+\newblock {Targeted validation of deployed AI agents}.
+\newblock US Patent Application Publication US 2026/0244777 A1, 2026{\natexlab{b}}.
+\newblock URL \url{https://patents.google.com/patent/US20260244777A1/en}.
+\newblock Assignee: Rpm One Inc dba Drive Health (same family as US 2026/0244728 A1). Appl. US 19/540,410; published 20 Aug 2026.
+
+\bibitem[{Sigstore}(2026)]{sigstore2026rekor}
+{Sigstore}.
+\newblock {Rekor: Software Supply Chain Transparency Log}, 2026.
+\newblock URL \url{https://github.com/sigstore/rekor}.
+\newblock GitHub repository; documentation at https://docs.sigstore.dev/logging/overview/. Accessed 14 Nov 2026.
+
+\bibitem[Silva et~al.(2020)Silva, Kulldorff, and Yih]{silva2020optimal}
+Ivair~R. Silva, Martin Kulldorff, and W.~Katherine Yih.
+\newblock {Optimal alpha spending for sequential analysis with binomial data}.
+\newblock \emph{Journal of the Royal Statistical Society Series B: Statistical Methodology}, 82\penalty0 (4):\penalty0 1141--1164, 2020.
+\newblock \doi{10.1111/rssb.12379}.
+
+\bibitem[Singh et~al.(2025)Singh, Nan, Wang, D'Souza, Kapoor, {\"U}st{\"u}n, et~al.]{singh2025leaderboard}
+Shivalika Singh, Yiyang Nan, Alex Wang, Daniel D'Souza, Sayash Kapoor, Ahmet {\"U}st{\"u}n, et~al.
+\newblock {The Leaderboard Illusion}, 2025.
+
+\bibitem[{SkillMill}(2026)]{skillmill2026}
+{SkillMill}.
+\newblock {SkillMill: The Trust Registry for Agent Skills}, 2026.
+\newblock URL \url{https://skillmill.ai/}.
+\newblock Accessed 14 Nov 2026.
+
+\bibitem[South et~al.(2024)South, Camuto, Jain, Nguyen, Mahari, Paquin, Morton, and Pentland]{south2024zksnarks}
+Tobin South, Alexander Camuto, Shrey Jain, Shayla Nguyen, Robert Mahari, Christian Paquin, Jason Morton, and Alex~'Sandy' Pentland.
+\newblock {Verifiable evaluations of machine learning models using zkSNARKs}, 2024.
+\newblock arXiv:2402.02675 (v2).
+
+\bibitem[{sx4im}(2026)]{sx4im2026skillcheck}
+{sx4im}.
+\newblock {skillcheck: Blind A/B testing for AI agent skills, .cursorrules, CLAUDE.md, and system prompts}, 2026.
+\newblock URL \url{https://github.com/sx4im/skillcheck}.
+\newblock GitHub repository. Accessed 14 Nov 2026.
+
+\bibitem[Tavyrikov et~al.(2025)Tavyrikov, Goeman, and de~Heide]{tavyrikov2025carefree}
+Yury Tavyrikov, Jelle~J. Goeman, and Rianne de~Heide.
+\newblock {Carefree multiple testing with e-processes}, 2025.
+
+\bibitem[Tian \& Ramdas(2021)Tian and Ramdas]{tian2021online}
+Jinjin Tian and Aaditya Ramdas.
+\newblock {Online control of the familywise error rate}.
+\newblock \emph{Statistical Methods in Medical Research}, 30\penalty0 (4):\penalty0 976--993, 2021.
+\newblock \doi{10.1177/0962280220983381}.
+
+\bibitem[Ville(1939)]{ville1939etude}
+Jean Ville.
+\newblock {{\'E}tude critique de la notion de collectif}.
+\newblock Th{\`e}se, Th{\`e}ses de l'entre-deux-guerres, no. 218, 1939.
+\newblock URL \url{https://www.numdam.org/item/THESE_1939__218__1_0/}.
+\newblock In French.
+
+\bibitem[Wald(1945)]{wald1945sequential}
+Abraham Wald.
+\newblock {Sequential tests of statistical hypotheses}.
+\newblock \emph{The Annals of Mathematical Statistics}, 16\penalty0 (2):\penalty0 117--186, 1945.
+\newblock \doi{10.1214/aoms/1177731118}.
+
+\bibitem[Wang et~al.(2023)Wang, Xie, Jiang, Mandlekar, Xiao, Zhu, Fan, and Anandkumar]{wang2023voyager}
+Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, and Anima Anandkumar.
+\newblock {Voyager: An Open-Ended Embodied Agent with Large Language Models}, 2023.
+\newblock arXiv:2305.16291 (v2).
+
+\bibitem[Wang et~al.(2025)Wang, Dandapanthula, and Ramdas]{wang2025stopped}
+Hongjian Wang, Sanjit Dandapanthula, and Aaditya Ramdas.
+\newblock {Anytime-valid FDR control with the stopped e-BH procedure}, 2025.
+
+\bibitem[Wang et~al.(2026{\natexlab{a}})Wang, Zhao, Li, Chen, Chen, Peng, and He]{wang2026skillrevisions}
+Jiajie Wang, Yutong Zhao, Tianlin Li, Huashan Chen, Jinfu Chen, Kebin Peng, and Sen He.
+\newblock {Agent Skill Evolution: How Revisions Affect Coding Agents}, 2026{\natexlab{a}}.
+\newblock arXiv:2610.04832 (v1).
+
+\bibitem[Wang et~al.(2026{\natexlab{b}})Wang, Wang, and Xu]{wang2026skilltester}
+Leye Wang, Zixing Wang, and Anjie Xu.
+\newblock {SkillTester: Benchmarking Utility and Security of Agent Skills}, 2026{\natexlab{b}}.
+\newblock Technical report. arXiv:2603.28815 (v1).
+
+\bibitem[Wang \& Ramdas(2022)Wang and Ramdas]{wang2022ebh}
+Ruodu Wang and Aaditya Ramdas.
+\newblock {False discovery rate control with e-values}.
+\newblock \emph{Journal of the Royal Statistical Society Series B: Statistical Methodology}, 84\penalty0 (3):\penalty0 822--852, 2022.
+\newblock \doi{10.1111/rssb.12489}.
+\newblock arXiv:2009.02824.
+
+\bibitem[Waudby-Smith \& Ramdas(2024)Waudby-Smith and Ramdas]{waudbysmith2024betting}
+Ian Waudby-Smith and Aaditya Ramdas.
+\newblock {Estimating means of bounded random variables by betting}.
+\newblock \emph{Journal of the Royal Statistical Society Series B: Statistical Methodology}, 86\penalty0 (1):\penalty0 1--27, 2024.
+\newblock \doi{10.1093/jrsssb/qkad009}.
+\newblock arXiv:2010.09686.
+
+\bibitem[Waudby-Smith et~al.(2025)Waudby-Smith, Sandoval, and Jordan]{waudbysmith2025instance}
+Ian Waudby-Smith, Ricardo~J. Sandoval, and Michael~I. Jordan.
+\newblock {Instance-log-optimality of portfolio-based e-processes and their sequential hypothesis tests}, 2025.
+
+\bibitem[Xie \& Barron(1997)Xie and Barron]{xie1997minimax}
+Qun Xie and Andrew~R. Barron.
+\newblock Minimax redundancy for the class of memoryless sources.
+\newblock \emph{IEEE Transactions on Information Theory}, 43\penalty0 (2):\penalty0 646--657, 1997.
+\newblock \doi{10.1109/18.556120}.
+
+\bibitem[Xu \& Ramdas(2024)Xu and Ramdas]{xu2024online}
+Ziyu Xu and Aaditya Ramdas.
+\newblock {Online multiple testing with e-values}.
+\newblock In \emph{Proceedings of the 27th International Conference on Artificial Intelligence and Statistics (AISTATS)}, volume 238 of \emph{Proceedings of Machine Learning Research}, pp.\  3997--4005, 2024.
+\newblock URL \url{https://proceedings.mlr.press/v238/xu24a.html}.
+\newblock Introduces e-LOND. arXiv:2311.06412.
+
+\bibitem[Yang \& Ding(2026)Yang and Ding]{yang2026webdevskills}
+Ziyue Yang and Fan Ding.
+\newblock {Signal or Noise? A Benchmark Study of Agent Skills in Web Development}, 2026.
+\newblock WebDev-Skills-Bench. arXiv:2608.23067 (v1).
+
+\bibitem[Yin et~al.(2026)Yin, Liu, and Qi]{yin2026enough}
+Enoch Yin, Bin Liu, and Zhengling Qi.
+\newblock {When Is Enough Enough in Self-Evolving LLM Systems?}, 2026.
+\newblock arXiv:2610.04756 (v1).
+
+\bibitem[Ying et~al.(2026)Ying, Ai, Tang, Liu, and Cao]{ying2026openskilleval}
+Jiahao Ying, Boxian Ai, Wei Tang, Siyuan Liu, and Yixin Cao.
+\newblock {OpenSkillEval: Automatically Auditing the Open Skill Ecosystem for LLM Agents}, 2026.
+\newblock arXiv:2605.23657 (v2).
+
+\bibitem[Yu et~al.(2026{\natexlab{a}})Yu, Li, Guan, Lin, Luan, Rao, Lan, Ran, Lan, Zhai, et~al.]{yu2026skillaudit}
+Dexu Yu, Youhua Li, Zhaoyang Guan, Xianhao Lin, Jining Luan, Zihao Rao, Xuanqi Lan, Yang Ran, Bo~Lan, Nai-Xin Zhai, et~al.
+\newblock {SkillAudit: From Fixed-Suite Benchmarking to Skill-Centered Assessment}, 2026{\natexlab{a}}.
+\newblock arXiv:2606.22613 (v1).
+
+\bibitem[Yu et~al.(2026{\natexlab{b}})Yu, Zhu, Lin, Cui, Ding, and Li]{yu2026masa}
+Jianxiang Yu, Jiapeng Zhu, Bochen Lin, Qier Cui, Zichen Ding, and Xiang Li.
+\newblock {Skill is Not One-Size-Fits-All: Model-Aware Skill Alignment for LLM Agents}, 2026{\natexlab{b}}.
+\newblock arXiv:2605.30723 (v1).
+
+\bibitem[Zhang et~al.(2026)Zhang, Liu, Chen, and Ji]{zhang2026reusable}
+Chi Zhang, Yimin Liu, Xinze Chen, and Ping Ji.
+\newblock {What Keeps Agent Skills from Being Reusable? Evidence from 138K SKILL.md Files}, 2026.
+\newblock arXiv:2608.08453 (v1).
+
+\bibitem[Zhao et~al.(2024)Zhao, Huang, Xu, Lin, Liu, and Huang]{zhao2024expel}
+Andrew Zhao, Daniel Huang, Quentin Xu, Matthieu Lin, Yong-Jin Liu, and Gao Huang.
+\newblock {ExpeL: LLM agents are experiential learners}.
+\newblock \emph{Proceedings of the AAAI Conference on Artificial Intelligence}, 38\penalty0 (17):\penalty0 19632--19642, 2024.
+\newblock \doi{10.1609/aaai.v38i17.29936}.
+\newblock arXiv:2308.10144.
+
+\bibitem[Zheng et~al.(2025)Zheng, Fatemi, Jin, Wang, Gandhi, Song, Gu, Srinivasa, Liu, Neubig, et~al.]{zheng2025skillweaver}
+Boyuan Zheng, Michael~Y. Fatemi, Xiaolong Jin, Zora~Zhiruo Wang, Apurva Gandhi, Yueqi Song, Yu~Gu, Jayanth Srinivasa, Gaowen Liu, Graham Neubig, et~al.
+\newblock {SkillWeaver: Web Agents can Self-Improve by Discovering and Honing Skills}, 2025.
+\newblock arXiv:2504.07079 (v1).
+
+\bibitem[Zhou et~al.(2026)Zhou, Ye, Chen, Li, and Liu]{zhou2026celeus}
+Zhijian Zhou, Zesheng Ye, Zhaorun Chen, Bo~Li, and Feng Liu.
+\newblock {CELEUS: Certifiable and Efficient LLM Evaluation via E-Processes}, 2026.
+\newblock arXiv:2606.20820 (v3).
+
+\end{thebibliography}

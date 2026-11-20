@@ -1,0 +1,71 @@
+% P9 manuscript. TMLR style.
+% Build the review copy with \usepackage{tmlr} (anonymous); this author copy uses [preprint].
+% INTERNAL DRAFT: not to be posted or submitted before the patent decision and Chari's explicit OK.
+\documentclass[10pt]{article}
+\usepackage[preprint]{tmlr}
+\input{math_commands.tex}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit}
+\graphicspath{{../figures/out/}{../figures/tikz/}}
+\input{numbers.tex}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+
+\title{Certifying That an Agent Skill Helps: Anytime-Valid, Resubmission-Proof and Verifiable Admission for Skill Registries}
+
+\author{\name Sai Praveen Chettupalli \email saichettupalli@gmail.com\\
+      \addr Independent researcher
+      \AND
+      \name Narahara C. Dingari \email ndingari@wpi.edu \\
+      \addr Department of Data Science, Worcester Polytechnic Institute, Worcester, MA, USA\\
+      \addr Corresponding author}
+
+\def\month{MM}
+\def\year{YYYY}
+\def\openreview{\url{https://openreview.net/forum?id=XXXX}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+
+\input{sections/intro}
+\input{sections/related}
+\input{sections/setup}
+\input{sections/gate}
+\input{sections/theory}
+\input{sections/evaluation}
+\input{sections/results}
+\input{sections/discussion}
+
+\section*{Broader Impact Statement}
+\input{sections/impact}
+
+\section*{Code and data availability}
+Code (the \texttt{nixigate} package, all experiment scripts, and the scripts that generate every number and figure in this paper) will be released with the paper; for review it is in the anonymized supplement. The benchmark data reanalyzed here are public: SWE-Skills-Bench per-cell results (MIT license) and the SkillsBench results registry (AGPL-3.0), at the commits listed in Appendix~\ref{app:data}.
+
+\bibliography{refs}
+\bibliographystyle{tmlr}
+
+\appendix
+\input{sections/appendix_notation}
+\input{sections/appendix_related}
+\input{sections/appendix_results}
+\input{sections/appendix_theory}
+\input{sections/appendix}
+
+\end{document}

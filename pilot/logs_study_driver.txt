@@ -1,0 +1,44 @@
+beacon round 33980345 not available yet: HTTP Error 425: Too Early
+beacon round 33980345 not available yet: HTTP Error 425: Too Early
+beacon round 33980345 not available yet: HTTP Error 425: Too Early
+beacon round 33980345 not available yet: HTTP Error 425: Too Early
+beacon round 33980345 not available yet: HTTP Error 425: Too Early
+beacon round 33980345 not available yet: HTTP Error 425: Too Early
+beacon round 33980345 not available yet: HTTP Error 425: Too Early
+beacon round 33980345 not available yet: HTTP Error 425: Too Early
+beacon round 33980345 not available yet: HTTP Error 425: Too Early
+beacon round 33980345 not available yet: HTTP Error 425: Too Early
+06:07:07 batch 1/8 start: 12 tasks, spent so far $0.00, free 49 GB
+07:53:30 batch 1 done rc=[1, 1], spent $45.35
+07:53:30 batch 2/8 start: 12 tasks, spent so far $45.35, free 56 GB
+19:48:06 batch 2/8 start: 12 tasks, spent so far $29.41, free 56 GB
+01:15:09 batch 2 done rc=[1, 1], spent $36.08
+01:15:17 batch 3/8 start: 12 tasks, spent so far $36.08, free 62 GB
+02:30:50 batch 3 done rc=[1, 1], spent $44.37
+02:30:54 batch 4/8 start: 12 tasks, spent so far $44.37, free 53 GB
+02:31:07 batch 4 done rc=[1, 1], spent $44.37
+02:31:07 batch 5/8 start: 12 tasks, spent so far $44.37, free 64 GB
+03:02:40 batch 5 done rc=[1, 1], spent $46.48
+03:02:49 batch 6/8 start: 12 tasks, spent so far $46.48, free 54 GB
+03:02:51 batch 6 done rc=[1, 1], spent $46.48
+03:02:51 batch 7/8 start: 12 tasks, spent so far $46.48, free 55 GB
+04:09:53 batch 7 done rc=[1, 1], spent $55.74
+04:10:01 batch 8/8 start: 3 tasks, spent so far $55.74, free 49 GB
+04:59:08 batch 8 done rc=[1, 1], spent $65.67
+04:59:08 STUDY RUNS DONE, reported cost $65.67
+batch 04 rerun: 11 tasks
+batch 04 rerun done rc=[1, 1]
+batch 06 rerun: 11 tasks
+batch 06 rerun done rc=[1, 1]
+RERUN DONE
+API OK {"input_tokens":10}
+secondary 04: 11 tasks
+secondary 04 done rc=[1, 1]
+API BLOCKED 400 {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_i
+SECONDARY STOP: usage limit reached again
+API OK {"input_tokens":10}
+secondary 04: already done, skipped
+secondary 06: 11 tasks
+secondary 06 done rc=[1, 1]
+API OK {"input_tokens":10}
+SECONDARY DONE

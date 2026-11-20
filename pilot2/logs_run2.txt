@@ -1,0 +1,114 @@
+exam 1 (A1 placebo) level 0.02187 start at pair 0
+  t=1 pairs=6 valid=6 Dbar=0.000 spent=$0.10
+  t=1 pairs=12 valid=12 Dbar=0.000 spent=$0.12
+  t=1 pairs=18 valid=18 Dbar=0.000 spent=$0.14
+  t=1 pairs=24 valid=24 Dbar=0.000 spent=$0.16
+  t=1 pairs=30 valid=30 Dbar=0.000 spent=$0.18
+  t=1 pairs=36 valid=36 Dbar=0.000 spent=$0.21
+  t=1 pairs=42 valid=42 Dbar=0.000 spent=$0.23
+  t=1 pairs=48 valid=48 Dbar=0.000 spent=$0.25
+  t=1 pairs=54 valid=54 Dbar=0.000 spent=$0.27
+  t=1 pairs=60 valid=57 Dbar=0.000 spent=$0.28
+  t=1 pairs=66 valid=57 Dbar=0.000 spent=$0.28
+  t=1 pairs=72 valid=57 Dbar=0.000 spent=$0.28
+  t=1 pairs=78 valid=57 Dbar=0.000 spent=$0.28
+  t=1 pairs=84 valid=57 Dbar=0.000 spent=$0.28
+  t=1 pairs=90 valid=57 Dbar=0.000 spent=$0.28
+  t=1 pairs=96 valid=57 Dbar=0.000 spent=$0.28
+exam 1 (A1 placebo) level 0.02187 start at pair 96
+  t=1 pairs=102 valid=63 Dbar=0.000 spent=$0.30
+  t=1 pairs=108 valid=69 Dbar=0.000 spent=$0.32
+  t=1 pairs=114 valid=75 Dbar=0.000 spent=$0.34
+  t=1 pairs=120 valid=81 Dbar=0.000 spent=$0.36
+  t=1 pairs=126 valid=87 Dbar=0.000 spent=$0.38
+  t=1 pairs=132 valid=93 Dbar=0.000 spent=$0.40
+  t=1 pairs=138 valid=99 Dbar=0.000 spent=$0.42
+  t=1 pairs=144 valid=105 Dbar=0.000 spent=$0.44
+  t=1 pairs=150 valid=111 Dbar=0.000 spent=$0.47
+  t=1 pairs=156 valid=117 Dbar=0.000 spent=$0.49
+  t=1 pairs=162 valid=123 Dbar=0.000 spent=$0.51
+  t=1 pairs=168 valid=129 Dbar=0.000 spent=$0.53
+  t=1 pairs=174 valid=135 Dbar=0.000 spent=$0.55
+  t=1 pairs=180 valid=141 Dbar=0.000 spent=$0.57
+  t=1 pairs=186 valid=147 Dbar=0.000 spent=$0.59
+  t=1 pairs=192 valid=153 Dbar=0.000 spent=$0.61
+  t=1 pairs=198 valid=159 Dbar=0.000 spent=$0.64
+  t=1 pairs=204 valid=165 Dbar=0.000 spent=$0.66
+  t=1 pairs=210 valid=171 Dbar=0.000 spent=$0.68
+  t=1 pairs=216 valid=177 Dbar=0.000 spent=$0.70
+  t=1 pairs=222 valid=183 Dbar=0.005 spent=$0.72
+  t=1 pairs=228 valid=189 Dbar=0.005 spent=$0.74
+  t=1 pairs=234 valid=195 Dbar=0.005 spent=$0.77
+  t=1 pairs=240 valid=201 Dbar=0.005 spent=$0.79
+  t=1 pairs=246 valid=207 Dbar=0.005 spent=$0.81
+  t=1 pairs=252 valid=213 Dbar=0.005 spent=$0.83
+exam 1 decision futility at valid pair 209
+exam 2 (B1 leak) level 0.00722 start at pair 0
+  t=2 pairs=6 valid=6 Dbar=0.167 spent=$0.86
+  t=2 pairs=12 valid=12 Dbar=0.083 spent=$0.88
+  t=2 pairs=18 valid=18 Dbar=0.056 spent=$0.91
+  t=2 pairs=24 valid=24 Dbar=0.042 spent=$0.94
+  t=2 pairs=30 valid=30 Dbar=0.033 spent=$0.97
+  t=2 pairs=36 valid=36 Dbar=0.028 spent=$0.99
+  t=2 pairs=42 valid=42 Dbar=0.024 spent=$1.02
+  t=2 pairs=48 valid=48 Dbar=0.021 spent=$1.04
+  t=2 pairs=54 valid=54 Dbar=0.019 spent=$1.07
+  t=2 pairs=60 valid=60 Dbar=0.017 spent=$1.09
+  t=2 pairs=66 valid=66 Dbar=0.015 spent=$1.12
+  t=2 pairs=72 valid=72 Dbar=0.014 spent=$1.15
+  t=2 pairs=78 valid=78 Dbar=0.013 spent=$1.17
+  t=2 pairs=84 valid=84 Dbar=0.012 spent=$1.19
+  t=2 pairs=90 valid=90 Dbar=0.011 spent=$1.22
+  t=2 pairs=96 valid=96 Dbar=0.010 spent=$1.25
+  t=2 pairs=102 valid=102 Dbar=0.010 spent=$1.28
+  t=2 pairs=108 valid=108 Dbar=0.009 spent=$1.30
+  t=2 pairs=114 valid=114 Dbar=0.009 spent=$1.32
+  t=2 pairs=120 valid=120 Dbar=0.008 spent=$1.35
+  t=2 pairs=126 valid=126 Dbar=0.008 spent=$1.38
+  t=2 pairs=132 valid=132 Dbar=0.008 spent=$1.40
+  t=2 pairs=138 valid=138 Dbar=0.007 spent=$1.43
+  t=2 pairs=144 valid=144 Dbar=0.000 spent=$1.46
+  t=2 pairs=150 valid=150 Dbar=0.000 spent=$1.48
+  t=2 pairs=156 valid=156 Dbar=0.000 spent=$1.51
+  t=2 pairs=162 valid=162 Dbar=0.000 spent=$1.54
+  t=2 pairs=168 valid=168 Dbar=0.000 spent=$1.56
+  t=2 pairs=174 valid=174 Dbar=0.000 spent=$1.59
+  t=2 pairs=180 valid=180 Dbar=0.000 spent=$1.61
+  t=2 pairs=186 valid=186 Dbar=0.000 spent=$1.64
+  t=2 pairs=192 valid=192 Dbar=0.000 spent=$1.66
+exam 2 decision futility at valid pair 191
+exam 3 (C1 harmful) level 0.00377 start at pair 0
+  t=3 pairs=6 valid=6 Dbar=0.000 spent=$1.69
+  t=3 pairs=12 valid=12 Dbar=0.000 spent=$1.71
+  t=3 pairs=18 valid=18 Dbar=0.000 spent=$1.73
+  t=3 pairs=24 valid=24 Dbar=0.000 spent=$1.75
+  t=3 pairs=30 valid=30 Dbar=0.000 spent=$1.78
+  t=3 pairs=36 valid=36 Dbar=-0.028 spent=$1.80
+  t=3 pairs=42 valid=42 Dbar=-0.024 spent=$1.82
+  t=3 pairs=48 valid=48 Dbar=-0.021 spent=$1.85
+  t=3 pairs=54 valid=54 Dbar=-0.019 spent=$1.87
+  t=3 pairs=60 valid=60 Dbar=-0.017 spent=$1.89
+  t=3 pairs=66 valid=66 Dbar=-0.015 spent=$1.92
+  t=3 pairs=72 valid=72 Dbar=-0.014 spent=$1.94
+  t=3 pairs=78 valid=78 Dbar=-0.013 spent=$1.96
+  t=3 pairs=84 valid=84 Dbar=-0.012 spent=$1.99
+  t=3 pairs=90 valid=90 Dbar=-0.011 spent=$2.01
+  t=3 pairs=96 valid=96 Dbar=-0.010 spent=$2.03
+  t=3 pairs=102 valid=102 Dbar=-0.010 spent=$2.05
+  t=3 pairs=108 valid=108 Dbar=-0.009 spent=$2.07
+  t=3 pairs=114 valid=114 Dbar=-0.009 spent=$2.09
+  t=3 pairs=120 valid=120 Dbar=-0.008 spent=$2.11
+  t=3 pairs=126 valid=126 Dbar=-0.008 spent=$2.14
+  t=3 pairs=132 valid=132 Dbar=-0.008 spent=$2.16
+  t=3 pairs=138 valid=138 Dbar=-0.007 spent=$2.18
+  t=3 pairs=144 valid=144 Dbar=-0.007 spent=$2.20
+  t=3 pairs=150 valid=150 Dbar=-0.013 spent=$2.23
+exam 3 decision futility at valid pair 150
+exam 4 (A2 helpful) level 0.00238 start at pair 0
+  t=4 pairs=6 valid=6 Dbar=1.000 spent=$2.25
+  t=4 pairs=12 valid=12 Dbar=1.000 spent=$2.27
+  t=4 pairs=18 valid=18 Dbar=1.000 spent=$2.29
+  t=4 pairs=24 valid=24 Dbar=1.000 spent=$2.31
+  t=4 pairs=30 valid=30 Dbar=0.967 spent=$2.33
+exam 4 decision admit at valid pair 28
+STUDY2 RUNS DONE $2.33

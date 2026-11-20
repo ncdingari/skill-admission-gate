@@ -1,0 +1,4827 @@
+{
+  "multi_skill": true,
+  "skill_count": 2,
+  "max_risk_score": 85,
+  "risk_severity": "CRITICAL",
+  "execution_successful": true,
+  "risk_recommendation": "DO_NOT_INSTALL",
+  "analysis_completeness": {
+    "is_complete": false,
+    "execution_successful": true,
+    "status": "partial",
+    "coverage_percent": 50.0,
+    "fully_inspected_files": 1,
+    "partially_inspected_files": 1,
+    "entirely_uninspected_files": 0,
+    "total_files": 2,
+    "limitations": [],
+    "scope": "recursive_skills"
+  },
+  "skills_scanned": 2,
+  "skills_omitted": 0,
+  "skills_output_omitted": 0,
+  "public_finding_records": 29,
+  "report_characters": 170946,
+  "transitive_finding_count": 0,
+  "transitive_sources": [],
+  "skills": [
+    {
+      "name": "jackson-security",
+      "path": "jackson-security",
+      "risk_score": 33,
+      "risk_severity": "MEDIUM",
+      "finding_count": 2,
+      "execution_successful": true,
+      "transitive_finding_count": 0,
+      "transitive_sources": [],
+      "skill": {
+        "name": "jackson-security",
+        "source": "/private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/e15_clean_qax5uau_/tasks/fix-druid-loophole-cve/environment/skills/jackson-security",
+        "scanned_at": "2026-11-16T18:15:41.112407+00:00"
+      },
+      "risk_assessment": {
+        "score": 33,
+        "severity": "MEDIUM",
+        "recommendation": "CAUTION",
+        "max_issue_severity": "HIGH"
+      },
+      "components": [
+        {
+          "path": "SKILL.md",
+          "type": "markdown",
+          "lines": 112,
+          "executable": false,
+          "size_bytes": 4182,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        }
+      ],
+      "structured_summaries": [],
+      "issues": [
+        {
+          "id": "TM1",
+          "finding_id": "finding-80a19f47acd94dc4ae399578a529c42a",
+          "category": "Tool Misuse",
+          "pattern": "Tool Parameter Abuse",
+          "severity": "HIGH",
+          "confidence": 0.9,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 78,
+            "end_line": null,
+            "start_column": 18
+          },
+          "finding": "rm -rf /",
+          "explanation": "Tool parameters are crafted to achieve unintended or unsafe behavior. Parameter abuse can bypass intended safety checks (e.g. shell=True, --force, dangerous glob patterns).",
+          "remediation": "Validate all tool parameters against an allowlist. Reject dangerous parameter values (shell=True, --force, -rf /) and use safe defaults.",
+          "code_snippet": "\n    {\n      \"@class\": \"com.attacker.MaliciousClass\",\n      \"command\": \"rm -rf /\"\n    }\n\nJackson will attempt to instantiate whatever class is named. If the classpath contains exploitable \"gadget\" classes, arbitrary code execution may occur during deserialization\u2014before your code ever runs.",
+          "intent": null,
+          "tags": [
+            "Tool Misuse"
+          ],
+          "evidence": {},
+          "match_fingerprint": "f3ff4d6cfbe1b7f6b23dd4d1379edae984c14738c5f5b14db40e215beb673f08",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 78,
+              "end_line": null,
+              "start_column": 18
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "TM1",
+          "finding_id": "finding-be95d0141a5348d595c26952dc17c45a",
+          "category": "Tool Misuse",
+          "pattern": "Tool Parameter Abuse",
+          "severity": "HIGH",
+          "confidence": 0.85,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 78,
+            "end_line": null,
+            "start_column": 18
+          },
+          "finding": "rm -rf /\"",
+          "explanation": "Tool parameters are crafted to achieve unintended or unsafe behavior. Parameter abuse can bypass intended safety checks (e.g. shell=True, --force, dangerous glob patterns).",
+          "remediation": "Validate all tool parameters against an allowlist. Reject dangerous parameter values (shell=True, --force, -rf /) and use safe defaults.",
+          "code_snippet": "\n    {\n      \"@class\": \"com.attacker.MaliciousClass\",\n      \"command\": \"rm -rf /\"\n    }\n\nJackson will attempt to instantiate whatever class is named. If the classpath contains exploitable \"gadget\" classes, arbitrary code execution may occur during deserialization\u2014before your code ever runs.",
+          "intent": null,
+          "tags": [
+            "Tool Misuse"
+          ],
+          "evidence": {},
+          "match_fingerprint": "27e76377cb5ff2d68171e047ecb47c1c1268da1cb778111906599044cb2ca492",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 78,
+              "end_line": null,
+              "start_column": 18
+            }
+          ],
+          "surface": "instructions"
+        }
+      ],
+      "suppressed_count": 0,
+      "suppressed": [],
+      "metadata": {
+        "has_executable_scripts": false,
+        "skillspector_version": "2.12.0",
+        "llm_requested": false,
+        "llm_available": false,
+        "meta_analysis_applied": false,
+        "inference_usage": [],
+        "llm_provenance": {
+          "schema_version": 1,
+          "provider": {
+            "configured_adapter": "unknown",
+            "resolved_adapter": "unknown",
+            "effective_adapter": "not_applicable",
+            "effective_adapters": [],
+            "service": "unknown",
+            "routing": {
+              "deployment_override": null,
+              "deployment_source": "unknown",
+              "api_version": null,
+              "api_version_source": "unknown"
+            }
+          },
+          "analyzers": [
+            {
+              "analyzer_id": "mcp_tool_poisoning",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            },
+            {
+              "analyzer_id": "semantic_developer_intent",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            },
+            {
+              "analyzer_id": "semantic_quality_policy",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            },
+            {
+              "analyzer_id": "semantic_security_discovery",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            },
+            {
+              "analyzer_id": "meta_analyzer",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            }
+          ],
+          "sampling": {
+            "temperature": {
+              "requested": null,
+              "source": "provider_default",
+              "forwarded_to_client": null,
+              "adapter_support": false,
+              "provider_support": "unknown"
+            },
+            "seed": {
+              "requested": null,
+              "source": "unset",
+              "forwarded_to_client": null,
+              "adapter_support": false,
+              "provider_support": "unknown"
+            },
+            "reasoning_effort": {
+              "requested": null,
+              "source": "provider_default",
+              "forwarded_to_client": null,
+              "adapter_support": false,
+              "provider_support": "unknown"
+            }
+          },
+          "determinism": {
+            "classification": "not_applicable",
+            "control_status": "not_applied",
+            "provider_guarantee": false,
+            "reason": "LLM analysis was not executed for this scan."
+          }
+        },
+        "filtering_mode": "heuristic"
+      },
+      "analysis_completeness": {
+        "total_components": 1,
+        "scanned_components": 1,
+        "coverage_percent": 100.0,
+        "is_complete": true,
+        "status": "complete",
+        "execution_successful": true,
+        "fully_inspected_files": 1,
+        "partially_inspected_files": 0,
+        "entirely_uninspected_files": 0,
+        "ledger_exceptions": [],
+        "scope_exclusions": [],
+        "analyzer_statuses": [
+          {
+            "analyzer_id": "artifact_integrity",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "behavioral_ast",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "behavioral_taint_tracking",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "bundled_execution_surface",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "mcp_least_privilege",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "mcp_rug_pull",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "mcp_tool_poisoning",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "meta_analyzer",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "semantic_developer_intent",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "semantic_quality_policy",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "semantic_security_discovery",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "static_patterns_agent_snooping",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_anti_refusal",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_data_exfiltration",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_deserialization",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_excessive_agency",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_harmful_content",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_memory_poisoning",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_output_handling",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_privilege_escalation",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_prompt_injection",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_rogue_agent",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_ssrf",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_supply_chain",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_system_prompt_leakage",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_tool_misuse",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_yara",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          }
+        ],
+        "references": [],
+        "limitations": [],
+        "findings_before_filtering": 2,
+        "findings_after_filtering": 2,
+        "dependency_inspection": {
+          "enabled": false,
+          "status": "not_requested",
+          "mode": "static_local",
+          "locked_entries": 0,
+          "inspected_artifacts": 0,
+          "artifacts": []
+        }
+      }
+    },
+    {
+      "name": "senior-java",
+      "path": "senior-java",
+      "risk_score": 85,
+      "risk_severity": "CRITICAL",
+      "finding_count": 7,
+      "execution_successful": true,
+      "transitive_finding_count": 0,
+      "transitive_sources": [],
+      "skill": {
+        "name": "senior-java",
+        "source": "/private/var/folders/55/0qx83dpd0f7_8pjgwz14b1p80000gn/T/e15_clean_qax5uau_/tasks/fix-druid-loophole-cve/environment/skills/senior-java",
+        "scanned_at": "2026-11-16T18:15:46.217989+00:00"
+      },
+      "risk_assessment": {
+        "score": 85,
+        "severity": "CRITICAL",
+        "recommendation": "DO_NOT_INSTALL",
+        "max_issue_severity": "HIGH"
+      },
+      "components": [
+        {
+          "path": "HOW_TO_USE.md",
+          "type": "markdown",
+          "lines": 76,
+          "executable": false,
+          "size_bytes": 2316,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "SKILL.md",
+          "type": "markdown",
+          "lines": 580,
+          "executable": false,
+          "size_bytes": 20202,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "assets/.gitkeep",
+          "type": "other",
+          "lines": 0,
+          "executable": false,
+          "size_bytes": 0,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/java-performance-tuning",
+          "type": "other",
+          "lines": 68,
+          "executable": false,
+          "size_bytes": 954,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/java-performance-tuning.md",
+          "type": "markdown",
+          "lines": 408,
+          "executable": false,
+          "size_bytes": 9235,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/jpa-hibernate-guide",
+          "type": "other",
+          "lines": 68,
+          "executable": false,
+          "size_bytes": 950,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/jpa-hibernate-guide.md",
+          "type": "markdown",
+          "lines": 469,
+          "executable": false,
+          "size_bytes": 12473,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/microservices-patterns",
+          "type": "other",
+          "lines": 68,
+          "executable": false,
+          "size_bytes": 953,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/microservices-patterns.md",
+          "type": "markdown",
+          "lines": 465,
+          "executable": false,
+          "size_bytes": 10991,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/spring-boot-best-practices",
+          "type": "other",
+          "lines": 68,
+          "executable": false,
+          "size_bytes": 957,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/spring-boot-best-practices.md",
+          "type": "markdown",
+          "lines": 531,
+          "executable": false,
+          "size_bytes": 15321,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/spring-security-reference",
+          "type": "other",
+          "lines": 68,
+          "executable": false,
+          "size_bytes": 956,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "references/spring-security-reference.md",
+          "type": "markdown",
+          "lines": 469,
+          "executable": false,
+          "size_bytes": 14368,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "scripts/api_endpoint_generator",
+          "type": "python",
+          "lines": 128,
+          "executable": true,
+          "size_bytes": 3274,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "scripts/api_endpoint_generator.py",
+          "type": "python",
+          "lines": 192,
+          "executable": true,
+          "size_bytes": 6505,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "scripts/dependency_analyzer",
+          "type": "python",
+          "lines": 128,
+          "executable": true,
+          "size_bytes": 3258,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "scripts/dependency_analyzer.py",
+          "type": "python",
+          "lines": 314,
+          "executable": true,
+          "size_bytes": 11816,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "scripts/entity_generator",
+          "type": "python",
+          "lines": 128,
+          "executable": true,
+          "size_bytes": 3240,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "scripts/entity_generator.py",
+          "type": "python",
+          "lines": 693,
+          "executable": true,
+          "size_bytes": 24964,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "scripts/performance_profiler",
+          "type": "python",
+          "lines": 128,
+          "executable": true,
+          "size_bytes": 3264,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "scripts/performance_profiler.py",
+          "type": "python",
+          "lines": 323,
+          "executable": true,
+          "size_bytes": 11883,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "scripts/security_config_generator",
+          "type": "python",
+          "lines": 128,
+          "executable": true,
+          "size_bytes": 3292,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "scripts/security_config_generator.py",
+          "type": "python",
+          "lines": 393,
+          "executable": true,
+          "size_bytes": 14025,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "scripts/spring_project_scaffolder",
+          "type": "python",
+          "lines": 128,
+          "executable": true,
+          "size_bytes": 3292,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        },
+        {
+          "path": "scripts/spring_project_scaffolder.py",
+          "type": "python",
+          "lines": 1074,
+          "executable": true,
+          "size_bytes": 37504,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        }
+      ],
+      "structured_summaries": [],
+      "issues": [
+        {
+          "id": "AE1",
+          "finding_id": "finding-4ccd5fadda604879854113c5621cf77f",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 53,
+            "end_line": null
+          },
+          "finding": "scripts/entity_generator.py (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "input: \"python scripts/entity_generator.py User --fields 'id:Long,email:String,name:String,createdAt:LocalDateTime'\"",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "scripts/entity_generator.py",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_agent_snooping"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_anti_refusal"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_deserialization"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_excessive_agency"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_harmful_content"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_memory_poisoning"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_privilege_escalation"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_prompt_injection"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_rogue_agent"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_ssrf"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_supply_chain"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_system_prompt_leakage"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "943fd9eb57cd9ab6e70608b4fbc12e46cb505a4f7ab472575a2b2f4ddb21c7e9",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 53,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-252bb895f6094e56b7f3746678c60c5b",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 144,
+            "end_line": null
+          },
+          "finding": "scripts/entity_generator.py (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "python scripts/entity_generator.py Product --fields \"id:Long,name:String,price:BigDecimal,category:String,createdAt:LocalDateTime\"",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "scripts/entity_generator.py",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_agent_snooping"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_anti_refusal"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_deserialization"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_excessive_agency"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_harmful_content"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_memory_poisoning"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_privilege_escalation"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_prompt_injection"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_rogue_agent"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_ssrf"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_supply_chain"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_system_prompt_leakage"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "943fd9eb57cd9ab6e70608b4fbc12e46cb505a4f7ab472575a2b2f4ddb21c7e9",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 144,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-30827e339f0b4cd4ac49e0e87bb4dbcd",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 147,
+            "end_line": null
+          },
+          "finding": "scripts/entity_generator.py (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "python scripts/entity_generator.py Order --fields \"id:Long,customer:Customer,items:List<OrderItem>,total:BigDecimal\" --relations \"customer:ManyToOne,items:OneTo",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "scripts/entity_generator.py",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_agent_snooping"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_anti_refusal"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_deserialization"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_excessive_agency"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_harmful_content"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_memory_poisoning"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_privilege_escalation"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_prompt_injection"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_rogue_agent"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_ssrf"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_supply_chain"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_system_prompt_leakage"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "943fd9eb57cd9ab6e70608b4fbc12e46cb505a4f7ab472575a2b2f4ddb21c7e9",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 147,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-c17bfce120d6405c9c134df770357f34",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 188,
+            "end_line": null
+          },
+          "finding": "scripts/entity_generator.py (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "python scripts/entity_generator.py Inventory --fields \"id:Long,productId:Long,quantity:Integer,warehouse:String\"",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "scripts/entity_generator.py",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_agent_snooping"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_anti_refusal"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_deserialization"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_excessive_agency"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_harmful_content"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_memory_poisoning"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_privilege_escalation"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_prompt_injection"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_rogue_agent"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_ssrf"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_supply_chain"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_system_prompt_leakage"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "943fd9eb57cd9ab6e70608b4fbc12e46cb505a4f7ab472575a2b2f4ddb21c7e9",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 188,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-76a45c7365984c59a812e30dcfffd0ba",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 189,
+            "end_line": null
+          },
+          "finding": "scripts/entity_generator.py (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "python scripts/entity_generator.py InventoryMovement --fields \"id:Long,inventory:Inventory,quantity:Integer,type:MovementType,timestamp:LocalDateTime\"",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "scripts/entity_generator.py",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_agent_snooping"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_anti_refusal"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_deserialization"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_excessive_agency"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_harmful_content"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_memory_poisoning"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_privilege_escalation"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_prompt_injection"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_rogue_agent"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_ssrf"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_supply_chain"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_system_prompt_leakage"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "943fd9eb57cd9ab6e70608b4fbc12e46cb505a4f7ab472575a2b2f4ddb21c7e9",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 189,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-d8982b74686f48ee980fd12c7c6344c3",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 311,
+            "end_line": null
+          },
+          "finding": "scripts/entity_generator.py (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "python scripts/entity_generator.py Customer --fields \"id:Long,name:String,email:String\"",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "scripts/entity_generator.py",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_agent_snooping"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_anti_refusal"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_deserialization"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_excessive_agency"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_harmful_content"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_memory_poisoning"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_privilege_escalation"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_prompt_injection"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_rogue_agent"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_ssrf"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_supply_chain"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_system_prompt_leakage"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "943fd9eb57cd9ab6e70608b4fbc12e46cb505a4f7ab472575a2b2f4ddb21c7e9",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 311,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-1f42ca53515649c281ef92264a1defce",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 314,
+            "end_line": null
+          },
+          "finding": "scripts/entity_generator.py (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "python scripts/entity_generator.py Order --fields \"id:Long,customer:Customer,total:BigDecimal\" --relations \"customer:ManyToOne\"",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "scripts/entity_generator.py",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_agent_snooping"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_anti_refusal"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_deserialization"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_excessive_agency"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_harmful_content"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_memory_poisoning"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_privilege_escalation"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_prompt_injection"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_rogue_agent"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_ssrf"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_supply_chain"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_system_prompt_leakage"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "943fd9eb57cd9ab6e70608b4fbc12e46cb505a4f7ab472575a2b2f4ddb21c7e9",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 314,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-2cb7910c8dd049a4ab963b8ca6ff2df3",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 317,
+            "end_line": null
+          },
+          "finding": "scripts/entity_generator.py (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "python scripts/entity_generator.py Product --fields \"id:Long,name:String,price:BigDecimal\" --auditable",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "scripts/entity_generator.py",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_agent_snooping"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_anti_refusal"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_deserialization"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_excessive_agency"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_harmful_content"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_memory_poisoning"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_privilege_escalation"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_prompt_injection"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_rogue_agent"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_ssrf"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_supply_chain"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_system_prompt_leakage"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "943fd9eb57cd9ab6e70608b4fbc12e46cb505a4f7ab472575a2b2f4ddb21c7e9",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 317,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-f2d2ac98a15044d0a2414cdd6450aa95",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 320,
+            "end_line": null
+          },
+          "finding": "scripts/entity_generator.py (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "python scripts/entity_generator.py --help",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "scripts/entity_generator.py",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_agent_snooping"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_anti_refusal"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_deserialization"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_excessive_agency"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_harmful_content"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_memory_poisoning"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_privilege_escalation"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_prompt_injection"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_rogue_agent"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_ssrf"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_supply_chain"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_system_prompt_leakage"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "943fd9eb57cd9ab6e70608b4fbc12e46cb505a4f7ab472575a2b2f4ddb21c7e9",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 320,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-f1652b4026fd4fb7a546e46a61ff91e6",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 560,
+            "end_line": null
+          },
+          "finding": "scripts/entity_generator.py (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "3. Generate entities with `python scripts/entity_generator.py`",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "scripts/entity_generator.py",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_agent_snooping"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_anti_refusal"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_deserialization"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_excessive_agency"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_harmful_content"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_memory_poisoning"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_privilege_escalation"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_prompt_injection"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_rogue_agent"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_ssrf"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_supply_chain"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_system_prompt_leakage"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "943fd9eb57cd9ab6e70608b4fbc12e46cb505a4f7ab472575a2b2f4ddb21c7e9",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 560,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-682ee642f45b4e918f39e0d2d84eefbd",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 162,
+            "end_line": null
+          },
+          "finding": "references/spring-boot-best-practices.md (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "- Spring Boot patterns: `references/spring-boot-best-practices.md`",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "references/spring-boot-best-practices.md",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_agent_snooping"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_anti_refusal"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_deserialization"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_excessive_agency"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_harmful_content"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_memory_poisoning"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_privilege_escalation"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_prompt_injection"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_rogue_agent"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_ssrf"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_supply_chain"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_system_prompt_leakage"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "67a50e60a52ce409afbae0925f12054be48f9ead2aa3542c20753b3d82f8b43a",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 162,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-41577e1e8e1b4976b2c4e0fb57e1978d",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 207,
+            "end_line": null
+          },
+          "finding": "references/spring-boot-best-practices.md (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "See [spring-boot-best-practices.md](references/spring-boot-best-practices.md) for complete setup patterns.",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "references/spring-boot-best-practices.md",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_agent_snooping"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_anti_refusal"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_deserialization"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_excessive_agency"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_harmful_content"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_memory_poisoning"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_privilege_escalation"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_prompt_injection"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_rogue_agent"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_ssrf"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_supply_chain"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_system_prompt_leakage"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "67a50e60a52ce409afbae0925f12054be48f9ead2aa3542c20753b3d82f8b43a",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 207,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-9819e7921fb14b6eb013f28791d7a761",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 226,
+            "end_line": null
+          },
+          "finding": "references/spring-boot-best-practices.md (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "See [spring-boot-best-practices.md](references/spring-boot-best-practices.md) for API design patterns.",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "references/spring-boot-best-practices.md",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_agent_snooping"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_anti_refusal"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_deserialization"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_excessive_agency"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_harmful_content"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_memory_poisoning"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_privilege_escalation"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_prompt_injection"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_rogue_agent"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_ssrf"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_supply_chain"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_system_prompt_leakage"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "67a50e60a52ce409afbae0925f12054be48f9ead2aa3542c20753b3d82f8b43a",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 226,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-90edd426a9ad4a988b49a1b0de450eca",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 428,
+            "end_line": null
+          },
+          "finding": "references/spring-boot-best-practices.md (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "**[spring-boot-best-practices.md](references/spring-boot-best-practices.md)** - Spring Boot Patterns",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "references/spring-boot-best-practices.md",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_agent_snooping"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_anti_refusal"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_deserialization"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_excessive_agency"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_harmful_content"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_memory_poisoning"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_privilege_escalation"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_prompt_injection"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_rogue_agent"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_ssrf"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_supply_chain"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_system_prompt_leakage"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "67a50e60a52ce409afbae0925f12054be48f9ead2aa3542c20753b3d82f8b43a",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 428,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-a033d9bc8b394432a94cc7abd7981b35",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 481,
+            "end_line": null
+          },
+          "finding": "references/spring-boot-best-practices.md (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "See [spring-boot-best-practices.md](references/spring-boot-best-practices.md) for detailed guidelines.",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "references/spring-boot-best-practices.md",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_agent_snooping"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_anti_refusal"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_deserialization"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_excessive_agency"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_harmful_content"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_memory_poisoning"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_privilege_escalation"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_prompt_injection"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_rogue_agent"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_ssrf"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_supply_chain"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_system_prompt_leakage"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "67a50e60a52ce409afbae0925f12054be48f9ead2aa3542c20753b3d82f8b43a",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 481,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-62ff96fde6e349e3b066e36e838d9b68",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 508,
+            "end_line": null
+          },
+          "finding": "references/spring-boot-best-practices.md (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "See [spring-boot-best-practices.md](references/spring-boot-best-practices.md) for CI/CD and automation integration examples.",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "references/spring-boot-best-practices.md",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_agent_snooping"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_anti_refusal"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_deserialization"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_excessive_agency"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_harmful_content"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_memory_poisoning"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_privilege_escalation"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_prompt_injection"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_rogue_agent"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_ssrf"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_supply_chain"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_system_prompt_leakage"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "67a50e60a52ce409afbae0925f12054be48f9ead2aa3542c20753b3d82f8b43a",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 508,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-0eef3c10462d412fabaf0016adf3aad4",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 570,
+            "end_line": null
+          },
+          "finding": "references/spring-boot-best-practices.md (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the target's analysis-completeness ledger and resolve all limitations. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "- **Best practices** - See [spring-boot-best-practices.md](references/spring-boot-best-practices.md)",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "references/spring-boot-best-practices.md",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_agent_snooping"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_anti_refusal"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_deserialization"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_excessive_agency"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_harmful_content"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_memory_poisoning"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_privilege_escalation"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_prompt_injection"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_rogue_agent"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_ssrf"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_supply_chain"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_system_prompt_leakage"
+                ]
+              },
+              {
+                "reason_code": "obfuscated_instruction_text",
+                "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "67a50e60a52ce409afbae0925f12054be48f9ead2aa3542c20753b3d82f8b43a",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 570,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-922349c6729a49b897c92dc73959035b",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 166,
+            "end_line": null
+          },
+          "finding": "references/java-performance-tuning.md (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "- Performance tuning: `references/java-performance-tuning.md`",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "references/java-performance-tuning.md",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "static_parse_limit",
+                "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "a38583bd98aed77cee823ddc3e6df886ad2ecf16a090c55f29f5463da06ace2c",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 166,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-40a6a78e5d2f4aaa9f3b938f3f165b61",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 456,
+            "end_line": null
+          },
+          "finding": "references/java-performance-tuning.md (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "**[java-performance-tuning.md](references/java-performance-tuning.md)** - Performance",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "references/java-performance-tuning.md",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "static_parse_limit",
+                "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "a38583bd98aed77cee823ddc3e6df886ad2ecf16a090c55f29f5463da06ace2c",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 456,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "AE1",
+          "finding_id": "finding-072d43a9549644db8c77adfca32c55f7",
+          "category": "analysis-evasion",
+          "pattern": "Incomplete referenced artifact analysis",
+          "severity": "HIGH",
+          "confidence": 1.0,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 571,
+            "end_line": null
+          },
+          "finding": "references/java-performance-tuning.md (partial)",
+          "explanation": "Referenced artifact was not completely inspected",
+          "remediation": "Review the reported expression and analyzer's parsing limitation; correct the scanner if it misinterprets valid source, then rerun the scan. Keep required references; incomplete analysis is not proof of malicious evasion.",
+          "code_snippet": "- **Troubleshooting** - See [java-performance-tuning.md](references/java-performance-tuning.md)",
+          "intent": null,
+          "tags": [
+            "coverage",
+            "reference",
+            "target-disposition:partial"
+          ],
+          "evidence": {
+            "target_path": "references/java-performance-tuning.md",
+            "target_disposition": "partial",
+            "reasons": [
+              {
+                "reason_code": "static_parse_limit",
+                "message": "A security-relevant expression could not be fully resolved by the bounded static parser.",
+                "phase": "static",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ]
+              }
+            ]
+          },
+          "match_fingerprint": "a38583bd98aed77cee823ddc3e6df886ad2ecf16a090c55f29f5463da06ace2c",
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 571,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "PE3",
+          "finding_id": "finding-7bbd847f54b0460484bc3a99cfd0e36c",
+          "category": "Privilege Escalation",
+          "pattern": "Credential Access",
+          "severity": "HIGH",
+          "confidence": 0.7,
+          "location": {
+            "file": "references/spring-security-reference.md",
+            "start_line": 461,
+            "end_line": null,
+            "start_column": 22
+          },
+          "finding": "access tokens",
+          "explanation": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts.",
+          "remediation": "Remove references to credential paths. Use environment variables or secrets managers. For docs, use placeholder paths (e.g., /path/to/config). Never load .env or token files in production code paths.",
+          "code_snippet": "- [ ] Use HTTPS in production\n- [ ] Store passwords with bcrypt (strength 12+)\n- [ ] Implement rate limiting for auth endpoints\n- [ ] Use short-lived access tokens (15-60 min)\n- [ ] Implement token refresh mechanism\n- [ ] Validate and sanitize all input\n- [ ] Use CSRF protection for browser clients",
+          "intent": null,
+          "tags": [
+            "Privilege Escalation",
+            "contextual-triage",
+            "likely-benign-context"
+          ],
+          "evidence": {},
+          "match_fingerprint": "5059bb7b75e9337932d45472816371182dc6083e9db6060d8b737da812751493",
+          "occurrences": [
+            {
+              "file": "references/spring-security-reference.md",
+              "start_line": 461,
+              "end_line": null,
+              "start_column": 22
+            }
+          ],
+          "surface": "docs"
+        },
+        {
+          "id": "LP3",
+          "finding_id": "finding-06ca2c55068a427dbdef28dbe403015a",
+          "category": "MCP Least Privilege",
+          "pattern": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: file_read, file_write, network, shell.",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "location": {
+            "file": "SKILL.md",
+            "start_line": 1,
+            "end_line": null
+          },
+          "finding": "Skill declares no tool scope ('permissions' or 'allowed-tools') but code capabilities were detected: file_read, file_write, network, shell.",
+          "explanation": "Without declared permissions the skill's intent is opaque and cannot be validated.",
+          "remediation": "Clarify the skill's intended tool scope and review how the host runtime enforces it; runtime permissions are unknown unless separately verified. For Claude Code / Agent Skills SKILL.md, 'allowed-tools' records preapproved tools, not a permission ceiling; add a tool only when it is independently approved as necessary, not to silence this finding. For MCP server manifests, use a 'permissions' list naming the required capabilities.",
+          "code_snippet": null,
+          "intent": null,
+          "tags": [
+            "ASI02"
+          ],
+          "evidence": {},
+          "match_fingerprint": null,
+          "occurrences": [
+            {
+              "file": "SKILL.md",
+              "start_line": 1,
+              "end_line": null
+            }
+          ],
+          "surface": "instructions"
+        },
+        {
+          "id": "EA4",
+          "finding_id": "finding-bc52be1eb67b48fb9c22ef4d827bb221",
+          "category": "Excessive Agency",
+          "pattern": "Unbounded Resource Access",
+          "severity": "MEDIUM",
+          "confidence": 0.8,
+          "location": {
+            "file": "references/java-performance-tuning.md",
+            "start_line": 401,
+            "end_line": null,
+            "start_column": 5
+          },
+          "finding": "Unbounded queries",
+          "explanation": "Skill allows unbounded resource consumption (API calls, storage, compute). Without rate limits or quotas, a compromised or misbehaving agent can cause denial-of-service or cost overruns.",
+          "remediation": "Set explicit rate limits, timeouts, and resource quotas for API calls, file operations, and compute. Implement circuit breakers for runaway loops.",
+          "code_snippet": "\n## Common Performance Anti-Patterns\n\n1. **Unbounded queries** - Always use pagination\n2. **Synchronous I/O in request threads** - Use async/reactive\n3. **Creating objects in tight loops** - Reuse or pool objects\n4. **String concatenation in loops** - Use StringBuilder",
+          "intent": null,
+          "tags": [
+            "Excessive Agency"
+          ],
+          "evidence": {},
+          "match_fingerprint": "ceabe70399d5504acc60db41ae16109cf88f6a48499424de17675cd75dfb845f",
+          "occurrences": [
+            {
+              "file": "references/java-performance-tuning.md",
+              "start_line": 401,
+              "end_line": null,
+              "start_column": 5
+            }
+          ],
+          "surface": "docs"
+        },
+        {
+          "id": "E1",
+          "finding_id": "finding-9ded856ea5064e6380a5055a0406d3d0",
+          "category": "Data Exfiltration",
+          "pattern": "External Transmission",
+          "severity": "MEDIUM",
+          "confidence": 0.5,
+          "location": {
+            "file": "references/spring-boot-best-practices.md",
+            "start_line": 256,
+            "end_line": null,
+            "start_column": 19
+          },
+          "finding": "https://api.example.com/",
+          "explanation": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recommended.",
+          "remediation": "Verify the destination URL is trusted and necessary. Remove or replace with documented APIs. Ensure no secrets, tokens, or PII are transmitted.",
+          "code_snippet": "        log.warn(\"Resource not found: {}\", ex.getMessage());\n\n        ProblemDetail problem = ProblemDetail.builder()\n            .type(\"https://api.example.com/errors/not-found\")\n            .title(\"Resource Not Found\")\n            .status(HttpStatus.NOT_FOUND.value())\n            .detail(ex.getMessage())",
+          "intent": null,
+          "tags": [
+            "Data Exfiltration"
+          ],
+          "evidence": {},
+          "match_fingerprint": "88f1946300c8ae45d5ea7e81f2b6d4309a13082e928b6f7d1215d273945a1431",
+          "occurrences": [
+            {
+              "file": "references/spring-boot-best-practices.md",
+              "start_line": 256,
+              "end_line": null,
+              "start_column": 19
+            }
+          ],
+          "surface": "docs"
+        },
+        {
+          "id": "E1",
+          "finding_id": "finding-43384022ccbe45f8bec2f3cc1ac9ee5a",
+          "category": "Data Exfiltration",
+          "pattern": "External Transmission",
+          "severity": "MEDIUM",
+          "confidence": 0.5,
+          "location": {
+            "file": "references/spring-boot-best-practices.md",
+            "start_line": 272,
+            "end_line": null,
+            "start_column": 19
+          },
+          "finding": "https://api.example.com/",
+          "explanation": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recommended.",
+          "remediation": "Verify the destination URL is trusted and necessary. Remove or replace with documented APIs. Ensure no secrets, tokens, or PII are transmitted.",
+          "code_snippet": "        log.warn(\"Access denied: {}\", request.getRequestURI());\n\n        ProblemDetail problem = ProblemDetail.builder()\n            .type(\"https://api.example.com/errors/forbidden\")\n            .title(\"Access Denied\")\n            .status(HttpStatus.FORBIDDEN.value())\n            .detail(\"You don't have permission to access this resource\")",
+          "intent": null,
+          "tags": [
+            "Data Exfiltration"
+          ],
+          "evidence": {},
+          "match_fingerprint": "88f1946300c8ae45d5ea7e81f2b6d4309a13082e928b6f7d1215d273945a1431",
+          "occurrences": [
+            {
+              "file": "references/spring-boot-best-practices.md",
+              "start_line": 272,
+              "end_line": null,
+              "start_column": 19
+            }
+          ],
+          "surface": "docs"
+        },
+        {
+          "id": "E1",
+          "finding_id": "finding-eb357f25060b49f49b52ae9eb7c03e07",
+          "category": "Data Exfiltration",
+          "pattern": "External Transmission",
+          "severity": "MEDIUM",
+          "confidence": 0.5,
+          "location": {
+            "file": "references/spring-boot-best-practices.md",
+            "start_line": 294,
+            "end_line": null,
+            "start_column": 19
+          },
+          "finding": "https://api.example.com/",
+          "explanation": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recommended.",
+          "remediation": "Verify the destination URL is trusted and necessary. Remove or replace with documented APIs. Ensure no secrets, tokens, or PII are transmitted.",
+          "code_snippet": "            errors.put(error.getField(), error.getDefaultMessage()));\n\n        ProblemDetail problem = ProblemDetail.builder()\n            .type(\"https://api.example.com/errors/validation\")\n            .title(\"Validation Failed\")\n            .status(HttpStatus.BAD_REQUEST.value())\n            .detail(\"One or more fields have invalid values\")",
+          "intent": null,
+          "tags": [
+            "Data Exfiltration"
+          ],
+          "evidence": {},
+          "match_fingerprint": "88f1946300c8ae45d5ea7e81f2b6d4309a13082e928b6f7d1215d273945a1431",
+          "occurrences": [
+            {
+              "file": "references/spring-boot-best-practices.md",
+              "start_line": 294,
+              "end_line": null,
+              "start_column": 19
+            }
+          ],
+          "surface": "docs"
+        },
+        {
+          "id": "E1",
+          "finding_id": "finding-07832a2f021a4654aab5f006501a5a1f",
+          "category": "Data Exfiltration",
+          "pattern": "External Transmission",
+          "severity": "MEDIUM",
+          "confidence": 0.5,
+          "location": {
+            "file": "references/spring-boot-best-practices.md",
+            "start_line": 310,
+            "end_line": null,
+            "start_column": 19
+          },
+          "finding": "https://api.example.com/",
+          "explanation": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recommended.",
+          "remediation": "Verify the destination URL is trusted and necessary. Remove or replace with documented APIs. Ensure no secrets, tokens, or PII are transmitted.",
+          "code_snippet": "        log.error(\"Unexpected error\", ex);\n\n        ProblemDetail problem = ProblemDetail.builder()\n            .type(\"https://api.example.com/errors/internal\")\n            .title(\"Internal Server Error\")\n            .status(HttpStatus.INTERNAL_SERVER_ERROR.value())\n            .detail(\"An unexpected error occurred\")",
+          "intent": null,
+          "tags": [
+            "Data Exfiltration"
+          ],
+          "evidence": {},
+          "match_fingerprint": "88f1946300c8ae45d5ea7e81f2b6d4309a13082e928b6f7d1215d273945a1431",
+          "occurrences": [
+            {
+              "file": "references/spring-boot-best-practices.md",
+              "start_line": 310,
+              "end_line": null,
+              "start_column": 19
+            }
+          ],
+          "surface": "docs"
+        }
+      ],
+      "suppressed_count": 0,
+      "suppressed": [],
+      "metadata": {
+        "has_executable_scripts": true,
+        "skillspector_version": "2.12.0",
+        "llm_requested": false,
+        "llm_available": false,
+        "meta_analysis_applied": false,
+        "inference_usage": [],
+        "llm_provenance": {
+          "schema_version": 1,
+          "provider": {
+            "configured_adapter": "unknown",
+            "resolved_adapter": "unknown",
+            "effective_adapter": "not_applicable",
+            "effective_adapters": [],
+            "service": "unknown",
+            "routing": {
+              "deployment_override": null,
+              "deployment_source": "unknown",
+              "api_version": null,
+              "api_version_source": "unknown"
+            }
+          },
+          "analyzers": [
+            {
+              "analyzer_id": "mcp_tool_poisoning",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            },
+            {
+              "analyzer_id": "semantic_developer_intent",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            },
+            {
+              "analyzer_id": "semantic_quality_policy",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            },
+            {
+              "analyzer_id": "semantic_security_discovery",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            },
+            {
+              "analyzer_id": "meta_analyzer",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "c81615007d40e86051a302a3cf897f8a05264928",
+                  "source": "package_vcs_metadata"
+                }
+              }
+            }
+          ],
+          "sampling": {
+            "temperature": {
+              "requested": null,
+              "source": "provider_default",
+              "forwarded_to_client": null,
+              "adapter_support": false,
+              "provider_support": "unknown"
+            },
+            "seed": {
+              "requested": null,
+              "source": "unset",
+              "forwarded_to_client": null,
+              "adapter_support": false,
+              "provider_support": "unknown"
+            },
+            "reasoning_effort": {
+              "requested": null,
+              "source": "provider_default",
+              "forwarded_to_client": null,
+              "adapter_support": false,
+              "provider_support": "unknown"
+            }
+          },
+          "determinism": {
+            "classification": "not_applicable",
+            "control_status": "not_applied",
+            "provider_guarantee": false,
+            "reason": "LLM analysis was not executed for this scan."
+          }
+        },
+        "filtering_mode": "heuristic"
+      },
+      "analysis_completeness": {
+        "total_components": 25,
+        "scanned_components": 22,
+        "coverage_percent": 88.0,
+        "is_complete": false,
+        "status": "partial",
+        "execution_successful": true,
+        "fully_inspected_files": 22,
+        "partially_inspected_files": 3,
+        "entirely_uninspected_files": 0,
+        "ledger_exceptions": [
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 182,
+            "end_line": 182,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 197,
+            "end_line": 197,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 198,
+            "end_line": 198,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 203,
+            "end_line": 203,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "static",
+            "reason_code": "static_parse_limit",
+            "message": "A security-relevant expression could not be fully resolved by the bounded static parser. SkillSpector could not determine this command or code fragment's boundaries. Check: command string runtime; location: reported source range; unchecked scope: command string. Relevant parser input not fully checked.",
+            "path": "references/java-performance-tuning.md",
+            "start_line": null,
+            "end_line": null,
+            "fatal": false,
+            "analyzers": [
+              "static_patterns_tool_misuse"
+            ],
+            "parser_diagnostic": {
+              "cause": "boundary_unresolved",
+              "check": "command_string_runtime",
+              "source_start_offset": 751,
+              "source_end_offset": 862,
+              "start_line": 30,
+              "end_line": 36,
+              "unchecked_scope": "command_string",
+              "observed_is_lower_bound": false,
+              "full_input_checked": false,
+              "location_precision": "source_span"
+            }
+          },
+          {
+            "outcome": "partial",
+            "phase": "static",
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "path": "references/spring-boot-best-practices.md",
+            "start_line": null,
+            "end_line": null,
+            "fatal": false,
+            "analyzers": [
+              "static_patterns_agent_snooping",
+              "static_patterns_anti_refusal",
+              "static_patterns_deserialization",
+              "static_patterns_excessive_agency",
+              "static_patterns_harmful_content",
+              "static_patterns_memory_poisoning",
+              "static_patterns_privilege_escalation",
+              "static_patterns_prompt_injection",
+              "static_patterns_rogue_agent",
+              "static_patterns_ssrf",
+              "static_patterns_supply_chain",
+              "static_patterns_system_prompt_leakage",
+              "static_patterns_tool_misuse"
+            ]
+          },
+          {
+            "outcome": "partial",
+            "phase": "static",
+            "reason_code": "obfuscated_instruction_text",
+            "message": "Obfuscated instruction text could not be fully evaluated by the deterministic layer.",
+            "path": "scripts/entity_generator.py",
+            "start_line": null,
+            "end_line": null,
+            "fatal": false,
+            "analyzers": [
+              "static_patterns_agent_snooping",
+              "static_patterns_anti_refusal",
+              "static_patterns_deserialization",
+              "static_patterns_excessive_agency",
+              "static_patterns_harmful_content",
+              "static_patterns_memory_poisoning",
+              "static_patterns_privilege_escalation",
+              "static_patterns_prompt_injection",
+              "static_patterns_rogue_agent",
+              "static_patterns_ssrf",
+              "static_patterns_supply_chain",
+              "static_patterns_system_prompt_leakage",
+              "static_patterns_tool_misuse"
+            ]
+          }
+        ],
+        "scope_exclusions": [],
+        "analyzer_statuses": [
+          {
+            "analyzer_id": "artifact_integrity",
+            "status": "completed",
+            "planned_work": 25,
+            "completed": 25,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "behavioral_ast",
+            "status": "completed",
+            "planned_work": 12,
+            "completed": 12,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "behavioral_taint_tracking",
+            "status": "completed",
+            "planned_work": 12,
+            "completed": 12,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "bundled_execution_surface",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "mcp_least_privilege",
+            "status": "completed",
+            "planned_work": 13,
+            "completed": 13,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "mcp_rug_pull",
+            "status": "completed",
+            "planned_work": 25,
+            "completed": 25,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "mcp_tool_poisoning",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "meta_analyzer",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "reference_coverage",
+            "status": "completed",
+            "planned_work": 20,
+            "completed": 20,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "semantic_developer_intent",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "semantic_quality_policy",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "semantic_security_discovery",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "static_patterns_agent_snooping",
+            "status": "degraded",
+            "planned_work": 25,
+            "completed": 23,
+            "partial": 2,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_anti_refusal",
+            "status": "degraded",
+            "planned_work": 25,
+            "completed": 23,
+            "partial": 2,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_data_exfiltration",
+            "status": "completed",
+            "planned_work": 25,
+            "completed": 25,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_deserialization",
+            "status": "degraded",
+            "planned_work": 25,
+            "completed": 23,
+            "partial": 2,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_excessive_agency",
+            "status": "degraded",
+            "planned_work": 25,
+            "completed": 23,
+            "partial": 2,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_harmful_content",
+            "status": "degraded",
+            "planned_work": 25,
+            "completed": 23,
+            "partial": 2,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_memory_poisoning",
+            "status": "degraded",
+            "planned_work": 25,
+            "completed": 23,
+            "partial": 2,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_output_handling",
+            "status": "completed",
+            "planned_work": 25,
+            "completed": 25,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_privilege_escalation",
+            "status": "degraded",
+            "planned_work": 25,
+            "completed": 23,
+            "partial": 2,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_prompt_injection",
+            "status": "degraded",
+            "planned_work": 25,
+            "completed": 23,
+            "partial": 2,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_rogue_agent",
+            "status": "degraded",
+            "planned_work": 25,
+            "completed": 23,
+            "partial": 2,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_ssrf",
+            "status": "degraded",
+            "planned_work": 25,
+            "completed": 23,
+            "partial": 2,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_supply_chain",
+            "status": "degraded",
+            "planned_work": 25,
+            "completed": 23,
+            "partial": 2,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_system_prompt_leakage",
+            "status": "degraded",
+            "planned_work": 25,
+            "completed": 23,
+            "partial": 2,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_tool_misuse",
+            "status": "degraded",
+            "planned_work": 25,
+            "completed": 22,
+            "partial": 3,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_yara",
+            "status": "completed",
+            "planned_work": 25,
+            "completed": 25,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          }
+        ],
+        "references": [
+          {
+            "source_path": "SKILL.md",
+            "line": 50,
+            "column": 20,
+            "evidence": "input: \"python scripts/spring_project_scaffolder.py my-service --type microservice --db postgresql\"",
+            "target_path": "scripts/spring_project_scaffolder.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 53,
+            "column": 20,
+            "evidence": "input: \"python scripts/entity_generator.py User --fields 'id:Long,email:String,name:String,createdAt:LocalDateTime'\"",
+            "target_path": "scripts/entity_generator.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 131,
+            "column": 8,
+            "evidence": "python scripts/spring_project_scaffolder.py order-service --type microservice --db postgresql",
+            "target_path": "scripts/spring_project_scaffolder.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 134,
+            "column": 8,
+            "evidence": "python scripts/spring_project_scaffolder.py ecommerce-app --type monolith --db mysql --security oauth2",
+            "target_path": "scripts/spring_project_scaffolder.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 137,
+            "column": 8,
+            "evidence": "python scripts/spring_project_scaffolder.py notification-service --type reactive --db mongodb",
+            "target_path": "scripts/spring_project_scaffolder.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 144,
+            "column": 8,
+            "evidence": "python scripts/entity_generator.py Product --fields \"id:Long,name:String,price:BigDecimal,category:String,createdAt:LocalDateTime\"",
+            "target_path": "scripts/entity_generator.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 147,
+            "column": 8,
+            "evidence": "python scripts/entity_generator.py Order --fields \"id:Long,customer:Customer,items:List<OrderItem>,total:BigDecimal\" --relations \"customer:ManyToOne,items:OneTo",
+            "target_path": "scripts/entity_generator.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 154,
+            "column": 8,
+            "evidence": "python scripts/dependency_analyzer.py pom.xml --check-security",
+            "target_path": "scripts/dependency_analyzer.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 157,
+            "column": 8,
+            "evidence": "python scripts/dependency_analyzer.py build.gradle --output report.md",
+            "target_path": "scripts/dependency_analyzer.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 162,
+            "column": 26,
+            "evidence": "- Spring Boot patterns: `references/spring-boot-best-practices.md`",
+            "target_path": "references/spring-boot-best-practices.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 163,
+            "column": 26,
+            "evidence": "- Microservices design: `references/microservices-patterns.md`",
+            "target_path": "references/microservices-patterns.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 164,
+            "column": 25,
+            "evidence": "- JPA/Hibernate guide: `references/jpa-hibernate-guide.md`",
+            "target_path": "references/jpa-hibernate-guide.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 165,
+            "column": 24,
+            "evidence": "- Security reference: `references/spring-security-reference.md`",
+            "target_path": "references/spring-security-reference.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 166,
+            "column": 24,
+            "evidence": "- Performance tuning: `references/java-performance-tuning.md`",
+            "target_path": "references/java-performance-tuning.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 176,
+            "column": 11,
+            "evidence": "python scripts/spring_project_scaffolder.py inventory-service --type microservice --db postgresql --security jwt",
+            "target_path": "scripts/spring_project_scaffolder.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 182,
+            "column": 11,
+            "evidence": "# Edit src/main/resources/application.yml",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 188,
+            "column": 11,
+            "evidence": "python scripts/entity_generator.py Inventory --fields \"id:Long,productId:Long,quantity:Integer,warehouse:String\"",
+            "target_path": "scripts/entity_generator.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 189,
+            "column": 11,
+            "evidence": "python scripts/entity_generator.py InventoryMovement --fields \"id:Long,inventory:Inventory,quantity:Integer,type:MovementType,timestamp:LocalDateTime\"",
+            "target_path": "scripts/entity_generator.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 197,
+            "column": 4,
+            "evidence": "./mvnw test",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 198,
+            "column": 4,
+            "evidence": "./mvnw verify # Integration tests",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 203,
+            "column": 4,
+            "evidence": "./mvnw clean package -DskipTests",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 207,
+            "column": 37,
+            "evidence": "See [spring-boot-best-practices.md](references/spring-boot-best-practices.md) for complete setup patterns.",
+            "target_path": "references/spring-boot-best-practices.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 215,
+            "column": 11,
+            "evidence": "python scripts/api_endpoint_generator.py products --methods GET,POST,PUT,DELETE --paginated",
+            "target_path": "scripts/api_endpoint_generator.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 226,
+            "column": 37,
+            "evidence": "See [spring-boot-best-practices.md](references/spring-boot-best-practices.md) for API design patterns.",
+            "target_path": "references/spring-boot-best-practices.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 234,
+            "column": 11,
+            "evidence": "python scripts/performance_profiler.py --analyze-queries src/",
+            "target_path": "scripts/performance_profiler.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 245,
+            "column": 30,
+            "evidence": "See [jpa-hibernate-guide.md](references/jpa-hibernate-guide.md) for optimization patterns.",
+            "target_path": "references/jpa-hibernate-guide.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 253,
+            "column": 11,
+            "evidence": "python scripts/security_config_generator.py --type jwt --roles ADMIN,USER,MANAGER",
+            "target_path": "scripts/security_config_generator.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 264,
+            "column": 36,
+            "evidence": "See [spring-security-reference.md](references/spring-security-reference.md) for security patterns.",
+            "target_path": "references/spring-security-reference.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 284,
+            "column": 8,
+            "evidence": "python scripts/spring_project_scaffolder.py user-service --type microservice --db postgresql --security jwt",
+            "target_path": "scripts/spring_project_scaffolder.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 287,
+            "column": 8,
+            "evidence": "python scripts/spring_project_scaffolder.py ecommerce --type monolith --db mysql --security oauth2",
+            "target_path": "scripts/spring_project_scaffolder.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 290,
+            "column": 8,
+            "evidence": "python scripts/spring_project_scaffolder.py notification-service --type reactive --db mongodb",
+            "target_path": "scripts/spring_project_scaffolder.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 293,
+            "column": 8,
+            "evidence": "python scripts/spring_project_scaffolder.py --help",
+            "target_path": "scripts/spring_project_scaffolder.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 311,
+            "column": 8,
+            "evidence": "python scripts/entity_generator.py Customer --fields \"id:Long,name:String,email:String\"",
+            "target_path": "scripts/entity_generator.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 314,
+            "column": 8,
+            "evidence": "python scripts/entity_generator.py Order --fields \"id:Long,customer:Customer,total:BigDecimal\" --relations \"customer:ManyToOne\"",
+            "target_path": "scripts/entity_generator.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 317,
+            "column": 8,
+            "evidence": "python scripts/entity_generator.py Product --fields \"id:Long,name:String,price:BigDecimal\" --auditable",
+            "target_path": "scripts/entity_generator.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 320,
+            "column": 8,
+            "evidence": "python scripts/entity_generator.py --help",
+            "target_path": "scripts/entity_generator.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 338,
+            "column": 8,
+            "evidence": "python scripts/api_endpoint_generator.py orders --methods GET,POST,PUT,DELETE",
+            "target_path": "scripts/api_endpoint_generator.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 341,
+            "column": 8,
+            "evidence": "python scripts/api_endpoint_generator.py reports --methods GET --paginated",
+            "target_path": "scripts/api_endpoint_generator.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 344,
+            "column": 8,
+            "evidence": "python scripts/api_endpoint_generator.py --help",
+            "target_path": "scripts/api_endpoint_generator.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 362,
+            "column": 8,
+            "evidence": "python scripts/security_config_generator.py --type jwt --roles ADMIN,USER",
+            "target_path": "scripts/security_config_generator.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 365,
+            "column": 8,
+            "evidence": "python scripts/security_config_generator.py --type oauth2 --issuer-uri https://auth.example.com",
+            "target_path": "scripts/security_config_generator.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 368,
+            "column": 8,
+            "evidence": "python scripts/security_config_generator.py --help",
+            "target_path": "scripts/security_config_generator.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 385,
+            "column": 8,
+            "evidence": "python scripts/dependency_analyzer.py pom.xml",
+            "target_path": "scripts/dependency_analyzer.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 388,
+            "column": 8,
+            "evidence": "python scripts/dependency_analyzer.py build.gradle --check-security",
+            "target_path": "scripts/dependency_analyzer.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 391,
+            "column": 8,
+            "evidence": "python scripts/dependency_analyzer.py pom.xml --output report.md",
+            "target_path": "scripts/dependency_analyzer.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 394,
+            "column": 8,
+            "evidence": "python scripts/dependency_analyzer.py --help",
+            "target_path": "scripts/dependency_analyzer.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 412,
+            "column": 8,
+            "evidence": "python scripts/performance_profiler.py --analyze-queries src/",
+            "target_path": "scripts/performance_profiler.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 415,
+            "column": 8,
+            "evidence": "python scripts/performance_profiler.py --profile http://localhost:8080/actuator",
+            "target_path": "scripts/performance_profiler.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 418,
+            "column": 8,
+            "evidence": "python scripts/performance_profiler.py src/ --output performance-report.md",
+            "target_path": "scripts/performance_profiler.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 421,
+            "column": 8,
+            "evidence": "python scripts/performance_profiler.py --help",
+            "target_path": "scripts/performance_profiler.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 428,
+            "column": 35,
+            "evidence": "**[spring-boot-best-practices.md](references/spring-boot-best-practices.md)** - Spring Boot Patterns",
+            "target_path": "references/spring-boot-best-practices.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 435,
+            "column": 31,
+            "evidence": "**[microservices-patterns.md](references/microservices-patterns.md)** - Microservices Architecture",
+            "target_path": "references/microservices-patterns.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 442,
+            "column": 28,
+            "evidence": "**[jpa-hibernate-guide.md](references/jpa-hibernate-guide.md)** - Data Layer",
+            "target_path": "references/jpa-hibernate-guide.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 449,
+            "column": 34,
+            "evidence": "**[spring-security-reference.md](references/spring-security-reference.md)** - Security",
+            "target_path": "references/spring-security-reference.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 456,
+            "column": 32,
+            "evidence": "**[java-performance-tuning.md](references/java-performance-tuning.md)** - Performance",
+            "target_path": "references/java-performance-tuning.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 481,
+            "column": 37,
+            "evidence": "See [spring-boot-best-practices.md](references/spring-boot-best-practices.md) for detailed guidelines.",
+            "target_path": "references/spring-boot-best-practices.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 508,
+            "column": 37,
+            "evidence": "See [spring-boot-best-practices.md](references/spring-boot-best-practices.md) for CI/CD and automation integration examples.",
+            "target_path": "references/spring-boot-best-practices.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 558,
+            "column": 16,
+            "evidence": "1. Run `python scripts/spring_project_scaffolder.py my-service --type microservice --db postgresql` to create your first project",
+            "target_path": "scripts/spring_project_scaffolder.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "inline_command"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 560,
+            "column": 35,
+            "evidence": "3. Generate entities with `python scripts/entity_generator.py`",
+            "target_path": "scripts/entity_generator.py",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "inline_command"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 570,
+            "column": 60,
+            "evidence": "- **Best practices** - See [spring-boot-best-practices.md](references/spring-boot-best-practices.md)",
+            "target_path": "references/spring-boot-best-practices.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 571,
+            "column": 58,
+            "evidence": "- **Troubleshooting** - See [java-performance-tuning.md](references/java-performance-tuning.md)",
+            "target_path": "references/java-performance-tuning.md",
+            "status": "resolved",
+            "disposition": "analyzed",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 572,
+            "column": 56,
+            "evidence": "- **External documentation** - [Spring Boot Reference](https://docs.spring.io/spring-boot/docs/current/reference/html/)",
+            "target_path": null,
+            "status": "rejected",
+            "disposition": "out_of_scope",
+            "reference_kind": "markdown_link"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 578,
+            "column": 65,
+            "evidence": "**Support:** For issues or questions, refer to domain guide at `../CLAUDE.md`",
+            "target_path": null,
+            "status": "rejected",
+            "disposition": "out_of_scope",
+            "reference_kind": "quoted_or_code"
+          }
+        ],
+        "limitations": [
+          "Analyzer static_patterns_agent_snooping status: degraded.",
+          "Analyzer static_patterns_anti_refusal status: degraded.",
+          "Analyzer static_patterns_deserialization status: degraded.",
+          "Analyzer static_patterns_excessive_agency status: degraded.",
+          "Analyzer static_patterns_harmful_content status: degraded.",
+          "Analyzer static_patterns_memory_poisoning status: degraded.",
+          "Analyzer static_patterns_privilege_escalation status: degraded.",
+          "Analyzer static_patterns_prompt_injection status: degraded.",
+          "Analyzer static_patterns_rogue_agent status: degraded.",
+          "Analyzer static_patterns_ssrf status: degraded.",
+          "Analyzer static_patterns_supply_chain status: degraded.",
+          "Analyzer static_patterns_system_prompt_leakage status: degraded.",
+          "Analyzer static_patterns_tool_misuse status: degraded."
+        ],
+        "findings_before_filtering": 27,
+        "findings_after_filtering": 27,
+        "dependency_inspection": {
+          "enabled": false,
+          "status": "not_requested",
+          "mode": "static_local",
+          "locked_entries": 0,
+          "inspected_artifacts": 0,
+          "artifacts": []
+        }
+      }
+    }
+  ]
+}

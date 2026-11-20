@@ -1,0 +1,54 @@
+real 0 with True without True stop stop $0.001
+real 1 with True without True stop stop $0.002
+real 2 with True without False stop stop $0.007
+real 3 with True without False stop stop $0.009
+real 4 with True without False stop stop $0.009
+real 5 with True without True stop stop $0.010
+real 6 with True without True stop stop $0.012
+real 7 with True without True stop stop $0.014
+real 8 with True without True stop stop $0.016
+real 9 with True without False stop stop $0.017
+real 10 with True without False stop stop $0.018
+real 11 with True without True stop stop $0.020
+real 12 with True without True stop stop $0.022
+real 13 with True without True stop stop $0.023
+real 14 with True without True stop stop $0.025
+real 15 with True without True stop stop $0.026
+real 16 with False without True stop length $0.036
+real 17 with True without True stop stop $0.038
+real 18 with True without True stop stop $0.038
+real 19 with False without True stop stop $0.039
+placebo 0 with True without True stop stop $0.040
+placebo 1 with True without True stop stop $0.041
+placebo 2 with True without True stop stop $0.043
+placebo 3 with False without True stop stop $0.045
+placebo 4 with True without True stop stop $0.046
+placebo 5 with True without False stop stop $0.047
+placebo 6 with True without True stop stop $0.048
+placebo 7 with False without False stop stop $0.053
+placebo 8 with True without True stop stop $0.055
+placebo 9 with True without True stop stop $0.056
+placebo 10 with True without True stop stop $0.057
+placebo 11 with True without True stop stop $0.058
+placebo 12 with True without True stop stop $0.060
+placebo 13 with True without True stop stop $0.061
+placebo 14 with True without True stop stop $0.063
+placebo 15 with True without True stop stop $0.064
+placebo 16 with True without False stop stop $0.072
+placebo 17 with True without True stop stop $0.073
+placebo 18 with True without False stop stop $0.074
+placebo 19 with False without True stop stop $0.075
+{
+ "real": {
+  "with": 18,
+  "without": 15,
+  "ok_pairs": 20,
+  "pairs": 20
+ },
+ "placebo": {
+  "with": 17,
+  "without": 16,
+  "ok_pairs": 20,
+  "pairs": 20
+ }
+}

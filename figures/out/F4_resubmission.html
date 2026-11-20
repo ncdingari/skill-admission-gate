@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="../vendor/echarts.min.js"></script>
+
+    
+</head>
+<body >
+    <div id="f48d887d794c4710a5c2a60fe451037f" class="chart-container" style="width:1050px; height:600px; "></div>
+    <script>
+        var chart_f48d887d794c4710a5c2a60fe451037f = echarts.init(
+            document.getElementById('f48d887d794c4710a5c2a60fe451037f'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_f48d887d794c4710a5c2a60fe451037f = {
+    "backgroundColor": "#FFFFFF",
+    "animation": false,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#000000",
+        "#E69F00",
+        "#56B4E9",
+        "#009E73",
+        "#F0E442",
+        "#0072B2",
+        "#D55E00",
+        "#CC79A7"
+    ],
+    "textStyle": {
+        "color": "#000000",
+        "fontSize": 24,
+        "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+    },
+    "title": [
+        {
+            "left": 20,
+            "top": 6,
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 26,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+                "fontWeight": "normal"
+            }
+        }
+    ],
+    "grid": [
+        {
+            "left": 120,
+            "right": 40,
+            "top": 90,
+            "bottom": 110
+        }
+    ],
+    "xAxis": [
+        {
+            "type": "value",
+            "gridIndex": 0,
+            "name": "Resubmissions of a useless skill",
+            "nameLocation": "middle",
+            "nameGap": 60,
+            "nameTextStyle": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "axisLine": {
+                "show": true,
+                "onZero": false,
+                "lineStyle": {
+                    "color": "#000000",
+                    "width": 2
+                }
+            },
+            "axisTick": {
+                "show": true,
+                "inside": true,
+                "lineStyle": {
+                    "color": "#000000",
+                    "width": 2
+                }
+            },
+            "axisLabel": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "splitLine": {
+                "show": false
+            }
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value",
+            "gridIndex": 0,
+            "name": "P(admitted at least once)",
+            "nameLocation": "middle",
+            "nameGap": 70,
+            "nameTextStyle": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "axisLine": {
+                "show": true,
+                "onZero": false,
+                "lineStyle": {
+                    "color": "#000000",
+                    "width": 2
+                }
+            },
+            "axisTick": {
+                "show": true,
+                "inside": true,
+                "lineStyle": {
+                    "color": "#000000",
+                    "width": 2
+                }
+            },
+            "axisLabel": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "splitLine": {
+                "show": false
+            },
+            "min": 0,
+            "max": 1
+        }
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "95% CI re-checked, each attempt",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "data": [
+                [
+                    1.0,
+                    0.18025
+                ],
+                [
+                    2.0,
+                    0.32895
+                ],
+                [
+                    3.0,
+                    0.44805
+                ],
+                [
+                    4.0,
+                    0.54475
+                ],
+                [
+                    5.0,
+                    0.62515
+                ],
+                [
+                    6.0,
+                    0.6926
+                ],
+                [
+                    7.0,
+                    0.74685
+                ],
+                [
+                    8.0,
+                    0.79245
+                ],
+                [
+                    9.0,
+                    0.82915
+                ],
+                [
+                    10.0,
+                    0.8602
+                ],
+                [
+                    11.0,
+                    0.8852
+                ],
+                [
+                    12.0,
+                    0.9055
+                ],
+                [
+                    13.0,
+                    0.9238
+                ],
+                [
+                    14.0,
+                    0.93755
+                ],
+                [
+                    15.0,
+                    0.94755
+                ],
+                [
+                    16.0,
+                    0.9572
+                ],
+                [
+                    17.0,
+                    0.96515
+                ],
+                [
+                    18.0,
+                    0.97155
+                ],
+                [
+                    19.0,
+                    0.9769
+                ],
+                [
+                    20.0,
+                    0.98115
+                ]
+            ],
+            "symbol": "circle",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#E69F00",
+                "type": "dashed",
+                "width": 3
+            },
+            "itemStyle": {
+                "color": "#E69F00"
+            }
+        },
+        {
+            "type": "line",
+            "name": "Betting gate at \u03b1 each attempt",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "data": [
+                [
+                    1.0,
+                    0.02695
+                ],
+                [
+                    2.0,
+                    0.05315
+                ],
+                [
+                    3.0,
+                    0.0774
+                ],
+                [
+                    4.0,
+                    0.10245
+                ],
+                [
+                    5.0,
+                    0.12655
+                ],
+                [
+                    6.0,
+                    0.15105
+                ],
+                [
+                    7.0,
+                    0.17645
+                ],
+                [
+                    8.0,
+                    0.19775
+                ],
+                [
+                    9.0,
+                    0.2186
+                ],
+                [
+                    10.0,
+                    0.2388
+                ],
+                [
+                    11.0,
+                    0.2595
+                ],
+                [
+                    12.0,
+                    0.27985
+                ],
+                [
+                    13.0,
+                    0.2984
+                ],
+                [
+                    14.0,
+                    0.31785
+                ],
+                [
+                    15.0,
+                    0.33785
+                ],
+                [
+                    16.0,
+                    0.35505
+                ],
+                [
+                    17.0,
+                    0.3739
+                ],
+                [
+                    18.0,
+                    0.3916
+                ],
+                [
+                    19.0,
+                    0.40885
+                ],
+                [
+                    20.0,
+                    0.4245
+                ]
+            ],
+            "symbol": "circle",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#0072B2",
+                "type": "solid",
+                "width": 3
+            },
+            "itemStyle": {
+                "color": "#0072B2"
+            }
+        },
+        {
+            "type": "line",
+            "name": "Betting gate, lineage \u03b1-spending",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "data": [
+                [
+                    1.0,
+                    0.01105
+                ],
+                [
+                    2.0,
+                    0.0147
+                ],
+                [
+                    3.0,
+                    0.0164
+                ],
+                [
+                    4.0,
+                    0.0177
+                ],
+                [
+                    5.0,
+                    0.01905
+                ],
+                [
+                    6.0,
+                    0.0196
+                ],
+                [
+                    7.0,
+                    0.0201
+                ],
+                [
+                    8.0,
+                    0.02045
+                ],
+                [
+                    9.0,
+                    0.0209
+                ],
+                [
+                    10.0,
+                    0.02105
+                ],
+                [
+                    11.0,
+                    0.0213
+                ],
+                [
+                    12.0,
+                    0.0215
+                ],
+                [
+                    13.0,
+                    0.0217
+                ],
+                [
+                    14.0,
+                    0.02215
+                ],
+                [
+                    15.0,
+                    0.0223
+                ],
+                [
+                    16.0,
+                    0.0226
+                ],
+                [
+                    17.0,
+                    0.02275
+                ],
+                [
+                    18.0,
+                    0.02305
+                ],
+                [
+                    19.0,
+                    0.02315
+                ],
+                [
+                    20.0,
+                    0.0235
+                ]
+            ],
+            "symbol": "circle",
+            "symbolSize": 10,
+            "lineStyle": {
+                "color": "#009E73",
+                "type": "solid",
+                "width": 3
+            },
+            "itemStyle": {
+                "color": "#009E73"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "show": true,
+            "textStyle": {
+                "color": "#000000",
+                "fontSize": 24,
+                "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+            },
+            "itemWidth": 30,
+            "itemHeight": 16,
+            "inactiveColor": "#FFFFFF",
+            "itemGap": 18,
+            "left": 20,
+            "top": 10,
+            "width": 1000
+        }
+    ],
+    "_emsk_width_px": 1050,
+    "_emsk_height_px": 600
+};
+        chart_f48d887d794c4710a5c2a60fe451037f.setOption(option_f48d887d794c4710a5c2a60fe451037f);
+    </script>
+</body>
+</html>

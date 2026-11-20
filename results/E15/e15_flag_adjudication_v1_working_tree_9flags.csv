@@ -1,0 +1,10 @@
+task,skill,score,driver,author_reading,needs_second_reader
+citation-check,citation-management,65,AR2 anti-refusal on a submission checklist; LP1 undeclared network/env use in helper scripts,false positive (AR2); minor permission-declaration hygiene (LP1),yes
+court-form-filling,pdf,100,SC8/SC9 shipped Python bytecode and __pycache__ that the scanner cannot inspect,genuine supply-chain hygiene risk (uninspectable executables); no evidence of malice,yes
+crystallographic-wyckoff-position-analysis,pymatgen,80,PE3 credential access: instructions to obtain a Materials Project API key,false positive (documented API-key setup),yes
+exceltable-in-ppt,pptx,61,one uninspectable referenced artifact (coverage) plus medium subprocess/sudo findings,coverage-driven; ordinary for an office-file tool,yes
+fix-druid-loophole-cve,senior-java,85,PE3 credential access on a security-best-practice checklist (bcrypt),false positive,yes
+fix-erlang-ssh-cve,ssh-penetration-testing,94,YARA offensive-tool and backdoor-persistence rules; key-harvesting and authorized_keys persistence commands,genuine dual-use offensive content (penetration-testing skill); a registry would need a policy decision,yes
+organize-messy-files,pptx,61,same pptx skill as exceltable-in-ppt,coverage-driven,yes
+pptx-reference-formatting,pptx,61,same pptx skill as exceltable-in-ppt,coverage-driven,yes
+simpo-code-reproduction,nlp-research-repo-package-installment,52,TM1/TM2 tool misuse on apt-get install lines,false positive (routine package installation),yes

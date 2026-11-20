@@ -1,0 +1,33 @@
+{
+ "history": 0,
+ "lineage": 0,
+ "versions": [
+  {
+   "phase": "pre",
+   "lift": 0.09877330299891729,
+   "null": false,
+   "admit": true,
+   "level": 0.021874508288723685,
+   "attempt": 1,
+   "n": 272
+  },
+  {
+   "phase": "edit",
+   "lift": 0.0,
+   "null": true,
+   "admit": false,
+   "level": 0.001005862641038352,
+   "attempt": 2,
+   "n": 394
+  },
+  {
+   "phase": "edit",
+   "lift": 0.0,
+   "null": true,
+   "admit": false,
+   "level": 0.0004598054511301803,
+   "attempt": 3,
+   "n": 600
+  }
+ ]
+}

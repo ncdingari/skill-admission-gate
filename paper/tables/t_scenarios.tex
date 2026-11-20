@@ -1,0 +1,29 @@
+\begin{tabular}{llrrrr}
+\toprule
+Scenario & Gate & Admitted (\%) & False share (\%) & Runs/candidate & Runs/true admission \\
+\midrule
+Curated-like & Fixed-$n$ $t$ & 86.6 & 0 & 274 & 317 \\
+ & CI re-checked & 96.0 & 0 & 158 & 165 \\
+ & SPRT & 86.8 & 0 & 127 & 147 \\
+ & Betting + margin & 91.9 & 0 & 238 & 259 \\
+ & Betting + e-LOND & 83.5 & 0 & 475 & 569 \\
+\addlinespace
+Self-generated-like & Fixed-$n$ $t$ & 3.1 & 8 & 274 & 9{,}448 \\
+ & CI re-checked & 7.5 & 19 & 1131 & 18{,}548 \\
+ & SPRT & 3.4 & 10 & 70 & 2{,}329 \\
+ & Betting + margin & 3.3 & 5 & 250 & 7{,}934 \\
+ & Betting + e-LOND & 0.3 & 0 & 274 & 84{,}454 \\
+\addlinespace
+SWE-Skills-like & Fixed-$n$ $t$ & 9.9 & 52 & 274 & 5{,}768 \\
+ & CI re-checked & 23.8 & 75 & 977 & 16{,}217 \\
+ & SPRT & 9.4 & 48 & 159 & 3{,}269 \\
+ & Betting + margin & 8.5 & 35 & 709 & 12{,}956 \\
+ & Betting + e-LOND & 3.2 & 0 & 770 & 23{,}702 \\
+\addlinespace
+WebDev-like & Fixed-$n$ $t$ & 14.3 & 3 & 274 & 1{,}978 \\
+ & CI re-checked & 28.1 & 8 & 947 & 3{,}662 \\
+ & SPRT & 14.8 & 3 & 122 & 851 \\
+ & Betting + margin & 16.0 & 2 & 444 & 2{,}825 \\
+ & Betting + e-LOND & 5.8 & 0 & 544 & 9{,}384 \\
+\bottomrule
+\end{tabular}

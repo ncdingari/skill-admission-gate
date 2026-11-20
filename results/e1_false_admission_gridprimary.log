@@ -1,0 +1,13 @@
+boundary done
+placebo_webdev done
+two_point_worst done
+sd_theta_0.5 done
+sd_theta_3.0 done
+sd_lift_0 done
+sd_lift_1 done
+rho_0 done
+rho_0.9 done
+r_3 done
+margin_0.05 done
+stale_baseline_drift done
+{"exp": "E1", "quick": false, "wall_s": 161.77, "seed": 20261114, "nixigate": "0.1.0", "python": "3.12.7", "numpy": "1.26.3", "pandas": "2.3.3", "time": "2026-11-18 15:53:31 EST", "rule": "prpl", "cells": 12, "reps": 20000}

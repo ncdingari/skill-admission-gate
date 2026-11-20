@@ -1,0 +1,1 @@
+{"exp": "E23", "quick": false, "wall_s": 6564.52, "seed": 20261114, "nixigate": "0.1.0", "python": "3.12.7", "numpy": "1.26.3", "pandas": "2.3.3", "time": "2026-11-20 11:10:57 EST", "rule": "grid", "reps": 4000, "fit_best": {"sd_theta": 2.25, "sd_lift": 2.25, "rho": 0.999, "loss": 0.01487672244019212}, "orders": 1000, "splits": 100}

@@ -1,0 +1,16 @@
+control {'grid': 0.0285, 'prpl_c050': 0.0146, 'msprt': 0.0132, 'fixed_t': 0.051, 'sprt': 0.0443}
+coin_hard {'grid': 0.4944, 'prpl_c050': 0.4944, 'msprt': 0.4944, 'fixed_t': 0.0, 'sprt': 0.4944}
+coin_shift_0.05 {'grid': 0.2224, 'prpl_c050': 0.2601, 'msprt': 0.2361, 'fixed_t': 0.1784, 'sprt': 0.2016}
+coin_shift_0.10 {'grid': 0.4934, 'prpl_c050': 0.4951, 'msprt': 0.4954, 'fixed_t': 0.4014, 'sprt': 0.4167}
+snapshot_both {'grid': 0.0255, 'prpl_c050': 0.0129, 'msprt': 0.0117, 'fixed_t': 0.0493, 'sprt': 0.0427}
+snapshot_skill {'grid': 0.1546, 'prpl_c050': 0.1442, 'msprt': 0.1741, 'fixed_t': 0.0733, 'sprt': 0.077}
+block_5_0.5 {'grid': 0.0356, 'prpl_c050': 0.0214, 'msprt': 0.0201, 'fixed_t': 0.0607, 'sprt': 0.0545}
+block_10_0.5 {'grid': 0.0508, 'prpl_c050': 0.0314, 'msprt': 0.0302, 'fixed_t': 0.0693, 'sprt': 0.0696}
+block_10_1.0 {'grid': 0.1154, 'prpl_c050': 0.0763, 'msprt': 0.084, 'fixed_t': 0.1073, 'sprt': 0.1218}
+repeat_0.01 {'grid': 0.0291, 'prpl_c050': 0.0159, 'msprt': 0.014, 'fixed_t': 0.0497, 'sprt': 0.0451}
+repeat_0.05 {'grid': 0.0353, 'prpl_c050': 0.0206, 'msprt': 0.0188, 'fixed_t': 0.0568, 'sprt': 0.0536}
+repeat_0.20 {'grid': 0.0737, 'prpl_c050': 0.0517, 'msprt': 0.0473, 'fixed_t': 0.0945, 'sprt': 0.0968}
+exclude_0.01 {'grid': 0.0297, 'prpl_c050': 0.0176, 'msprt': 0.0158, 'fixed_t': 0.0512, 'sprt': 0.044}
+exclude_0.05 {'grid': 0.0373, 'prpl_c050': 0.0244, 'msprt': 0.0209, 'fixed_t': 0.0635, 'sprt': 0.0587}
+exclude_0.20 {'grid': 0.0989, 'prpl_c050': 0.1026, 'msprt': 0.0804, 'fixed_t': 0.1348, 'sprt': 0.1429}
+{"exp": "E21", "quick": false, "wall_s": 205.37, "seed": 20261114, "nixigate": "0.1.0", "python": "3.12.7", "numpy": "1.26.3", "pandas": "2.3.3", "time": "2026-11-20 09:00:22 EST", "rule": "grid", "cells": 15, "reps": 20000}

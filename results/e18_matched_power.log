@@ -1,0 +1,82 @@
+default 1 0.1 done
+default 1 0.166 done
+default 3 0.1 done
+default 3 0.166 done
+moment_matched 1 0.1 done
+moment_matched 1 0.166 done
+moment_matched 3 0.1 done
+moment_matched 3 0.166 done
+             model  r   lift  target     gate    setting  power  variants_alt  variants_null_0.0  admit_null_0.0
+0          default  1  0.100    0.80  fixed_t      n=137  0.814       137.000            137.000           0.048
+1          default  1  0.100    0.80     sprt  beta=0.20  0.850        95.718             75.772           0.045
+2          default  1  0.100    0.80    msprt  N_max=280  0.805       167.000            278.341           0.011
+3          default  1  0.100    0.80     prpl  N_max=260  0.802       167.449            218.625           0.010
+4          default  1  0.100    0.80     grid  N_max=280  0.806       147.689            226.935           0.025
+5          default  1  0.100    0.95  fixed_t      n=239  0.957       239.000            239.000           0.052
+6          default  1  0.100    0.95     sprt  beta=0.05  0.964       124.066            141.208           0.045
+7          default  1  0.100    0.95    msprt  N_max=430  0.952       183.318            426.605           0.012
+8          default  1  0.100    0.95     prpl  N_max=405  0.950       183.184            296.518           0.015
+9          default  1  0.100    0.95     grid  N_max=455  0.950       166.766            312.598           0.026
+10         default  1  0.166    0.80  fixed_t       n=55  0.812        55.000             55.000           0.048
+11         default  1  0.166    0.80     sprt  beta=0.20  0.878        40.850             37.997           0.050
+12         default  1  0.166    0.80    msprt  N_max=120  0.813        76.398            119.697           0.005
+13         default  1  0.166    0.80     prpl  N_max=120  0.815        87.232            115.751           0.002
+14         default  1  0.166    0.80     grid  N_max=100  0.809        57.471             96.990           0.020
+15         default  1  0.166    0.95  fixed_t       n=96  0.958        96.000             96.000           0.050
+16         default  1  0.166    0.95     sprt  beta=0.05  0.969        56.661             69.920           0.032
+17         default  1  0.166    0.95    msprt  N_max=165  0.950        81.197            164.443           0.006
+18         default  1  0.166    0.95     prpl  N_max=160  0.952        91.491            148.766           0.004
+19         default  1  0.166    0.95     grid  N_max=160  0.953        64.050            146.628           0.023
+20         default  3  0.100    0.80  fixed_t       n=50  0.798        50.000             50.000           0.050
+21         default  3  0.100    0.80    msprt  N_max=105  0.807        62.306            103.496           0.021
+22         default  3  0.100    0.80     prpl  N_max=165  0.803       131.855            155.402           0.000
+23         default  3  0.100    0.80     grid   N_max=95  0.821        65.136             94.536           0.009
+24         default  3  0.100    0.95  fixed_t       n=87  0.956        87.000             87.000           0.050
+25         default  3  0.100    0.95    msprt  N_max=155  0.950        67.799            152.373           0.024
+26         default  3  0.100    0.95     prpl  N_max=205  0.958       136.060            180.112           0.000
+27         default  3  0.100    0.95     grid  N_max=135  0.956        69.089            131.120           0.015
+28         default  3  0.166    0.80  fixed_t       n=21  0.818        21.000             21.000           0.050
+29         default  3  0.166    0.80    msprt   N_max=45  0.834        28.120             44.697           0.012
+30         default  3  0.166    0.80     prpl   N_max=95  0.830        78.028             94.743           0.000
+31         default  3  0.166    0.80     grid   N_max=50  0.856        36.190             49.995           0.001
+32         default  3  0.166    0.95  fixed_t       n=36  0.958        36.000             36.000           0.048
+33         default  3  0.166    0.95    msprt   N_max=65  0.960        29.979             64.433           0.014
+34         default  3  0.166    0.95     prpl  N_max=115  0.970        79.804            113.851           0.000
+35         default  3  0.166    0.95     grid   N_max=65  0.965        37.392             64.968           0.002
+36  moment_matched  1  0.100    0.80  fixed_t      n=133  0.795       133.000            133.000           0.045
+37  moment_matched  1  0.100    0.80     sprt  beta=0.20  0.841        94.880             73.121           0.044
+38  moment_matched  1  0.100    0.80    msprt  N_max=275  0.802       167.874            273.750           0.008
+39  moment_matched  1  0.100    0.80     prpl  N_max=260  0.803       169.398            219.784           0.008
+40  moment_matched  1  0.100    0.80     grid  N_max=275  0.806       147.712            225.005           0.025
+41  moment_matched  1  0.100    0.95  fixed_t      n=233  0.950       233.000            233.000           0.042
+42  moment_matched  1  0.100    0.95     sprt  beta=0.05  0.961       123.369            134.659           0.042
+43  moment_matched  1  0.100    0.95    msprt  N_max=425  0.952       184.257            422.432           0.009
+44  moment_matched  1  0.100    0.95     prpl  N_max=410  0.953       184.999            302.023           0.012
+45  moment_matched  1  0.100    0.95     grid  N_max=445  0.951       165.781            311.439           0.026
+46  moment_matched  1  0.166    0.80  fixed_t       n=51  0.812        51.000             51.000           0.060
+47  moment_matched  1  0.166    0.80     sprt  beta=0.20  0.858        38.734             30.384           0.050
+48  moment_matched  1  0.166    0.80    msprt  N_max=110  0.803        72.445            109.606           0.008
+49  moment_matched  1  0.166    0.80     prpl  N_max=115  0.807        86.932            111.495           0.002
+50  moment_matched  1  0.166    0.80     grid   N_max=90  0.812        54.379             87.738           0.026
+51  moment_matched  1  0.166    0.95  fixed_t       n=89  0.956        89.000             89.000           0.054
+52  moment_matched  1  0.166    0.95     sprt  beta=0.05  0.972        49.807             56.248           0.047
+53  moment_matched  1  0.166    0.95    msprt  N_max=160  0.952        77.846            159.088           0.011
+54  moment_matched  1  0.166    0.95     prpl  N_max=160  0.956        91.582            149.349           0.006
+55  moment_matched  1  0.166    0.95     grid  N_max=150  0.953        60.660            138.716           0.029
+56  moment_matched  3  0.100    0.80  fixed_t       n=79  0.802        79.000             79.000           0.050
+57  moment_matched  3  0.100    0.80    msprt  N_max=165  0.802        98.916            163.416           0.015
+58  moment_matched  3  0.100    0.80     prpl  N_max=190  0.814       140.310            170.086           0.003
+59  moment_matched  3  0.100    0.80     grid  N_max=135  0.808        81.791            128.286           0.022
+60  moment_matched  3  0.100    0.95  fixed_t      n=139  0.958       139.000            139.000           0.048
+61  moment_matched  3  0.100    0.95    msprt  N_max=245  0.951       107.718            242.155           0.016
+62  moment_matched  3  0.100    0.95     prpl  N_max=255  0.953       146.840            206.710           0.005
+63  moment_matched  3  0.100    0.95     grid  N_max=215  0.952        90.291            182.315           0.028
+64  moment_matched  3  0.166    0.80  fixed_t       n=30  0.808        30.000             30.000           0.051
+65  moment_matched  3  0.166    0.80    msprt   N_max=65  0.807        41.486             64.762           0.008
+66  moment_matched  3  0.166    0.80     prpl  N_max=100  0.811        79.670             98.863           0.000
+67  moment_matched  3  0.166    0.80     grid   N_max=60  0.837        40.076             59.898           0.008
+68  moment_matched  3  0.166    0.95  fixed_t       n=53  0.956        53.000             53.000           0.052
+69  moment_matched  3  0.166    0.95    msprt   N_max=95  0.953        44.756             94.477           0.011
+70  moment_matched  3  0.166    0.95     prpl  N_max=125  0.960        82.276            121.293           0.000
+71  moment_matched  3  0.166    0.95     grid   N_max=85  0.958        42.350             84.219           0.016
+{"exp": "E18", "quick": false, "wall_s": 178.94, "seed": 20261114, "nixigate": "0.1.0", "python": "3.12.7", "numpy": "1.26.3", "pandas": "2.3.3", "time": "2026-11-20 09:33:58 EST", "rule": "prpl", "reps": 4000, "cols": 3000}

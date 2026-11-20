@@ -1,0 +1,64 @@
+# Every parameter: value, unit, and either `source` (URL/DOI the value is taken from)
+# or `design` (why this value was chosen, and which experiment sweeps it).
+# The loader (src/nixigate/params.py) refuses entries with neither, and refuses "TODO".
+
+# ---------------------------------------------------------------- pre-registered gate (theta)
+alpha:            {value: 0.05, unit: prob, design: "Conventional one-sided level; matches SWE-Skills-Bench p < 0.05 decision rule (https://arxiv.org/abs/2603.15401). Fixed before any run."}
+alpha_futility:   {value: 0.10, unit: prob, design: "Futility only reduces admissions, so it cannot inflate type-I error; 0.10 trades early rejection of useless skills against losing slow positives. Swept in E2."}
+delta_abs:        {value: 0.0, unit: lift, design: "Margin for the no-skill exam: admit only if the skill helps at all. delta = 0.05 is the sensitivity value in E2."}
+futility_margin:  {value: 0.05, unit: lift, design: "Futility bet tests Delta >= 0.05 (half the target lift), so useless skills stop early. Cannot raise false admission. Compared with delta_f = delta in E2."}
+delta_sens:       {value: 0.05, unit: lift, design: "Non-zero margin for sensitivity runs (E2)."}
+r_attempts:       {value: 1, unit: count, design: "Attempts per arm per variant. r = 3 (SkillsBench uses three trials per cell, https://arxiv.org/abs/2602.12670) is the E2 sensitivity value."}
+r_sens:           {value: 3, unit: count, source: "https://arxiv.org/abs/2602.12670"}
+n_max:            {value: 600, unit: count, design: "Variant cap per exam. About 2.4x the fixed-n size for a 10 pp lift at 80% power (Eq. 7), so sequential power is not truncated by the cap at the target lift. Swept in E2."}
+bet_cap_c:        {value: 0.5, unit: dimless, source: "https://arxiv.org/abs/2010.09686", note: "Waudby-Smith and Ramdas use truncation c = 1/2 or 3/4 for predictable plug-in bets."}
+bet_cap_c_alt:    {value: 0.75, unit: dimless, source: "https://arxiv.org/abs/2010.09686"}
+prior_var:        {value: 0.25, unit: dimless, source: "https://arxiv.org/abs/2010.09686", note: "WSR plug-in variance prior 1/4 (the maximum variance of a [0,1] variable)."}
+prior_mean:       {value: 0.5, unit: dimless, source: "https://arxiv.org/abs/2010.09686"}
+
+# ---------------------------------------------------------------- baselines
+target_lift:      {value: 0.10, unit: lift, design: "Design alternative Delta_1 for power calculations: a 10 pp lift, below the SkillsBench curated mean of +16.6 pp (https://arxiv.org/abs/2602.12670) so the comparison is not tuned to the easy case."}
+power_target:     {value: 0.80, unit: prob, design: "Conventional power for sample-size planning (Eq. 7 of the draft)."}
+peek_n_min:       {value: 10, unit: count, design: "First look for the peeking gates G2 and G3; small first looks are what an engineer watching a dashboard does."}
+peek_every:       {value: 10, unit: count, design: "Look interval for the CI gate G3 (checks after every 10 variants)."}
+ci_level_z:       {value: 1.959964, unit: dimless, design: "Two-sided 95% normal interval, as reported by ACES (https://arxiv.org/abs/2608.20614) and skillcheck (https://github.com/sx4im/skillcheck), used here as a decision rule."}
+sprt_beta:        {value: 0.20, unit: prob, design: "SPRT type-II error, matched to power_target."}
+msprt_tau:        {value: 0.10, unit: lift, design: "mSPRT mixing scale set to the target lift (Johari et al., https://doi.org/10.1287/opre.2021.2135)."}
+
+# ---------------------------------------------------------------- outcome model (calibration)
+base_pass_rate:   {value: 0.339, unit: prob, source: "https://arxiv.org/abs/2602.12670", note: "SkillsBench no-skill average pass rate 33.9%."}
+curated_lift:     {value: 0.166, unit: lift, source: "https://arxiv.org/abs/2602.12670", note: "SkillsBench curated skills: 33.9% to 50.5%."}
+selfgen_lift_lo:  {value: -0.115, unit: lift, source: "https://arxiv.org/abs/2602.12670", note: "Self-generated skills 8.1 to 11.5 pp below no-skill, on 3 of 18 configurations."}
+selfgen_lift_hi:  {value: -0.081, unit: lift, source: "https://arxiv.org/abs/2602.12670"}
+swe_null_share:   {value: 0.9388, unit: frac, source: "https://arxiv.org/abs/2603.15401", note: "92 of 98 skills without a significant effect."}
+webdev_lift_lo:   {value: -0.042, unit: lift, source: "https://arxiv.org/abs/2608.23067", note: "Skill injection lowers mean Pass@2 by 1.3 to 4.2%."}
+webdev_lift_hi:   {value: -0.013, unit: lift, source: "https://arxiv.org/abs/2608.23067"}
+sd_theta:         {value: 1.5, unit: logit, design: "Between-variant difficulty SD. No published value; 1.5 on the logit scale spreads per-variant pass rates over roughly 5% to 85% around a 34% mean. Swept {0.5, 1.5, 3.0} in E1/E2."}
+sd_lift:          {value: 0.5, unit: logit, design: "Between-variant SD of the skill effect (heterogeneous lift). Swept {0, 0.5, 1.0}."}
+rho_crn:          {value: 0.5, unit: prob, design: "Probability that both arms share the sampling uniform (common random numbers). Swept {0, 0.5, 0.9}."}
+scenario_sd:      {value: 0.08, unit: lift, design: "SD of true lifts across skills within a library scenario (E5). No published per-skill SD; swept {0.04, 0.08, 0.12}."}
+swe_golden_lift:  {value: 0.10, unit: lift, design: "Mean lift of the non-null minority in the SWE-like scenario; SWE-Skills-Bench does not report one comparable number. Swept {0.05, 0.10, 0.20}."}
+drift_logit:      {value: 0.5, unit: logit, design: "Provider model improvement between a stored baseline and the skill run (E1 drift rows). 0.5 logit is about +11 pp at a 34% pass rate."}
+
+# ---------------------------------------------------------------- library level (E3, E5)
+window_size:      {value: 20, unit: count, design: "Candidates per admission window (one 'term')."}
+n_windows:        {value: 10, unit: count, design: "Windows per simulated library history."}
+null_share:       {value: 0.8, unit: frac, design: "Share of null candidates in E3, between the SWE-like (0.94) and a curated-heavy library."}
+resubmissions:    {value: 20, unit: count, design: "Maximum resubmissions of one null lineage in the E3 attack."}
+elond_gamma_exp:  {value: 1.6, unit: dimless, source: "https://arxiv.org/abs/2311.06412", note: "gamma_t proportional to log(max(t,2)) / (t exp(sqrt(log t))) is the LOND default; we use the simpler normalized t^-1.6 sequence, which also sums to 1."}
+
+# ---------------------------------------------------------------- Monte Carlo
+mc_reps:          {value: 20000, unit: count, design: "Reps per null cell: SE of a 5% rate is 0.0015."}
+mc_reps_power:    {value: 4000, unit: count, design: "Reps per power cell: SE of an 80% rate is 0.0063."}
+mc_reps_quick:    {value: 1000, unit: count, design: "Quick-mode reps for smoke runs."}
+seed:             {value: 20261114, unit: count, design: "Master seed; experiment seeds are derived by SeedSequence.spawn."}
+
+# ---------------------------------------------------------------- leakage (E6)
+gen_space_small:  {value: 200, unit: count, design: "A deliberately small generator space, where a lookup table is feasible."}
+gen_space_large:  {value: 1000000, unit: count, design: "A large generator space."}
+leak_lambda_max:  {value: 0.5, unit: frac, design: "Per-variant literal overlap threshold."}
+leak_cover_max:   {value: 0.01, unit: frac, design: "Coverage threshold: reject if the skill contains answers for more than 1% of a Monte Carlo sample of the generator space."}
+leak_mc_sample:   {value: 2000, unit: count, design: "Monte Carlo sample of the generator space for coverage."}
+
+# ---------------------------------------------------------------- credential timing (E7)
+transcript_kb:    {value: 40, unit: kB, design: "Synthetic transcript size per attempt; agent runs with tool calls are tens of kB of JSON."}

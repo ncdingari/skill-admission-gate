@@ -1,0 +1,226 @@
+{
+ "calibration": {
+  "math_skill": {
+   "pairs": 20,
+   "p_plus": 0.0,
+   "p_minus": 0.2,
+   "lift": -0.2,
+   "se": 0.0917662935482247,
+   "p_minus_conservative": 0.2,
+   "p_plus_conservative": 0.2
+  },
+  "math_teacher": {
+   "pairs": 20,
+   "p_plus": 0.0,
+   "p_minus": 0.15,
+   "lift": -0.15,
+   "se": 0.08191780219091253,
+   "p_minus_conservative": 0.15,
+   "p_plus_conservative": 0.15
+  },
+  "math_help": {
+   "pairs": 20,
+   "p_plus": 0.05,
+   "p_minus": 0.15,
+   "lift": -0.09999999999999999,
+   "se": 0.09999999999999999,
+   "p_minus_conservative": 0.15,
+   "p_plus_conservative": 0.15
+  },
+  "placebo": {
+   "pairs": 20,
+   "p_plus": 0.0,
+   "p_minus": 0.05,
+   "lift": -0.05,
+   "se": 0.04999999999999999,
+   "p_minus_conservative": 0.05,
+   "p_plus_conservative": 0.05
+  },
+  "harmful": {
+   "pairs": 20,
+   "p_plus": 0.0,
+   "p_minus": 0.3,
+   "lift": -0.3,
+   "se": 0.10513149660756935,
+   "p_minus_conservative": 0.3,
+   "p_plus_conservative": 0.3
+  }
+ },
+ "placebo_noise_per_side": 0.025,
+ "order": [
+  "math_teacher",
+  "harmful",
+  "placebo",
+  "math_help",
+  "math_skill"
+ ],
+ "targets": [],
+ "rule": "smallest N_max in 600, 900, 1200 with conservative power >= 0.80 for every skill with lift >= 0.05; 600 if none qualifies, 1200 if none reaches 0.80",
+ "reps": 2000,
+ "curve": [
+  {
+   "n_max": 600,
+   "skills": {
+    "math_teacher": {
+     "t": 1,
+     "level": 0.021874508288723685,
+     "power_cal": 0.0,
+     "power_conservative": 0.012,
+     "mean_pairs_cal": 52.7415,
+     "mean_pairs_conservative": 433.8195
+    },
+    "harmful": {
+     "t": 2,
+     "level": 0.007215896682809537,
+     "power_cal": 0.0,
+     "power_conservative": 0.003,
+     "mean_pairs_cal": 30.3285,
+     "mean_pairs_conservative": 494.1535
+    },
+    "placebo": {
+     "t": 3,
+     "level": 0.0037717620966034107,
+     "power_cal": 0.0,
+     "power_conservative": 0.002,
+     "mean_pairs_cal": 100.636,
+     "mean_pairs_conservative": 283.7065
+    },
+    "math_help": {
+     "t": 4,
+     "level": 0.0023803581890717677,
+     "power_cal": 0.0,
+     "power_conservative": 0.001,
+     "mean_pairs_cal": 77.0965,
+     "mean_pairs_conservative": 431.5135
+    },
+    "math_skill": {
+     "t": 5,
+     "level": 0.0016656597544520788,
+     "power_cal": 0.0,
+     "power_conservative": 0.0005,
+     "mean_pairs_cal": 42.479,
+     "mean_pairs_conservative": 461.844
+    }
+   }
+  },
+  {
+   "n_max": 900,
+   "skills": {
+    "math_teacher": {
+     "t": 1,
+     "level": 0.021874508288723685,
+     "power_cal": 0.0,
+     "power_conservative": 0.014,
+     "mean_pairs_cal": 52.483,
+     "mean_pairs_conservative": 569.2635
+    },
+    "harmful": {
+     "t": 2,
+     "level": 0.007215896682809537,
+     "power_cal": 0.0,
+     "power_conservative": 0.002,
+     "mean_pairs_cal": 30.6535,
+     "mean_pairs_conservative": 700.489
+    },
+    "placebo": {
+     "t": 3,
+     "level": 0.0037717620966034107,
+     "power_cal": 0.0,
+     "power_conservative": 0.0015,
+     "mean_pairs_cal": 100.386,
+     "mean_pairs_conservative": 283.741
+    },
+    "math_help": {
+     "t": 4,
+     "level": 0.0023803581890717677,
+     "power_cal": 0.0,
+     "power_conservative": 0.001,
+     "mean_pairs_cal": 78.394,
+     "mean_pairs_conservative": 574.818
+    },
+    "math_skill": {
+     "t": 5,
+     "level": 0.0016656597544520788,
+     "power_cal": 0.0,
+     "power_conservative": 0.001,
+     "mean_pairs_cal": 42.5295,
+     "mean_pairs_conservative": 645.8895
+    }
+   }
+  },
+  {
+   "n_max": 1200,
+   "skills": {
+    "math_teacher": {
+     "t": 1,
+     "level": 0.021874508288723685,
+     "power_cal": 0.0,
+     "power_conservative": 0.0125,
+     "mean_pairs_cal": 52.1805,
+     "mean_pairs_conservative": 641.4495
+    },
+    "harmful": {
+     "t": 2,
+     "level": 0.007215896682809537,
+     "power_cal": 0.0,
+     "power_conservative": 0.0025,
+     "mean_pairs_cal": 30.641,
+     "mean_pairs_conservative": 891.809
+    },
+    "placebo": {
+     "t": 3,
+     "level": 0.0037717620966034107,
+     "power_cal": 0.0,
+     "power_conservative": 0.0025,
+     "mean_pairs_cal": 100.654,
+     "mean_pairs_conservative": 288.3905
+    },
+    "math_help": {
+     "t": 4,
+     "level": 0.0023803581890717677,
+     "power_cal": 0.0,
+     "power_conservative": 0.0015,
+     "mean_pairs_cal": 77.4395,
+     "mean_pairs_conservative": 674.7165
+    },
+    "math_skill": {
+     "t": 5,
+     "level": 0.0016656597544520788,
+     "power_cal": 0.0,
+     "power_conservative": 0.001,
+     "mean_pairs_cal": 42.334,
+     "mean_pairs_conservative": 754.2285
+    }
+   }
+  }
+ ],
+ "exams": [
+  [
+   "L_math_teacher",
+   1,
+   "math_teacher"
+  ],
+  [
+   "L_harmful",
+   1,
+   "harmful"
+  ],
+  [
+   "L_placebo",
+   1,
+   "placebo"
+  ],
+  [
+   "L_math_help",
+   1,
+   "math_help"
+  ],
+  [
+   "L_math_skill",
+   1,
+   "math_skill"
+  ]
+ ],
+ "n_max": 600,
+ "chosen": false
+}
