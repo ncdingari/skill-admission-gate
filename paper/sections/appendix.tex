@@ -17,7 +17,7 @@ Predictable plug-in bets follow \citet{waudbysmith2024betting}: $\hat\mu_t=(1/2+
 \label{app:schema}
 The credential body contains: version and status; agent identity, controller key, model and harness versions, configuration digest; skill digest (Merkle root over canonically ordered files); comparator kind and digest; commitment, registered parameters $\theta$ and their hash, registration, commitment and beacon heights, and the reveal $(\sigma_p,\rho)$; for each arm the Merkle root, leaf count and leaf hashes; the statistics $(N,\hat\Delta,\mathrm{LCB},\text{decision},\text{test})$; the security-scan and leakage-report hashes; and, optionally, an attestation quote over $H(R^{(0)}\|R^{(1)})$. The digest $\chi$ is computed over the body without the signature and log fields, which are attached afterwards.
 
-\begin{algorithm}[!tbp]
+\begin{algorithm}[H]
 \caption{VerifyCredential$(\chi)$}\label{alg:verify}
 \begin{algorithmic}[1]
 \State fetch body $B$; check $H(\mathrm{JCS}(B))=\chi$, the signature, and that $\chi$ is logged and not revoked
@@ -40,7 +40,7 @@ The credential body contains: version and status; agent identity, controller key
 
 \section{External data}
 \label{app:data}
-We use two released files, unmodified; their SHA-256 hashes are in the supplement.
+We use two released files, unmodified; their SHA-256 hashes are in the code repository (\texttt{data/external/PROVENANCE.md}).
 \begin{itemize}
 \item SWE-Skills-Bench (MIT license), file \path{results/final_results/ALL_combined_cells.csv} at commit \texttt{4d3450d}, from\newline \url{https://github.com/ControllableModel/SWE-Skills-Bench}.
 \item SkillsBench (AGPL-3.0), commit \texttt{3748490}, file\newline \path{website-data/results-registry.json}, from\newline {\small\url{https://github.com/benchflow-ai/skillsbench-trajectories}}.

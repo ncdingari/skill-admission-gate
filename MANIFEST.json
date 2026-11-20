@@ -2491,13 +2491,13 @@
 },
 {
 "path": "paper/main.bbl",
-"bytes": 34281,
-"sha256": "1037e581c298fe7522548fcdf96b4a6991985710e4288fb5cb7379169bbba532"
+"bytes": 34250,
+"sha256": "38c99e8f20c20dbdcec7e636def1dc00aab8b21e01a06f86e88a5ee21b8a2a15"
 },
 {
 "path": "paper/main.pdf",
-"bytes": 757751,
-"sha256": "041bb9f1ac521eae0cdb5d5e5f8ed93b44c1e7a87b4cf2e14de505730ae5d764"
+"bytes": 759660,
+"sha256": "8daf6cd82f5862f2b1c1d83b26b61635c6c9e75beb69c1e6059803638abfa115"
 },
 {
 "path": "paper/main.tex",
@@ -2516,8 +2516,8 @@
 },
 {
 "path": "paper/refs.bib",
-"bytes": 58269,
-"sha256": "556394ecfe119fcd14993b198154da52f2cb7e7e0aeee552c204d32c909e0005"
+"bytes": 58244,
+"sha256": "8deda241117e6e0d7e5dc54da63e0b7c2aa316fa6dfd49f6ef4a3121b5ebc2a5"
 },
 {
 "path": "paper/sections/abstract.tex",
@@ -2526,23 +2526,23 @@
 },
 {
 "path": "paper/sections/appendix.tex",
-"bytes": 8870,
-"sha256": "8841c1ca65110d2b7339d8fef93bb823192299bf8c1b071a1f4f216f2c1c4581"
+"bytes": 8911,
+"sha256": "b12ef90eb215f2ac5b0a9e0f726d08e587909d2a1a18f13b40e34a5568e19647"
 },
 {
 "path": "paper/sections/appendix_notation.tex",
 "bytes": 1885,
-"sha256": "860bf3316419d672f4312b8e980c1f17c37f1f85620e44762e745d4283dcd27a"
+"sha256": "68f06a111611b13b01766b0ab1fcbc09d71ebb0fd938ccaec19c9e6f70af9a05"
 },
 {
 "path": "paper/sections/appendix_related.tex",
-"bytes": 5940,
-"sha256": "5c41411109fd52c55ded35891705f8d32f6f626c00c72517d031c9d2385b5373"
+"bytes": 5943,
+"sha256": "f6c2acf591b2d3305d9c6f98fc81512a3b6b9982809f6d339d39a37f4c0e8f14"
 },
 {
 "path": "paper/sections/appendix_results.tex",
-"bytes": 38451,
-"sha256": "7dc190a5ffb40ccfce0e11af74e5f2ba0dcc46ac7524db966b82aeba5e945a3b"
+"bytes": 38794,
+"sha256": "002ad2368f37e6d5b86778e340cf89963822a3e8a51a6ed1722777b840d85884"
 },
 {
 "path": "paper/sections/appendix_theory.tex",
@@ -2551,13 +2551,13 @@
 },
 {
 "path": "paper/sections/discussion.tex",
-"bytes": 8201,
-"sha256": "b34c975b0071e3e14cd6754f458fb4215f0b11171400bd3159ad61fe1eabc183"
+"bytes": 8301,
+"sha256": "c0108453730938b752ea1d37a78b518723a124da6b65ebc8e3689c1220efa536"
 },
 {
 "path": "paper/sections/evaluation.tex",
-"bytes": 5147,
-"sha256": "8e0c1fe65e4944ab0a008a84917c1d454c12401287035fd3bd1487214db1fc70"
+"bytes": 5472,
+"sha256": "023347742d62fa8cc28682f0edadf27b897c420631204ea57d90776abd53e565"
 },
 {
 "path": "paper/sections/gate.tex",
@@ -2581,8 +2581,8 @@
 },
 {
 "path": "paper/sections/results.tex",
-"bytes": 30270,
-"sha256": "35b1a97fdc9a9ac2dbcedc0ddaacd0affb0ba24ddbaac84ebb55872bc95be976"
+"bytes": 30515,
+"sha256": "090df4f3984534b3fdfb502e797bc89a88ae3fa4c5bea7aaed59c14037c3076a"
 },
 {
 "path": "paper/sections/setup.tex",
@@ -2591,8 +2591,8 @@
 },
 {
 "path": "paper/sections/theory.tex",
-"bytes": 32216,
-"sha256": "6a67316d1555f890ab0ec54a19db0e637157f64d6cb09e6f33fc2e84a423179c"
+"bytes": 32210,
+"sha256": "277eb40579a1607329f697893f5b555b811b8ec0f6b0d4413c43dd8b73a9eee4"
 },
 {
 "path": "paper/tables/t_false_admission.tex",
@@ -2612,7 +2612,7 @@
 {
 "path": "paper/tables/t_live_study.tex",
 "bytes": 5342,
-"sha256": "0b275ea5f5cfa0f53dbddee24d79cf56a1d3c2c12f639bed5024b3f885577af5"
+"sha256": "8dbc0d3687526ddc44d6d90d4c1244d4bde8ed5e5e3354271e38d8648af08e75"
 },
 {
 "path": "paper/tables/t_matched_power.tex",

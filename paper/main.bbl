@@ -15,11 +15,12 @@
 {agentskill.sh}.
 \newblock {agentskill.sh: AI Agent Skills Directory and Marketplace}, 2026.
 \newblock URL \url{https://agentskill.sh/}.
-\newblock Homepage advertises 276,000+ skills (checked 14 Nov 2026; returned HTTP 503 earlier the same day). Accessed 14 Nov 2026.
+\newblock Homepage advertises 276,000+ skills. Accessed 14 Nov 2026.
 
 \bibitem[Agrawal et~al.(2025)Agrawal, Ram, and Ramdas]{agrawal2025stopping}
 Shubhada Agrawal, Ashwin Ram, and Aaditya Ramdas.
 \newblock {On stopping times of power-one sequential tests: Tight lower and upper bounds}, 2025.
+\newblock arXiv:2504.19952.
 
 \bibitem[Anand et~al.(2026)Anand, Wang, Jiang, Masson, Zheng, and Zhou]{anand2026aeval}
 Tejas~Singh Anand, Yuet Ying~Christina Wang, Wanting Jiang, Steve Masson, Tian Zheng, and Bingjie Zhou.
@@ -30,7 +31,7 @@ Tejas~Singh Anand, Yuet Ying~Christina Wang, Wanting Jiang, Steve Masson, Tian Z
 {Anthropic}.
 \newblock {Introducing Agent Skills}, 2025.
 \newblock URL \url{https://claude.com/resources/articles/skills}.
-\newblock Announcement dated 16 Oct 2025; www.anthropic.com/news/skills redirects here. Accessed 14 Nov 2026.
+\newblock Announcement dated 16 Oct 2025. Accessed 14 Nov 2026.
 
 \bibitem[Ardebili(2026)]{seyedkazemi2026novafabric}
 Mohsen~Seyedkazemi Ardebili.
@@ -46,6 +47,7 @@ Suguru Arimoto.
 \bibitem[Bates et~al.(2022)Bates, Jordan, Sklar, and Soloff]{bates2022principal}
 Stephen Bates, Michael~I. Jordan, Michael Sklar, and Jake~A. Soloff.
 \newblock {Principal-agent hypothesis testing}, 2022.
+\newblock arXiv:2205.06812.
 
 \bibitem[Blahut(1972)]{blahut1972computation}
 Richard~E. Blahut.
@@ -219,7 +221,7 @@ Emilie Kaufmann, Olivier Capp{\'e}, and Aur{\'e}lien Garivier.
 \newblock {On the complexity of best-arm identification in multi-armed bandit models}.
 \newblock \emph{Journal of Machine Learning Research}, 17\penalty0 (1):\penalty0 1--42, 2016.
 \newblock URL \url{https://jmlr.org/papers/v17/kaufman16a.html}.
-\newblock arXiv:1407.4443. Change-of-measure inequality is Lemma 1.
+\newblock arXiv:1407.4443.
 
 \bibitem[Kevin et~al.(2026)Kevin, Raghavan, Puget, Malani, Puvvadi, Abramovitch, Gupta, Akkiraju, Prabhu, Dangi, et~al.]{kevin2026aces}
 Christopher Kevin, Narendran Raghavan, Jean-Francois Puget, Roshni Malani, Meghana Puvvadi, Moshe Abramovitch, Mohit Gupta, Rama Akkiraju, Subodh Prabhu, Yogesh Dangi, et~al.
@@ -266,7 +268,7 @@ Ben Laurie, Eran Messeri, and Rob Stradling.
 \bibitem[Li et~al.(2026{\natexlab{a}})Li, Chen, and Huang]{li2026avaivat}
 Boning Li, Yu~Chen, and Longbo Huang.
 \newblock {AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games}, 2026{\natexlab{a}}.
-\newblock AV-AIVAT. arXiv:2608.06362 (v1).
+\newblock arXiv:2608.06362.
 
 \bibitem[Li et~al.(2026{\natexlab{b}})Li, Liu, Chen, You, Di, He, Zheng, Choe, Sun, Wang, et~al.]{li2026skillsbench}
 Xiangyi Li, Yimin Liu, Wenbo Chen, Bingran You, Zonglin Di, Yifeng He, Shenghan Zheng, Kyoung~Whan Choe, Jiankai Sun, Shuyi Wang, et~al.
@@ -359,7 +361,7 @@ Francesco Orabona.
 \bibitem[Pardasani \& Singh(2026)Pardasani and Singh]{pardasani2026whoverifies}
 Sahil Pardasani and Madhusudan Singh.
 \newblock {Who Verifies the Benchmark? Decentralizing Trust in Large Language Model Evaluation}, 2026.
-\newblock QASC 2026. arXiv:2608.07762 (v1).
+\newblock arXiv:2608.07762.
 
 \bibitem[Pollak(1978)]{pollak1978optimality}
 Moshe Pollak.
@@ -461,6 +463,7 @@ Ivair~R. Silva, Martin Kulldorff, and W.~Katherine Yih.
 \bibitem[Singh et~al.(2025)Singh, Nan, Wang, D'Souza, Kapoor, {\"U}st{\"u}n, et~al.]{singh2025leaderboard}
 Shivalika Singh, Yiyang Nan, Alex Wang, Daniel D'Souza, Sayash Kapoor, Ahmet {\"U}st{\"u}n, et~al.
 \newblock {The Leaderboard Illusion}, 2025.
+\newblock arXiv:2504.20879.
 
 \bibitem[{SkillMill}(2026)]{skillmill2026}
 {SkillMill}.
@@ -482,6 +485,7 @@ Tobin South, Alexander Camuto, Shrey Jain, Shayla Nguyen, Robert Mahari, Christi
 \bibitem[Tavyrikov et~al.(2025)Tavyrikov, Goeman, and de~Heide]{tavyrikov2025carefree}
 Yury Tavyrikov, Jelle~J. Goeman, and Rianne de~Heide.
 \newblock {Carefree multiple testing with e-processes}, 2025.
+\newblock arXiv:2501.19360.
 
 \bibitem[Tian \& Ramdas(2021)Tian and Ramdas]{tian2021online}
 Jinjin Tian and Aaditya Ramdas.
@@ -510,6 +514,7 @@ Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Li
 \bibitem[Wang et~al.(2025)Wang, Dandapanthula, and Ramdas]{wang2025stopped}
 Hongjian Wang, Sanjit Dandapanthula, and Aaditya Ramdas.
 \newblock {Anytime-valid FDR control with the stopped e-BH procedure}, 2025.
+\newblock arXiv:2502.08539.
 
 \bibitem[Wang et~al.(2026{\natexlab{a}})Wang, Zhao, Li, Chen, Chen, Peng, and He]{wang2026skillrevisions}
 Jiajie Wang, Yutong Zhao, Tianlin Li, Huashan Chen, Jinfu Chen, Kebin Peng, and Sen He.
@@ -538,6 +543,7 @@ Ian Waudby-Smith and Aaditya Ramdas.
 \bibitem[Waudby-Smith et~al.(2025)Waudby-Smith, Sandoval, and Jordan]{waudbysmith2025instance}
 Ian Waudby-Smith, Ricardo~J. Sandoval, and Michael~I. Jordan.
 \newblock {Instance-log-optimality of portfolio-based e-processes and their sequential hypothesis tests}, 2025.
+\newblock arXiv:2504.02818.
 
 \bibitem[Xie \& Barron(1997)Xie and Barron]{xie1997minimax}
 Qun Xie and Andrew~R. Barron.
@@ -550,7 +556,7 @@ Ziyu Xu and Aaditya Ramdas.
 \newblock {Online multiple testing with e-values}.
 \newblock In \emph{Proceedings of the 27th International Conference on Artificial Intelligence and Statistics (AISTATS)}, volume 238 of \emph{Proceedings of Machine Learning Research}, pp.\  3997--4005, 2024.
 \newblock URL \url{https://proceedings.mlr.press/v238/xu24a.html}.
-\newblock Introduces e-LOND. arXiv:2311.06412.
+\newblock arXiv:2311.06412.
 
 \bibitem[Yang \& Ding(2026)Yang and Ding]{yang2026webdevskills}
 Ziyue Yang and Fan Ding.
