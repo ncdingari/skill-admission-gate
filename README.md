@@ -35,7 +35,7 @@ of error; E23 wider fit grid; E24 intervals; E25 live study 5.
 
 ## Not included
 - Raw SkillsBench job folders from the first live study (`pilot/jobs`, `pilot/jobs_study`, `pilot/jobs_study_aborted`;
-  about 8 GB unpacked), released as a separate data archive, `p9-skillsbench-jobs.tar.gz` (link and SHA-256 in
+  about 8 GB unpacked), released as a separate data archive, `skillsbench-live-study-jobs.tar.gz` (link and SHA-256 in
   `DATA.md`). Unpack it in the repository root to restore those folders. The live-study verifiers do not need it.
 - Proctor private keys and commitment secrets; the secrets are revealed in the ledger.
 
